@@ -1,0 +1,25 @@
+.heroText {
+  // background: cornsilk;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &__developer-name {
+    letter-spacing: -0.03em;
+    color: $white;
+    font-size: 5.5rem;
+    font-weight: 700;
+    line-height: 120%;
+  }
+
+  &__developer-occupation {
+    letter-spacing: -0.03em;
+    color: $white;
+    font-size: 4.7rem;
+    font-weight: 600;
+    line-height: 120%;
+    background: $main-gradient;
+    @include gradient-text();
+  }
+}
