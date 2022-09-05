@@ -1,0 +1,14 @@
+.logo {
+  display: flex;
+  align-items: flex-end;
+  color: $white;
+  letter-spacing: -0.05em;
+  line-height: 150%;
+  font-size: 3rem;
+  font-weight: 700;
+
+  span {
+    background: $main-gradient;
+    @include gradient-text;
+  }
+}

@@ -1,3 +1,5 @@
+@import '../abstracts/colors';
+
 /***
     The new CSS reset - version 1.7.3 (last updated 7.8.2022)
     GitHub page: https://github.com/elad2412/the-new-css-reset
@@ -12,6 +14,24 @@
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Raleway', sans-serif;
+  background: $black;
+  color: $white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Mukta', sans-serif;
 }
 
 a,

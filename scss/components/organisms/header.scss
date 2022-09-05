@@ -1,0 +1,14 @@
+.header {
+  padding: 2rem;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 9;
+
+  &__container {
+    display: flex;
+    margin: 0 3rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

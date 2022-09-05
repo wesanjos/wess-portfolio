@@ -1,1 +1,9 @@
 @import 'base/reset';
+@import './utilities/mixins';
+
+@import './components/atoms/logo.scss';
+@import './components/atoms/navbarLink.scss';
+
+@import './components/molecules/navbar.scss';
+
+@import './components/organisms/header.scss';
