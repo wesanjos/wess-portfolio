@@ -27,3 +27,70 @@
   -webkit-animation: #{$str};
   animation: #{$str};
 }
+
+@include keyframes(fade) {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@include keyframes(rotateText) {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@include keyframes(moveUpAndDown) {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}
+
+@include keyframes(floating-github) {
+  0%,
+  100% {
+    left: 2%;
+    top: 0%;
+  }
+
+  50% {
+    top: 12%;
+  }
+}
+
+@include keyframes(floating-gmail) {
+  0%,
+  100% {
+    right: 6%;
+    top: 10%;
+  }
+
+  50% {
+    top: 25%;
+  }
+}
+
+@include keyframes(floating-linkedin) {
+  0%,
+  100% {
+    left: 15%;
+    bottom: -5%;
+  }
+
+  50% {
+    bottom: 17%;
+  }
+}

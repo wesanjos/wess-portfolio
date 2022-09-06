@@ -10,7 +10,21 @@ export default function Hero() {
         <ExperienceList />
       </div>
 
-      <FloatingSocial/>
+      <FloatingSocial
+        linkToAction="/"
+        callToAction="Acesse meu GitHub"
+        imageSrc="/assets/icons/github-icon.svg"
+      />
+      <FloatingSocial
+        linkToAction="/"
+        callToAction="Entre em contato pelo e-mail"
+        imageSrc="/assets/icons/gmail-icon.svg"
+      />
+      <FloatingSocial
+        linkToAction="/"
+        callToAction="Conecte-se ao meu LinkedIn"
+        imageSrc="/assets/icons/linkedin-icon.svg"
+      />
     </section>
   );
 }
