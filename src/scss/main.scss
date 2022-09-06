@@ -4,11 +4,15 @@
 @import './components/atoms/logo.scss';
 @import './components/atoms/navbarLink.scss';
 @import './components/atoms/experienceTitle.scss';
+@import './components/atoms/subtitle.scss';
 
 @import './components/molecules/navbar.scss';
 @import './components/molecules/heroText.scss';
 @import './components/molecules/experienceList.scss';
 @import './components/molecules/floatingSocial.scss';
+@import './components/molecules/sectionHeader.scss';
+@import './components/molecules/presentationPhoto.scss';
 
 @import './components/organisms/header.scss';
 @import './components/organisms/hero.scss';
+@import './components/organisms/introduction.scss';

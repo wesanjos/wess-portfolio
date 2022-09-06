@@ -1,5 +1,4 @@
 .hero {
-  // background: crimson;
   width: 100%;
   height: calc(100vh - 91.6px);
   text-align: center;
@@ -13,5 +12,12 @@
     text-align: center;
     height: 100%;
     position: relative;
+  }
+
+  &__scroll {
+    position: absolute;
+    bottom: 3rem;
+    opacity: 0.5;
+    @include animation("moveUpAndDown 2s ease-in-out infinite");
   }
 }

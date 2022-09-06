@@ -1,0 +1,56 @@
+.presentationPhoto {
+  width: 300px;
+  position: relative;
+
+  &__title {
+    position: absolute;
+    z-index: 1;
+    right: -70%;
+    top: -10%;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 120%;
+    max-width: 310px;
+    letter-spacing: -0.03em;
+  }
+
+  &__container {
+    display: flex;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    background: linear-gradient(#000, #000) padding-box,
+    $main-gradient border-box;
+    border: 3px solid transparent;
+    border-radius: 1.6rem;
+
+    &::after {
+      content: url('/assets/images/effect-photo.svg');
+      display: block;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      bottom: -2.2rem;
+      right: -4.8rem;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    &::before {
+      content: "";
+      width: 80px;
+      height: 120px;
+      display: block;
+      background: $main-gradient;
+      position: absolute;
+      top: -0.5rem;
+      left: -0.5rem;
+      border-radius: 1rem;
+    }
+  }
+
+  &__photo {
+    pointer-events: none;
+    border-radius: 1.3rem;
+  }
+}
