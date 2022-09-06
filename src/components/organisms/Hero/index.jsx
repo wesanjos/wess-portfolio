@@ -10,7 +10,7 @@ export default function Hero() {
         <ExperienceList />
       </div>
 
-      {/* <FloatingSocial/> */}
+      <FloatingSocial/>
     </section>
   );
 }

@@ -1,0 +1,63 @@
+.floatingSocial {
+  background-color: transparent;
+
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: auto;
+  width: 32rem;
+  height: 32rem;
+
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  background-size: cover;
+  box-sizing: border-box;
+
+  &:before {
+    transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.15rem;
+    opacity: 0.5;
+    background: linear-gradient(#000, #000) padding-box,
+      $main-gradient border-box;
+    border: 2px solid transparent;
+    border-radius: 50%;
+  }
+
+  &:hover::before {
+    opacity: 1;
+    transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    transform: scale(1.2);
+  }
+
+  &__link {
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    background: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem;
+    border-radius: 50%;
+    transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+
+    &:hover {
+      transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+      transform: scale(1.3);
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
