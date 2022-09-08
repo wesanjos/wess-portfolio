@@ -1,0 +1,17 @@
+.techList {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+  justify-content: center;
+
+  &__item {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background: linear-gradient(#000, #000) padding-box,
+      $main-gradient border-box;
+    border: 1.5px solid transparent;
+    font-size: 1.4rem;
+  }
+}
