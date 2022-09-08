@@ -1,13 +1,13 @@
 .presentationPhoto {
-  width: 300px;
+  width: 350px;
   position: relative;
 
   &__title {
     position: absolute;
     z-index: 1;
-    right: -70%;
+    right: -80%;
     top: -10%;
-    font-size: 4rem;
+    font-size: 4.2rem;
     font-weight: 700;
     line-height: 120%;
     max-width: 310px;
@@ -16,8 +16,8 @@
 
   &__container {
     display: flex;
-    width: 300px;
-    height: 400px;
+    width: 350px;
+    height: 465px;
     position: relative;
     background: linear-gradient(#000, #000) padding-box,
     $main-gradient border-box;
