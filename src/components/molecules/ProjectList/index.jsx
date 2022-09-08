@@ -23,6 +23,16 @@ export default function ProjectList() {
         projectName="Projeto 04"
         techList={['MySQL', 'MongoDB']}
       />
+      <ProjectCard
+        projectImage="/assets/images/dummy.png"
+        projectName="Projeto 05"
+        techList={['MySQL', 'MongoDB']}
+      />
+      <ProjectCard
+        projectImage="/assets/images/dummy.png"
+        projectName="Projeto 06"
+        techList={['MySQL', 'MongoDB']}
+      />
     </div>
   );
 }

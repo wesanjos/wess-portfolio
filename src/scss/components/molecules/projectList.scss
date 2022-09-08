@@ -4,4 +4,8 @@
   grid-template-columns: repeat(2, 1fr);
   margin: 0 auto;
   padding: 3rem 0;
+
+  @media screen and (min-width: 1120px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
