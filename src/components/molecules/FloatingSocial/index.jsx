@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 export default function FloatingSocial({
   linkToAction,
   callToAction,
@@ -7,7 +5,12 @@ export default function FloatingSocial({
 }) {
   return (
     <div className="floatingSocial">
-      <a href={linkToAction} className="floatingSocial__link" target="_blank" rel="noreferrer">
+      <a
+        href={linkToAction}
+        className="floatingSocial__link"
+        target="_blank"
+        rel="noreferrer"
+      >
         <svg className="svg absolute" viewBox="0 0 100 100">
           <defs>
             <path
@@ -53,13 +56,7 @@ export default function FloatingSocial({
           </text>
         </svg>
         <span className="floatingSocial__overlay">
-          <Image
-            className="floatingSocial__icon"
-            alt=""
-            src={imageSrc}
-            width="40"
-            height="40"
-          />
+          <img className="floatingSocial__icon" src={imageSrc} alt="" />
         </span>
       </a>
     </div>

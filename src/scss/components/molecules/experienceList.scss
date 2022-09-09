@@ -1,20 +1,28 @@
 .experienceList {
-  // background-color: crimson;
-
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 2;
 
   &__container {
-    // background: chartreuse;
     display: flex;
     align-items: center;
     margin-top: 1rem;
+    
+    @media screen and (max-width: 798px) {
+      flex-direction: column;
+      margin-top: 2rem;
+    }
 
     li {
       display: flex;
       align-items: center;
       margin: 0 1rem 0;
+      
+      @media screen and (max-width: 798px) {
+        margin: 0.3rem 0;
+      }
 
       &:nth-child(2) {
         &:before {
@@ -25,6 +33,14 @@
           border-radius: 9px;
           background: $main-gradient;
           display: inline-flex;
+
+          @media screen and (max-width: 798px) {
+            width: 30px;
+            height: 3px;
+            margin-right: 1rem;
+            align-items: center;
+            justify-content: center;
+          }
         }
 
         &:after {
@@ -35,6 +51,14 @@
           border-radius: 9px;
           background: $main-gradient;
           display: inline-flex;
+
+          @media screen and (max-width: 798px) {
+            width: 30px;
+            height: 3px;
+            margin-left: 1rem;
+            align-items: center;
+            justify-content: center;
+          }
         }
       }
     }

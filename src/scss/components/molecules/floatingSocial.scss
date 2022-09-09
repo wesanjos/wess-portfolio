@@ -20,6 +20,30 @@
     'floating-github 8s 1s cubic-bezier(0.4, 0.01, 0.165, 0.99) infinite'
   );
 
+  @media screen and (max-width: 1368px) {
+    width: 24rem;
+    height: 24rem;
+  }
+
+  @media screen and (max-width: 998px) {
+    position: relative;
+    animation: none;
+    left: auto;
+    right: auto;
+    bottom: 0;
+    top: auto;
+    animation: none;
+    width: 9rem;
+    height: 9rem;
+    margin: 0 1rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 7rem;
+    height: 7rem;
+    margin: 0 1rem;
+  }
+
   &::before {
     transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
     content: '';
@@ -64,6 +88,10 @@
     align-items: center;
     justify-content: center;
     padding: 0.8rem;
+
+    @media screen and (max-width: 1368px) {
+      padding: 0.7rem;
+    }
   }
 
   svg {
@@ -78,13 +106,22 @@
     transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
     pointer-events: none;
 
+    @media screen and (max-width: 998px) {
+      margin: 0.4rem;
+    }
+
     text {
       font-size: 0.4rem;
       letter-spacing: -0.03em;
+
+      @media screen and (max-width: 998px) {
+        font-size: 0.75rem;
+        letter-spacing: 0;
+      }
     }
   }
 
-  &:nth-child(3) {
+  &:nth-child(2) {
     top: 0;
     left: auto;
     right: 5%;
@@ -94,9 +131,31 @@
     @include animation(
       'floating-gmail 8s cubic-bezier(0.4, 0.01, 0.165, 0.99) infinite'
     );
+
+    @media screen and (max-width: 1368px) {
+      width: 22rem;
+      height: 22rem;
+    }
+
+    @media screen and (max-width: 998px) {
+      animation: none;
+      animation: none;
+      left: auto;
+      right: auto;
+      bottom: 0;
+      top: auto;
+      width: 9rem;
+      height: 9rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 7rem;
+      height: 7rem;
+      margin: 0 1rem;
+    }
   }
 
-  &:nth-child(4) {
+  &:nth-child(3) {
     top: auto;
     left: 14%;
     right: auto;
@@ -106,5 +165,47 @@
     @include animation(
       'floating-linkedin 8s 1s cubic-bezier(0.4, 0.01, 0.165, 0.99) infinite'
     );
+
+    @media screen and (max-width: 1368px) {
+      width: 16rem;
+      height: 16rem;
+    }
+
+    @media screen and (max-width: 998px) {
+      animation: none;
+      animation: none;
+      left: auto;
+      right: auto;
+      bottom: 0;
+      top: auto;
+      width: 9rem;
+      height: 9rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 7rem;
+      height: 7rem;
+      margin: 0 1rem;
+    }
+  }
+
+  &__icon {
+    width: 40px;
+    height: 40px;
+    
+    @media screen and (max-width: 1368px) {
+      width: 35px;
+      height: 35px;
+    }
+
+    @media screen and (max-width: 998px) {
+      width: 30px;
+      height: 30px;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 25px;
+      height: 25px;
+    }
   }
 }

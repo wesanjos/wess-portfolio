@@ -11,21 +11,23 @@ export default function Hero() {
         <ExperienceList />
       </div>
 
-      <FloatingSocial
-        linkToAction="/"
-        callToAction="Acesse meu GitHub"
-        imageSrc="/assets/icons/github-icon.svg"
-      />
-      <FloatingSocial
-        linkToAction="/"
-        callToAction="Entre em contato pelo e-mail"
-        imageSrc="/assets/icons/gmail-icon.svg"
-      />
-      <FloatingSocial
-        linkToAction="/"
-        callToAction="Conecte-se ao meu LinkedIn"
-        imageSrc="/assets/icons/linkedin-icon.svg"
-      />
+      <div className="floatingSocial__container">
+        <FloatingSocial
+          linkToAction="/"
+          callToAction="Acesse meu GitHub"
+          imageSrc="/assets/icons/github-icon.svg"
+        />
+        <FloatingSocial
+          linkToAction="/"
+          callToAction="Entre em contato pelo e-mail"
+          imageSrc="/assets/icons/gmail-icon.svg"
+        />
+        <FloatingSocial
+          linkToAction="/"
+          callToAction="Conecte-se ao meu LinkedIn"
+          imageSrc="/assets/icons/linkedin-icon.svg"
+        />
+      </div>
 
       <a href="#sobre" className="hero__scroll">
         <Image

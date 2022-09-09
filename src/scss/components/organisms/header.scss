@@ -1,12 +1,20 @@
 .header {
-  padding: 2rem;
+  padding: 1.5rem 2rem;
   position: sticky;
   width: 100%;
   top: 0;
   z-index: 9;
-  background: linear-gradient(180deg, #070809 0%, rgba(0, 0, 0, 0) 100%);
+  background: rgba(11, 11, 11, 0.9);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.15);
+
+  @media screen and (max-width: 768px) {
+    background: linear-gradient(180deg, #070809 0%, rgba(0, 0, 0, 0) 100%);
+    box-shadow: none;
+  }
 
   &__container {
+    position: relative;
     display: flex;
     margin: 0 3rem;
     align-items: center;

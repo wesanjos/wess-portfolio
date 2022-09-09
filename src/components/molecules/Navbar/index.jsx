@@ -1,8 +1,16 @@
+import { useState } from 'react';
 import NavbarLink from '../../atoms/NavbarLink';
 
 export default function Navbar() {
+  const [menuMobile, setMenuMobile] = useState(false);
+
+  const handleMenuMobile = (event) => {
+    event.preventDefault();
+    setMenuMobile(!menuMobile);
+  };
+
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${menuMobile ? 'active' : ''}`}>
       <ul className="navbar__container">
         <li>
           <NavbarLink title="Home" />
