@@ -1,0 +1,29 @@
+.footer {
+  display: flex;
+  padding: 3rem 1rem;
+  border-top: 1px solid $gray-900;
+
+  .logo {
+    font-size: 2.3rem;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    > p {
+      font-size: 1.3rem;
+      color: $gray-400;
+    }
+  }
+}

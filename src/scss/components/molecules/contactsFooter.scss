@@ -1,0 +1,21 @@
+.contactsFooter {
+  display: flex;
+  align-items: center;
+  width: 150px;
+  justify-content: space-around;
+  transition: all 0.3s ease-in-out;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 1.6rem;
+  }
+
+  &__item {
+    width: 24px;
+    height: 24px;
+
+    &:hover {
+      opacity: 0.5;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}
