@@ -1,3 +1,4 @@
+import Contact from '../components/organisms/Contact';
 import Header from '../components/organisms/Header';
 import Hero from '../components/organisms/Hero';
 import Introduction from '../components/organisms/Introduction';
@@ -12,6 +13,7 @@ export default function Home() {
       <Introduction />
       <Skills />
       <Portfolio />
+      <Contact />
     </main>
   );
 }

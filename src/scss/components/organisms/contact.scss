@@ -1,0 +1,23 @@
+.contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1920px;
+  margin: 12rem 0;
+
+  &__container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+
+    > p {
+      font-size: 3.2rem;
+      font-weight: 600;
+      color: $gray-400;
+      margin-bottom: 1.8rem;
+      line-height: 150%;
+    }
+  }
+}
