@@ -18,6 +18,10 @@
       color: $gray-400;
       margin-bottom: 1.8rem;
       line-height: 150%;
+
+      @media screen and (max-width: 998px) {
+        font-size: 2.2rem;
+      }
     }
   }
 }

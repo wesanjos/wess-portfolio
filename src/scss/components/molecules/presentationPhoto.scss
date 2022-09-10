@@ -2,6 +2,10 @@
   width: 350px;
   position: relative;
 
+  @media screen and (max-width: 998px) {
+    width: 100%;
+  }
+
   &__title {
     position: absolute;
     z-index: 1;
@@ -12,6 +16,18 @@
     line-height: 120%;
     max-width: 310px;
     letter-spacing: -0.03em;
+
+    @media screen and (max-width: 998px) {
+      right: auto;
+      top: auto;
+      bottom: 0;
+      left: 200px;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 3.2rem;
+      left: -20px;
+    }
   }
 
   &__container {
@@ -20,9 +36,17 @@
     height: 465px;
     position: relative;
     background: linear-gradient(#000, #000) padding-box,
-    $main-gradient border-box;
+      $main-gradient border-box;
     border: 3px solid transparent;
     border-radius: 1.6rem;
+
+    @media screen and (max-width: 468px) {
+      width: 100%;
+    }
+
+    @media screen and (max-width: 368px) {
+      height: 365px;
+    }
 
     &::after {
       content: url('/assets/images/effect-photo.svg');
@@ -37,7 +61,7 @@
     }
 
     &::before {
-      content: "";
+      content: '';
       width: 80px;
       height: 120px;
       display: block;
@@ -52,5 +76,9 @@
   &__photo {
     pointer-events: none;
     border-radius: 1.3rem;
+
+    @media screen and (max-width: 468px) {
+      object-fit: cover;
+    }
   }
 }

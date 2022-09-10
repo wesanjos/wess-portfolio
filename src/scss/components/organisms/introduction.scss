@@ -4,13 +4,20 @@
   flex-direction: column;
   max-width: 1920px;
   margin: 8rem 0;
-  
+
+  @media screen and (max-width: 998px) {
+    margin: 3rem 0;
+  }
 
   &__container {
     width: 80%;
     margin: 0 auto;
     padding: 1rem 0;
     display: flex;
+
+    @media screen and (max-width: 998px) {
+      flex-direction: column;
+    }
   }
 
   .textAboutMe {
@@ -18,11 +25,21 @@
     margin: 8.6rem 0 0 2.5rem;
     max-width: 740px;
 
+    @media screen and (max-width: 998px) {
+      margin: 2.6rem 0 0 0;
+      max-width: none;
+      width: 100%;
+    }
+
     p {
       line-height: 150%;
       color: $gray-300;
       margin-bottom: 1rem;
       font-size: 1.8rem;
+
+      @media screen and (max-width: 768px) {
+        font-size: 1.6rem;
+      }
     }
   }
 }

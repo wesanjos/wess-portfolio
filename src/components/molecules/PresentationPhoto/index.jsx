@@ -13,7 +13,7 @@ export default function PresentationPhoto() {
           src="/assets/images/wess-photo.jpg"
           alt="Foto de Wesley dos Anjos A. de Oliveira"
           layout="fill"
-          objectFit="contain"
+          // objectFit="contain"
         />
       </div>
     </div>

@@ -8,7 +8,8 @@
     position: fixed;
     background: rgba(11, 11, 11, 0.9);
     backdrop-filter: blur(10px);
-    bottom: 5%;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.15);
+    top: 3%;
     left: 50%;
     transform: translateX(-50%);
   }
