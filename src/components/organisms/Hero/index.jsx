@@ -1,9 +1,13 @@
 import Image from 'next/image';
+import { useParallax } from 'react-scroll-parallax';
+
 import ExperienceList from '../../molecules/ExperienceList';
 import FloatingSocial from '../../molecules/FloatingSocial';
 import HeroText from '../../molecules/HeroText';
 
 export default function Hero() {
+  const { ref } = useParallax({ speed: 20, easing: 'easeOut' });
+
   return (
     <section className="hero">
       <div className="hero__container">
@@ -11,7 +15,7 @@ export default function Hero() {
         <ExperienceList />
       </div>
 
-      <div className="floatingSocial__container">
+      <div className="floatingSocial__container" ref={ref}>
         <FloatingSocial
           linkToAction="/"
           callToAction="Acesse meu GitHub"

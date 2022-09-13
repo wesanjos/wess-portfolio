@@ -1,9 +1,13 @@
 import Image from 'next/image';
+import { useParallax } from 'react-scroll-parallax';
+
 
 export default function PresentationPhoto() {
+  const { ref } = useParallax({ speed: 8, easing: 'easeOut' });
+
   return (
     <div className="presentationPhoto">
-      <h4 className="presentationPhoto__title">
+      <h4 className="presentationPhoto__title" ref={ref}>
         Wesley dos Anjos A. de Oliveira ✌🏼
       </h4>
 

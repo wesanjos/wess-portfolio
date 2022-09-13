@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { useParallax } from 'react-scroll-parallax';
 import TechList from '../TechList';
 
 /* eslint-disable jsx-a11y/alt-text */
@@ -8,8 +9,10 @@ export default function ProjectCard({
   projectDescription,
   techList,
 }) {
+  const { ref } = useParallax({ speed: 5, easing: 'easeInCubic' });
+
   return (
-    <div className="projectCard">
+    <div className="projectCard" ref={ref}>
       <div className="projectCard__overlay" />
 
       <div className="projectCard__container">
