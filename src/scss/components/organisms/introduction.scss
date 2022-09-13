@@ -3,7 +3,7 @@
   align-items: center;
   flex-direction: column;
   max-width: 1920px;
-  margin: 8rem 0;
+  margin: 12rem auto 0;
 
   @media screen and (max-width: 998px) {
     margin: 3rem 0;
@@ -36,6 +36,10 @@
       color: $gray-300;
       margin-bottom: 1rem;
       font-size: 1.8rem;
+      
+      @media screen and (min-width: 1120px) {
+        font-size: 2rem;
+      }
 
       @media screen and (max-width: 768px) {
         font-size: 1.6rem;

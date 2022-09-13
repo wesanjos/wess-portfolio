@@ -3,11 +3,13 @@
   line-height: 150%;
   font-weight: 600;
   text-transform: uppercase;
-  color: $gray-500;
   margin-bottom: -0.5rem;
   font-family: 'Raleway', sans-serif;
   letter-spacing: -0.03em;
-  
+  background: $main-gradient;
+  @include gradient-text();
+  width: max-content;
+
   @media screen and (max-width: 998px) {
     font-size: 2rem;
   }
