@@ -3,7 +3,7 @@ import SectionHeader from "../../molecules/SectionHeader";
 
 export default function Contact() {
   return (
-    <section className="contact">
+    <section className="contact" id="contato">
       <SectionHeader title="Contato" />
 
       <div className="contact__container">

@@ -1,7 +1,7 @@
 .navbar {
   width: 100%;
   max-width: 400px;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   display: flex;
 
   @media screen and (max-width: 998px) {
@@ -19,7 +19,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 4rem;
+    padding: 1rem 3rem;
     border-radius: 1.5rem;
   }
 

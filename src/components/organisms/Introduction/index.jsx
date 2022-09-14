@@ -3,7 +3,7 @@ import SectionHeader from '../../molecules/SectionHeader';
 
 export default function Introduction() {
   return (
-    <section className="introduction">
+    <section className="introduction" id="sobre">
       <SectionHeader title="Sobre mim" subtitle="Introdução"/>
 
       <div className="introduction__container">

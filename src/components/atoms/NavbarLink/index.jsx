@@ -1,6 +1,6 @@
-export default function NavbarLink({ title }) {
+export default function NavbarLink({ title, id }) {
   return (
-    <a href="/" className="navbar__link">
+    <a href={`#${id}`} className="navbar__link">
       {title}
     </a>
   );

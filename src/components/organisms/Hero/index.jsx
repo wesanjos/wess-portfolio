@@ -9,7 +9,7 @@ export default function Hero() {
   const { ref } = useParallax({ speed: 20, easing: 'easeOut' });
 
   return (
-    <section className="hero">
+    <section className="hero" id="home">
       <div className="hero__container">
         <HeroText />
         <ExperienceList />
