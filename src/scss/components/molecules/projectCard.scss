@@ -91,6 +91,25 @@
     position: relative;
   }
 
+  &__link {
+    position: relative;
+    color: $gray-400;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1rem 0 0 0.5rem;
+    transition: color 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+
+    img {
+      padding-left: 0.8rem;
+    }
+
+    &:hover {
+      color: $white;
+    }
+  }
+
   &__header {
     display: flex;
     align-items: flex-start;
@@ -98,6 +117,7 @@
     width: 100%;
     justify-content: flex-end;
     z-index: 2;
+    position: relative;
 
     h4 {
       font-size: 2.6rem;
@@ -111,5 +131,12 @@
       color: $gray-500;
       font-size: 1.6rem;
     }
+  }
+
+  .headerCard__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
   }
 }
