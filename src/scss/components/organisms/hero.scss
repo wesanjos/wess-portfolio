@@ -6,6 +6,16 @@
   justify-content: center;
   position: relative;
 
+  &::before {
+    content: url('/assets/images/bg-right.svg');
+    position: absolute;
+    top: 30%;
+    opacity: 0.7;
+    right: 0;
+    z-index: -1;
+    display: block;
+  }
+
   @media screen and (max-width: 998px) {
     flex-direction: column;
     justify-content: space-evenly;
@@ -34,7 +44,6 @@
     @media screen and (max-width: 998px) {
       display: none;
     }
-
   }
 
   .floatingSocial__container {

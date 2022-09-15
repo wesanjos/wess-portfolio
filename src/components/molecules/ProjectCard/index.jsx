@@ -7,7 +7,9 @@ export default function ProjectCard({
   projectImage,
   projectName,
   projectDescription,
+  projectLink,
   techList,
+  freelancer,
 }) {
   const { ref } = useParallax({ speed: 5, easing: 'easeInCubic' });
 
@@ -17,8 +19,9 @@ export default function ProjectCard({
         <Image
           className="projectCard__image"
           src={projectImage}
-          width="430"
-          height="650"
+          alt={projectName}
+          width="770"
+          height="445"
           objectFit="contain"
         />
       </div>
@@ -31,15 +34,19 @@ export default function ProjectCard({
           <TechList techList={techList} />
         </div>
 
-        <a
-          href="#"
-          target="_blank"
-          rel="noreferrer"
-          className="projectCard__link"
-        >
-          Visualizar site
-          <img src="/assets/icons/icon-link.svg" alt="Link de visualização" />
-        </a>
+        {projectLink !== '#' && (
+          <a
+            href={projectLink}
+            target="_blank"
+            rel="noreferrer"
+            className="projectCard__link"
+          >
+            Visualizar site
+            <img src="/assets/icons/icon-link.svg" alt="Link de visualização" />
+          </a>
+        )}
+
+        {freelancer && <p className="projectCard__freelancer">Freelancer</p>}
       </div>
     </div>
   );

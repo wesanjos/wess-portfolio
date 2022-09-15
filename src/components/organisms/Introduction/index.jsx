@@ -10,9 +10,10 @@ export default function Introduction() {
         <PresentationPhoto />
 
         <div className="textAboutMe">
-          <p>Sou formado em Gestão de Tecnologia da  Informação,  porém atuo na área de desenvolvimento web.</p>
-          <p>Meu objetivo como desenvolvedor é realizar criação de sites de forma eficiente, qualidade e utilizando as tecnologias modernas do mercado.</p>
-          <p>Busco desenvolver projetos com simplicidade, responsivo e compatibilidade com diversos navegadores. Além da criação também busco aprimorar a experiência do usuário 😁.</p>
+          <p>Opaa, prazer! Sou desenvolvedor front-end a mais de 2 anos focado em web.</p>
+          <p>Atualmente realizo desenvolvimento de sites para diversos clientes junto a empresa que faço parte. Buscamos criar páginas de forma eficiente e com extrema qualidade.</p>
+          <p>Meu objetivo como desenvolvedor é criar páginas bem estruturadas e fluídas com tecnologias modernas (React e Next.js)</p>
+          <p>Além de utilizar tecnologias modernas, busco realizar implementação de novos conhecimentos, sempre buscando aprimorar a experiência do usuário.</p>
         </div>
       </div>
     </section>
