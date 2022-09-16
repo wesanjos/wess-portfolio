@@ -15,22 +15,22 @@ function MyApp({ Component, pageProps }) {
         />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="#" />
+        <meta property="og:url" content="https://www.wessanjos.dev/" />
         <meta property="og:title" content="WessAnjos - Dev FrontEnd" />
         <meta
           property="og:description"
           content="Prazer Wesley Anjos, sou desenvolvedor web e entusiasta em desenvolver projetos modernos de forma eficiente e simples."
         />
-        <meta property="og:image" content="#" />
+        <meta property="og:image" content="https://www.wessanjos.dev/assets/images/wess-anjos.png" />
 
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="#" />
+        <meta property="twitter:url" content="https://www.wessanjos.dev/" />
         <meta property="twitter:title" content="WessAnjos - Dev FrontEnd" />
         <meta
           property="twitter:description"
           content="Prazer Wesley Anjos, sou desenvolvedor web e entusiasta em desenvolver projetos modernos de forma eficiente e simples."
         />
-        <meta property="twitter:image" content="#" />
+        <meta property="twitter:image" content="https://www.wessanjos.dev/assets/images/wess-anjos.png" />
       </Head>
       <ParallaxProvider>
         <Component {...pageProps} />
