@@ -8,6 +8,29 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>WessAnjos - Dev FrontEnd</title>
+        <meta name="title" content="WessAnjos - Dev FrontEnd" />
+        <meta
+          name="description"
+          content="Prazer Wesley Anjos, sou desenvolvedor web e entusiasta em desenvolver projetos modernos de forma eficiente e simples."
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="#" />
+        <meta property="og:title" content="WessAnjos - Dev FrontEnd" />
+        <meta
+          property="og:description"
+          content="Prazer Wesley Anjos, sou desenvolvedor web e entusiasta em desenvolver projetos modernos de forma eficiente e simples."
+        />
+        <meta property="og:image" content="#" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="#" />
+        <meta property="twitter:title" content="WessAnjos - Dev FrontEnd" />
+        <meta
+          property="twitter:description"
+          content="Prazer Wesley Anjos, sou desenvolvedor web e entusiasta em desenvolver projetos modernos de forma eficiente e simples."
+        />
+        <meta property="twitter:image" content="#" />
       </Head>
       <ParallaxProvider>
         <Component {...pageProps} />
