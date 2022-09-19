@@ -2,7 +2,11 @@ export default function ContactList() {
   return (
     <div className="contactList">
       <div className="contactList__item">
-        <a href="malito:wanjos.andrade@gmail.com" target="_blank" rel="noreferrer">
+        <a
+          href="malito:wanjos.andrade@gmail.com"
+          target="_blank"
+          rel="noreferrer"
+        >
           <div className="contactList__icon">
             <img src="/assets/icons/icon-mail.svg" alt="E-mail" />
           </div>

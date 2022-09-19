@@ -30,7 +30,12 @@ body {
   color: $white;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Mukta', sans-serif;
 }
 
@@ -75,7 +80,7 @@ meter {
   display: none;
 }
 
-:where([contenteditable]:not([contenteditable="false"])) {
+:where([contenteditable]:not([contenteditable='false'])) {
   -moz-user-modify: read-write;
   -webkit-user-modify: read-write;
   overflow-wrap: break-word;
@@ -83,6 +88,6 @@ meter {
   -webkit-user-select: auto;
 }
 
-:where([draggable="true"]) {
+:where([draggable='true']) {
   -webkit-user-drag: element;
 }

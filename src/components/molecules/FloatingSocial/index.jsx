@@ -2,7 +2,7 @@ export default function FloatingSocial({
   linkToAction,
   callToAction,
   imageSrc,
-  altImg
+  altImg,
 }) {
   return (
     <div className="floatingSocial">
