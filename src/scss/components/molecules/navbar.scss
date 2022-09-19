@@ -1,6 +1,6 @@
 .navbar {
   width: 100%;
-  max-width: 400px;
+  max-width: 330px;
   border-radius: 1rem;
   display: flex;
 
@@ -12,6 +12,8 @@
     top: 3%;
     left: 50%;
     transform: translateX(-50%);
+    align-items: center;
+    justify-content: center;
   }
 
   &__container {
@@ -19,7 +21,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
     border-radius: 1.5rem;
   }
 

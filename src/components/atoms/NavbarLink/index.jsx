@@ -1,7 +1,19 @@
+import { Link } from 'react-scroll';
+
 export default function NavbarLink({ title, id }) {
   return (
-    <a href={`#${id}`} className="navbar__link">
+    <Link
+      to={id}
+      className="navbar__link"
+      activeClass="-active"
+      spy
+      smooth
+      offset={-100}
+      isDynamic
+      duration={200}
+      href="/"
+    >
       {title}
-    </a>
+    </Link>
   );
 }
