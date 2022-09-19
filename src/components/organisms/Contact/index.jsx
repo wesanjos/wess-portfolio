@@ -1,5 +1,5 @@
-import ContactList from "../../molecules/ContactList";
-import SectionHeader from "../../molecules/SectionHeader";
+import ContactList from '../../molecules/ContactList';
+import SectionHeader from '../../molecules/SectionHeader';
 
 export default function Contact() {
   return (
@@ -7,10 +7,13 @@ export default function Contact() {
       <SectionHeader title="Contato" />
 
       <div className="contact__container">
-        <p>Interessado pelo meu trabalho? Entre em contato comigo através de um desses meios de contato e retornarei o contato brevemente.</p>
+        <p>
+          Interessado pelo meu trabalho? Entre em contato comigo através de um
+          desses meios de contato e retornarei o contato brevemente.
+        </p>
 
         <ContactList />
       </div>
     </section>
-  )
+  );
 }
