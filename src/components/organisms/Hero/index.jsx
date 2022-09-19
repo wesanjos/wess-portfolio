@@ -17,19 +17,22 @@ export default function Hero() {
 
       <div className="floatingSocial__container" ref={ref}>
         <FloatingSocial
-          linkToAction="/"
+          linkToAction="https://github.com/srwess"
           callToAction="Acesse meu GitHub"
           imageSrc="/assets/icons/github-icon.svg"
+          altImg="Ícone do GitHub"
         />
         <FloatingSocial
-          linkToAction="/"
+          linkToAction="mailto:wanjos.andrade@gmail.com"
           callToAction="Entre em contato pelo e-mail"
           imageSrc="/assets/icons/gmail-icon.svg"
+          altImg="Ícone de E-mail"
         />
         <FloatingSocial
-          linkToAction="/"
+          linkToAction="https://www.linkedin.com/in/srwess/"
           callToAction="Conecte-se ao meu LinkedIn"
           imageSrc="/assets/icons/linkedin-icon.svg"
+          altImg="Ícone do LinkedIn"
         />
       </div>
 

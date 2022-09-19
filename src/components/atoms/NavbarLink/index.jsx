@@ -11,6 +11,7 @@ export default function NavbarLink({ title, id }) {
       offset={-100}
       isDynamic
       duration={200}
+      href="/"
     >
       {title}
     </Link>
