@@ -1,9 +1,26 @@
+/* eslint-disable react/no-danger */
 import { Html, Head, Main, NextScript } from 'next/document';
 
 export default function Document() {
   return (
     <Html lang="pt-BR">
       <Head>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-LSBHEPQ51C"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+    
+              gtag('config', 'G-LSBHEPQ51C');
+            `,
+          }}
+        />
+
         <link
           rel="shortcut icon"
           href="/assets/images/favicon.ico"
@@ -41,6 +58,11 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
+        <noscript
+          dangerouslySetInnerHTML={{
+            __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=G-LSBHEPQ51C" height="0" width="0" style="display: none; visibility: hidden;" />`,
+          }}
+        />
       </body>
     </Html>
   );

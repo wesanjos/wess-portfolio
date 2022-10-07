@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Script from 'next/script';
 import { ParallaxProvider } from 'react-scroll-parallax';
 
 import '../scss/main.scss';
@@ -21,7 +22,10 @@ function MyApp({ Component, pageProps }) {
           property="og:description"
           content="Prazer Wesley Anjos, sou desenvolvedor web e entusiasta em desenvolver projetos modernos de forma eficiente e simples."
         />
-        <meta property="og:image" content="https://www.wessanjos.dev/assets/images/wess-anjos.png" />
+        <meta
+          property="og:image"
+          content="https://www.wessanjos.dev/assets/images/wess-anjos.png"
+        />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://www.wessanjos.dev/" />
@@ -30,8 +34,20 @@ function MyApp({ Component, pageProps }) {
           property="twitter:description"
           content="Prazer Wesley Anjos, sou desenvolvedor web e entusiasta em desenvolver projetos modernos de forma eficiente e simples."
         />
-        <meta property="twitter:image" content="https://www.wessanjos.dev/assets/images/wess-anjos.png" />
+        <meta
+          property="twitter:image"
+          content="https://www.wessanjos.dev/assets/images/wess-anjos.png"
+        />
       </Head>
+      <Script id="google-tag-manager" strategy="afterInteractive">
+        {`
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','G-LSBHEPQ51C');
+        `}
+      </Script>
       <ParallaxProvider>
         <Component {...pageProps} />
       </ParallaxProvider>
