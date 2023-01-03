@@ -2,6 +2,7 @@ export default function FloatingSocial({
   linkToAction,
   callToAction,
   imageSrc,
+  altImg,
 }) {
   return (
     <div className="floatingSocial">
@@ -10,6 +11,7 @@ export default function FloatingSocial({
         className="floatingSocial__link"
         target="_blank"
         rel="noreferrer"
+        aria-label={callToAction}
       >
         <svg className="svg absolute" viewBox="0 0 100 100">
           <defs>
@@ -56,7 +58,7 @@ export default function FloatingSocial({
           </text>
         </svg>
         <span className="floatingSocial__overlay">
-          <img className="floatingSocial__icon" src={imageSrc} alt="" />
+          <img className="floatingSocial__icon" src={imageSrc} alt={altImg} />
         </span>
       </a>
     </div>

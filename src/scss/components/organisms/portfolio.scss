@@ -3,15 +3,14 @@
   align-items: center;
   flex-direction: column;
   max-width: 1920px;
-  margin: 12rem auto 0;
+  margin: 12rem auto;
   position: relative;
 
-  
   &::after {
     content: url('/assets/images/bg-left.svg');
     position: absolute;
     top: 10%;
-    opacity: 0.7;
+    opacity: 0.35;
     left: 0;
     z-index: -1;
     display: block;

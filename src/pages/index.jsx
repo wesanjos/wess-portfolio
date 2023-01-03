@@ -1,4 +1,3 @@
-import Contact from '../components/organisms/Contact';
 import Footer from '../components/organisms/Footer';
 import Header from '../components/organisms/Header';
 import Hero from '../components/organisms/Hero';
@@ -15,7 +14,6 @@ export default function Home() {
         <Introduction />
         <Skills />
         <Portfolio />
-        <Contact />
       </main>
       <Footer />
     </>
