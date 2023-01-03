@@ -16,6 +16,10 @@
     justify-content: center;
   }
 
+  @media screen and (max-width: 798px) {
+    max-width: max-content;
+  }
+
   &__container {
     width: 100%;
     display: flex;
