@@ -17,7 +17,7 @@
   box-sizing: border-box;
   transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
   @include animation(
-    'floating-github 8s 1s cubic-bezier(0.4, 0.01, 0.165, 0.99) infinite'
+    'floating-github 8s cubic-bezier(0.4, 0.01, 0.165, 0.99) infinite'
   );
 
   @media screen and (max-width: 1368px) {
@@ -163,7 +163,7 @@
     width: 22rem;
     height: 22rem;
     @include animation(
-      'floating-linkedin 8s 1s cubic-bezier(0.4, 0.01, 0.165, 0.99) infinite'
+      'floating-linkedin 8s cubic-bezier(0.4, 0.01, 0.165, 0.99) infinite'
     );
 
     @media screen and (max-width: 1368px) {
