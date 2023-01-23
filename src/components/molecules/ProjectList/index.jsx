@@ -4,6 +4,13 @@ export default function ProjectList() {
   return (
     <div className="projectList">
       <ProjectCard
+        projectImage="/assets/images/hda_home.png"
+        projectName="Honda Motos - Nova Home"
+        projectDescription="Reestruturação e construção da nova página de motos."
+        projectLink="https://www.honda.com.br/motos/"
+        techList={['Twig', 'Stylus', 'Javascript', 'jQuery', 'Drupal']}
+      />
+      <ProjectCard
         projectImage="/assets/images/project_1.png"
         projectName="Honda Store - Nova Home"
         projectDescription="Desenvolvimento de uma nova home para página de produtos da Honda"
