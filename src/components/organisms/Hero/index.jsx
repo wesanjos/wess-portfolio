@@ -17,7 +17,7 @@ export default function Hero() {
 
       <div className="floatingSocial__container" ref={ref}>
         <FloatingSocial
-          linkToAction="https://github.com/srwess"
+          linkToAction="https://github.com/wesanjos"
           callToAction="Acesse meu GitHub"
           imageSrc="/assets/icons/github-icon.svg"
           altImg="Ícone do GitHub"
@@ -29,7 +29,7 @@ export default function Hero() {
           altImg="Ícone de E-mail"
         />
         <FloatingSocial
-          linkToAction="https://www.linkedin.com/in/srwess/"
+          linkToAction="https://www.linkedin.com/in/wesanjos/"
           callToAction="Conecte-se ao meu LinkedIn"
           imageSrc="/assets/icons/linkedin-icon.svg"
           altImg="Ícone do LinkedIn"
