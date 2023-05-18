@@ -15,7 +15,8 @@ export default function PresentationPhoto() {
           className="presentationPhoto__photo"
           src="/assets/images/wess-photo.jpg"
           alt="Foto de Wesley dos Anjos A. de Oliveira"
-          layout="fill"
+          width="344"
+          height="459"
         />
       </div>
     </div>

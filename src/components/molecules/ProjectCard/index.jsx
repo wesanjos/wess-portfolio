@@ -22,7 +22,6 @@ export default function ProjectCard({
           alt={projectName}
           width="770"
           height="445"
-          objectFit="contain"
         />
       </div>
 
