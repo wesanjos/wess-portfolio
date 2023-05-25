@@ -1,21 +1,21 @@
-import Footer from '../components/organisms/Footer';
-import Header from '../components/organisms/Header';
-import Hero from '../components/organisms/Hero';
-import Introduction from '../components/organisms/Introduction';
-import Portfolio from '../components/organisms/Portfolio';
-import Skills from '../components/organisms/Skills';
+import { cmsService } from '../infra/cms/cmsService';
+import { CMSSectionRender } from '../infra/cms/CMSSectionRender';
+import { pageHOC } from '../context/pageHOC';
 
-export default function Home() {
-  return (
-    <>
-      <main>
-        <Header />
-        <Hero />
-        <Introduction />
-        <Skills />
-        <Portfolio />
-      </main>
-      <Footer />
-    </>
-  );
+import queryPageHome from '../infra/graphql/queries/queryPageHome';
+
+export const getStaticProps = async () => {
+  const { data: cmsContent } = await cmsService({ query: queryPageHome });
+
+  return {
+    props: {
+      cmsContent,
+    },
+  };
+};
+
+function HomeScreen() {
+  return <CMSSectionRender pageName="pageHome" />;
 }
+
+export default pageHOC(HomeScreen);
