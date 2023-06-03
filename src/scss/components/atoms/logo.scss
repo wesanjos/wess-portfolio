@@ -1,18 +1,42 @@
 .logo {
-  display: flex;
-  align-items: flex-end;
-  color: $white;
-  letter-spacing: -0.05em;
-  line-height: 150%;
-  font-size: 3rem;
-  font-weight: 700;
+  color: $primary-50;
+  letter-spacing: -0.055em;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 600;
+  position: relative;
 
-  @media screen and (max-width: 998px) {
-    display: none;
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+    line-height: 24px;
   }
 
-  span {
+  &::after {
+    content: '<';
+    position: absolute;
+    top: 0;
+    left: -18px;
+    font-size: 24px;
     background: $main-gradient;
     @include gradient-text;
+
+    @media screen and (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
+
+  &::before {
+    content: '/>';
+    position: absolute;
+    top: 0;
+    right: -28px;
+    letter-spacing: -0.055em;
+    font-size: 24px;
+    background: $main-gradient;
+    @include gradient-text;
+
+    @media screen and (max-width: 768px) {
+      font-size: 20px;
+    }
   }
 }

@@ -1,11 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&family=Montserrat:wght@300;400;600;700&display=swap');
 @import '../abstracts/colors';
 
-/***
-    The new CSS reset - version 1.7.3 (last updated 7.8.2022)
-    GitHub page: https://github.com/elad2412/the-new-css-reset
-***/
-*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol
-      *)) {
+*:where(
+    :not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)
+  ) {
   all: unset;
   display: revert;
 }
@@ -25,8 +23,8 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: 'Raleway', sans-serif;
-  background: $black;
+  font-family: 'Manrope', sans-serif;
+  background: $primary-700;
   color: $white;
 }
 
@@ -36,7 +34,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Mukta', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 a,

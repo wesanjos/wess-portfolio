@@ -44,16 +44,6 @@ export default function Document() {
           href="/assets/images/apple-touch-icon.png"
           sizes="180x180"
         />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="true"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600;700&family=Raleway:wght@300;400;500;700&display=swap"
-          rel="stylesheet"
-        />
       </Head>
       <body>
         <Main />

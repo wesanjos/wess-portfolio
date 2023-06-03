@@ -1,32 +1,21 @@
 .navbar__link {
-  font-size: 1.5rem;
-  padding: 0.7rem;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $primary-100;
   display: inline-flex;
-  color: $gray-300;
-  transition: all 0.2s ease-in-out;
-  border-radius: 0.7rem;
-  margin: 0 0.5rem;
+  letter-spacing: -0.01em;
   cursor: pointer;
-
-  @media screen and (max-width: 798px) {
-    font-size: 1.35rem;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-  }
+  transition: font-weight 0.3s, color 0.3s ease-in-out;
 
   &:hover {
-    color: $gray-900;
-    background: $gray-300;
-    border-radius: 0.7rem;
-
-    @media screen and (max-width: 798px) {
-      border-radius: 0.5rem;
-    }
+    color: $secondary-400;
+    transition: color 0.3s ease-in-out;
   }
 
   &.-active {
-    color: $gray-900;
-    background: $gray-300;
-    transition: all 0.1s ease-in-out;
+    color: $secondary-500;
+    font-weight: 600;
+    transition: font-weight 0.3s, color 0.3s ease-in-out;
   }
 }

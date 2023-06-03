@@ -1,9 +1,9 @@
 export default function Logo() {
   return (
     <a href="/" className="logo">
-      <span>&lt;</span>
+      {/* <span>&lt;</span> */}
       <h3>Wess Anjos</h3>
-      <span>/&gt;</span>
+      {/* <span>/&gt;</span> */}
     </a>
   );
 }

@@ -8,10 +8,10 @@ export default function Navbar() {
           <NavbarLink title="Home" id="home" />
         </li>
         <li>
-          <NavbarLink title="Sobre mim" id="sobre" />
+          <NavbarLink title="Trabalhos" id="work" />
         </li>
         <li>
-          <NavbarLink title="Portfólio" id="portfolio" />
+          <NavbarLink title="Sobre" id="about" />
         </li>
       </ul>
     </nav>
