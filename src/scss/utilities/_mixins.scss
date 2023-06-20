@@ -59,42 +59,6 @@
   }
 }
 
-@include keyframes(floating-github) {
-  0%,
-  100% {
-    left: 2%;
-    top: 0%;
-  }
-
-  50% {
-    top: 12%;
-  }
-}
-
-@include keyframes(floating-gmail) {
-  0%,
-  100% {
-    right: 6%;
-    top: 10%;
-  }
-
-  50% {
-    top: 25%;
-  }
-}
-
-@include keyframes(floating-linkedin) {
-  0%,
-  100% {
-    left: 15%;
-    bottom: -5%;
-  }
-
-  50% {
-    bottom: 17%;
-  }
-}
-
 /* new mixins */
 @mixin container {
   max-width: 1540px;

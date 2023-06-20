@@ -5,6 +5,8 @@ import { pageHOC } from '../context/pageHOC';
 import queryPageHome from '../infra/graphql/queries/queryPageHome';
 
 import Header from '../components/organisms/Header';
+import Hero from '../components/organisms/Hero';
+import Portfolio from '../components/organisms/Portfolio';
 
 export const getStaticProps = async () => {
   const { data: cmsContent } = await cmsService({ query: queryPageHome });
@@ -22,6 +24,7 @@ function HomeScreen() {
   return (
     <main>
       <Header />
+      <Hero />
     </main>
   );
 }
