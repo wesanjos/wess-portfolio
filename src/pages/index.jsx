@@ -25,6 +25,7 @@ function HomeScreen() {
     <main>
       <Header />
       <Hero />
+      <Portfolio />
     </main>
   );
 }
