@@ -1,5 +1,5 @@
 import { getCmsContent } from './CMSProvider';
 
-export function CMSSectionRender({ pageName }) {
+export default function CMSSectionRender({ pageName }) {
   const getAllSection = getCmsContent(`${pageName}.pageContent[0].section`);
 }

@@ -5,7 +5,7 @@ export default function ProjectCard({
   projectImage,
   projectName,
   projectDescription,
-  projectLink
+  projectLink,
 }) {
   // const { ref } = useParallax({ speed: 5, easing: 'easeInCubic' });
 

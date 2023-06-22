@@ -7,9 +7,11 @@
 </h1>
 
 ## 📃 Sobre
+
 Landing Page desenvolvida com propósito de compartilhar meus trabalhos de desenvolvimento web, trabalhos realizado junto a empresa e freelancer.
 
 ## 🚀 Tecnologias e Metodologia utilizadas
+
 - Next.js
 - SASS
 - Atomic Design

@@ -6,7 +6,7 @@
   @media screen and (max-width: 960px) {
     margin: 0 auto;
   }
-  
+
   &__container {
     @include flex(flex-start, flex-start);
     flex-direction: column;
@@ -28,7 +28,7 @@
       @media screen and (max-width: 1440px) {
         max-width: 736px;
       }
-      
+
       @media screen and (max-width: 768px) {
         min-width: 280px;
       }

@@ -1,9 +1,10 @@
 import CMSProvider from '../infra/cms/CMSProvider';
 
-export function pageHOC(Component) {
+export default function pageHOC(Component) {
   return function Wrapper(props) {
+    const { cmsContent } = props;
     return (
-      <CMSProvider cmsContent={props.cmsContent}>
+      <CMSProvider cmsContent={cmsContent}>
         <Component {...props} />
       </CMSProvider>
     );

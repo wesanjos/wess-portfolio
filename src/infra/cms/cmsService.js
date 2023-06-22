@@ -1,5 +1,4 @@
-
-export async function cmsService({ query }) {
+export default async function cmsService({ query }) {
   try {
     const responsePage = await fetch(`${process.env.BASE_ENDPOINT}`, {
       method: 'POST',

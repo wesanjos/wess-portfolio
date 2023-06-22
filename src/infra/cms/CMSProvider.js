@@ -12,10 +12,11 @@ export const getCmsContent = (path = '') => {
 
   const output = get(cmsContent, path);
 
-  if (!output)
+  if (!output) {
     throw new Error(
       `Não foi possível identificar a chave: ${path}. Verifique a query e tente novamente!`,
     );
+  }
 
   return output;
 };
