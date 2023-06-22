@@ -7,6 +7,7 @@ import queryPageHome from '../infra/graphql/queries/queryPageHome';
 import Header from '../components/organisms/Header';
 import Hero from '../components/organisms/Hero';
 import Portfolio from '../components/organisms/Portfolio';
+import Footer from '../components/organisms/Footer';
 
 export const getStaticProps = async () => {
   const { data: cmsContent } = await cmsService({ query: queryPageHome });
@@ -26,6 +27,7 @@ function HomeScreen() {
       <Header />
       <Hero />
       <Portfolio />
+      <Footer />
     </main>
   );
 }

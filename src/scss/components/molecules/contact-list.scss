@@ -1,0 +1,25 @@
+.contact-list {
+  @include flex(flex-start, center);
+  gap: 2rem;
+
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+
+  &__link {
+    color: $primary-50;
+
+    @include flex(flex-end, flex-end);
+    gap: 0.4rem;
+
+    @media screen and (max-width: 960px) {
+      font-size: 1.4rem;
+    }
+
+    img {
+      @media screen and (max-width: 960px) {
+        width: 2.2rem;
+      }
+    }
+  }
+}

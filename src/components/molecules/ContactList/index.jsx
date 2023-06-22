@@ -1,32 +1,53 @@
 export default function ContactList() {
   return (
-    <div className="contactList">
-      <div className="contactList__item">
+    <ul className="contact-list">
+      <li className="contact-list__item">
         <a
+          className="contact-list__link"
+          href="/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="/assets/icons/icon-linkedin.svg" alt="Ícone do LinkedIn" />
+          LinkedIn
+        </a>
+      </li>
+
+      <li className="contact-list__item">
+        <a
+          className="contact-list__link"
           href="malito:wanjos.andrade@gmail.com"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
-          <div className="contactList__icon">
-            <img src="/assets/icons/icon-mail.svg" alt="E-mail" />
-          </div>
-          <div className="contactList__wrapper">
-            <span>E-mail</span>
-            <p>wanjos.andrade@gmail.com</p>
-          </div>
+          <img src="/assets/icons/icon-mail.svg" alt="Ícone de E-mail" />
+          E-mail
         </a>
-      </div>
-      <div className="contactList__item">
-        <a href="https://t.me/SrWess" target="_blank" rel="noreferrer">
-          <div className="contactList__icon">
-            <img src="/assets/icons/icon-telegram.svg" alt="Telegram" />
-          </div>
-          <div className="contactList__wrapper">
-            <span>Telegram</span>
-            <p>@SrWess</p>
-          </div>
+      </li>
+
+      <li className="contact-list__item">
+        <a
+          className="contact-list__link"
+          href="/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="/assets/icons/icon-github.svg" alt="Ícone do GitHub" />
+          Github
         </a>
-      </div>
-    </div>
+      </li>
+
+      <li className="contact-list__item">
+        <a
+          className="contact-list__link"
+          href="/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="/assets/icons/icon-resume.svg" alt="Ícone do Currículo" />
+          Currículo
+        </a>
+      </li>
+    </ul>
   );
 }
