@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Script from 'next/script';
-import { ParallaxProvider } from 'react-scroll-parallax';
 
 import '../scss/main.scss';
 
@@ -48,9 +47,7 @@ function MyApp({ Component, pageProps }) {
           })(window,document,'script','dataLayer','G-LSBHEPQ51C');
         `}
       </Script>
-      <ParallaxProvider>
-        <Component {...pageProps} />
-      </ParallaxProvider>
+      <Component {...pageProps} />
     </>
   );
 }

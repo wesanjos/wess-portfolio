@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { useParallax } from 'react-scroll-parallax';
 
 export default function ProjectCard({
   projectImage,
@@ -7,8 +6,6 @@ export default function ProjectCard({
   projectDescription,
   projectLink,
 }) {
-  // const { ref } = useParallax({ speed: 5, easing: 'easeInCubic' });
-
   return (
     <article className="project-card">
       <a href={projectLink}>
