@@ -5,13 +5,13 @@ export default function Navbar() {
     <nav className="navbar">
       <ul className="navbar__container">
         <li>
-          <NavbarLink title="Home" id="home" />
+          <NavbarLink title="Home" id="#home" />
         </li>
         <li>
-          <NavbarLink title="Trabalhos" id="work" />
+          <NavbarLink title="Trabalhos" id="#work" />
         </li>
         <li>
-          <NavbarLink title="Sobre" id="about" />
+          <NavbarLink title="Contato" id="#contact" />
         </li>
       </ul>
     </nav>

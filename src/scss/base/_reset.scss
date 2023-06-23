@@ -16,7 +16,8 @@
 
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth;
+  --scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
   -webkit-overflow-scrolling: touch;
   overflow-x: hidden;
 }

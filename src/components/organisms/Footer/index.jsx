@@ -3,7 +3,7 @@ import ContactList from '../../molecules/ContactList';
 
 export default function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer" id="contact">
       <div className="footer__container">
         <div className="footer__content">
           <p className="text">

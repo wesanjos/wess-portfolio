@@ -3,7 +3,7 @@ import SectionHeader from '../../molecules/SectionHeader';
 
 export default function Portfolio() {
   return (
-    <section className="portfolio" id="works">
+    <section className="portfolio" id="work">
       <SectionHeader title="Meus trabalhos" subtitle="Portfólio" />
 
       <div className="portfolio__container">
