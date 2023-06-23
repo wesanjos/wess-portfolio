@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function ContactList() {
   return (
     <ul className="contact-list">
@@ -8,7 +10,12 @@ export default function ContactList() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="/assets/icons/icon-linkedin.svg" alt="Ícone do LinkedIn" />
+          <Image
+            src="/assets/icons/icon-linkedin.svg"
+            alt="Ícone do LinkedIn"
+            width={26}
+            height={26}
+          />
           LinkedIn
         </a>
       </li>
@@ -20,7 +27,12 @@ export default function ContactList() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="/assets/icons/icon-mail.svg" alt="Ícone de E-mail" />
+          <Image
+            src="/assets/icons/icon-mail.svg"
+            alt="Ícone de E-mail"
+            width={26}
+            height={26}
+          />
           E-mail
         </a>
       </li>
@@ -32,7 +44,12 @@ export default function ContactList() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="/assets/icons/icon-github.svg" alt="Ícone do GitHub" />
+          <Image
+            src="/assets/icons/icon-github.svg"
+            alt="Ícone do GitHub"
+            width={26}
+            height={26}
+          />
           Github
         </a>
       </li>
@@ -44,7 +61,12 @@ export default function ContactList() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="/assets/icons/icon-resume.svg" alt="Ícone do Currículo" />
+          <Image
+            src="/assets/icons/icon-resume.svg"
+            alt="Ícone do Currículo"
+            width={26}
+            height={26}
+          />
           Currículo
         </a>
       </li>
