@@ -1,22 +1,22 @@
 .section-header {
   @include container;
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
 
   @media screen and (max-width: 1280px) {
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
   }
 
   &__title {
-    font-size: 32px;
+    font-size: 3.2rem;
     line-height: 150%;
     font-weight: 600;
 
     @media screen and (max-width: 1280px) {
-      font-size: 28px;
+      font-size: 2.8rem;
     }
 
     @media screen and (max-width: 768px) {
-      font-size: 22px;
+      font-size: 2.2rem;
     }
   }
 }

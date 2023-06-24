@@ -1,27 +1,27 @@
 .logo {
   color: $primary-50;
   letter-spacing: -0.055em;
-  font-size: 22px;
-  line-height: 32px;
+  font-size: 2.2rem;
+  line-height: 3.2rem;
   font-weight: 600;
   position: relative;
 
   @media screen and (max-width: 768px) {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
   }
 
   &::after {
     content: '<';
     position: absolute;
     top: 0;
-    left: -18px;
-    font-size: 24px;
+    left: -1.8rem;
+    font-size: 2.4rem;
     background: $main-gradient;
     @include gradient-text;
 
     @media screen and (max-width: 768px) {
-      font-size: 20px;
+      font-size: 2rem;
     }
   }
 
@@ -29,14 +29,14 @@
     content: '/>';
     position: absolute;
     top: 0;
-    right: -28px;
+    right: -2.8rem;
     letter-spacing: -0.055em;
-    font-size: 24px;
+    font-size: 2.4rem;
     background: $main-gradient;
     @include gradient-text;
 
     @media screen and (max-width: 768px) {
-      font-size: 20px;
+      font-size: 2rem;
     }
   }
 }

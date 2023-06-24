@@ -1,7 +1,7 @@
 .contactsFooter {
   display: flex;
   align-items: center;
-  width: 150px;
+  width: 15rem;
   justify-content: space-around;
   transition: all 0.3s ease-in-out;
 
@@ -10,8 +10,8 @@
   }
 
   &__item {
-    width: 24px;
-    height: 24px;
+    width: 2.4rem;
+    height: 2.4rem;
 
     &:hover {
       opacity: 0.5;

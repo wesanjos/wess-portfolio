@@ -3,14 +3,9 @@
 
 @import './components/atoms/logo.scss';
 @import './components/atoms/navbarLink.scss';
-@import './components/atoms/experienceTitle.scss';
 @import './components/atoms/subtitle.scss';
-@import './components/atoms/skill.scss';
 
 @import './components/molecules/navbar.scss';
-@import './components/molecules/presentationPhoto.scss';
-@import './components/molecules/skillList.scss';
-@import './components/molecules/techList.scss';
 @import './components/molecules/contactsFooter.scss';
 
 @import './components/molecules/hero-content.scss';
@@ -21,8 +16,5 @@
 
 @import './components/organisms/header.scss';
 @import './components/organisms/hero.scss';
-@import './components/organisms/introduction.scss';
-@import './components/organisms/skills.scss';
 @import './components/organisms/portfolio.scss';
-@import './components/organisms/contact.scss';
 @import './components/organisms/footer.scss';

@@ -1,102 +1,102 @@
 .hero-content {
   @include flex;
   @include container;
-  padding: 0 24px 153px;
-  gap: 160px;
-  border-bottom: 1px solid $primary-500;
+  padding: 0 2.4rem 15.3rem;
+  gap: 16rem;
+  border-bottom: 0.1rem solid $primary-500;
 
   @media screen and (max-width: 1440px) {
-    gap: 140px;
+    gap: 14rem;
   }
 
   @media screen and (max-width: 1280px) {
-    gap: 60px;
-    padding: 0 8px 130px;
+    gap: 6rem;
+    padding: 0 0.8rem 13rem;
   }
 
   @media screen and (max-width: 960px) {
     flex-direction: column;
-    padding-bottom: 46px;
-    padding-top: 26px;
+    padding-bottom: 4.6rem;
+    padding-top: 2.6rem;
   }
 
   &__container {
-    max-width: 860px;
+    max-width: 86rem;
     width: 100%;
 
     @media screen and (max-width: 1440px) {
-      max-width: 660px;
+      max-width: 66rem;
     }
 
     .name {
       font-weight: 600;
-      font-size: 52px;
-      line-height: 63px;
+      font-size: 5.2rem;
+      line-height: 6.3rem;
       background: $main-gradient;
       @include gradient-text;
-      margin-bottom: 16px;
+      margin-bottom: 1.6rem;
 
       @media screen and (max-width: 1440px) {
-        font-size: 38px;
-        line-height: 53px;
+        font-size: 3.8rem;
+        line-height: 5.3rem;
       }
 
       @media screen and (max-width: 1280px) {
-        font-size: 32px;
-        line-height: 48px;
-        margin-bottom: 12px;
+        font-size: 3.2rem;
+        line-height: 4.8rem;
+        margin-bottom: 1.2rem;
       }
     }
 
     .description {
       font-weight: 400;
-      font-size: 24px;
+      font-size: 2.4rem;
       line-height: 150%;
       color: $primary-100;
-      margin-bottom: 34px;
+      margin-bottom: 3.4rem;
 
       @media screen and (max-width: 1440px) {
-        font-size: 20px;
+        font-size: 2rem;
       }
 
       @media screen and (max-width: 1280px) {
-        font-size: 18px;
-        margin-bottom: 18px;
+        font-size: 1.8rem;
+        margin-bottom: 1.8rem;
       }
     }
 
     .current-work {
       font-weight: 400;
-      font-size: 18px;
-      line-height: 28px;
+      font-size: 1.8rem;
+      line-height: 2.8rem;
       color: $primary-100;
-      margin-bottom: 50px;
+      margin-bottom: 5rem;
 
       @media screen and (max-width: 1440px) {
-        font-size: 16px;
+        font-size: 1.6rem;
       }
 
       @media screen and (max-width: 1280px) {
-        margin-bottom: 20px;
+        margin-bottom: 2rem;
       }
 
       a {
         text-decoration: underline;
-        margin-left: 4px;
+        margin-left: 0.4rem;
         color: $secondary-300;
       }
     }
 
     .view-works {
       font-weight: 400;
-      font-size: 18px;
-      line-height: 28px;
+      font-size: 1.8rem;
+      line-height: 2.8rem;
       color: $secondary-300;
       position: relative;
       @include flex(flex-start, center);
 
       @media screen and (max-width: 1440px) {
-        font-size: 16px;
+        font-size: 1.6rem;
       }
 
       &::before {
@@ -104,14 +104,14 @@
         position: relative;
         display: flex;
         left: 0;
-        width: 30px;
-        height: 2px;
-        border-radius: 8px;
-        margin-right: 12px;
+        width: 3rem;
+        height: 0.2rem;
+        border-radius: 0.8rem;
+        margin-right: 1.2rem;
         background: $secondary-300;
 
         @media screen and (max-width: 1440px) {
-          width: 20px;
+          width: 2rem;
         }
       }
     }

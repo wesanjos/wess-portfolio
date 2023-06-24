@@ -4,11 +4,11 @@
   &__container {
     width: 100%;
     @include flex;
-    gap: 60px;
+    gap: 6rem;
 
     @media screen and (max-width: 768px) {
-      margin-top: 14px;
-      gap: 30px;
+      margin-top: 1.4rem;
+      gap: 3rem;
     }
   }
 
