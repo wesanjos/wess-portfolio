@@ -94,6 +94,12 @@
       color: $secondary-300;
       position: relative;
       @include flex(flex-start, center);
+      display: inline-flex;
+      background-image: linear-gradient($secondary-300, $secondary-300);
+      background-size: 0 2px;
+      background-position: right bottom;
+      background-repeat: no-repeat;
+      transition: background-size 0.5s ease-in-out;
 
       @media screen and (max-width: 1440px) {
         font-size: 1.6rem;
@@ -113,6 +119,11 @@
         @media screen and (max-width: 1440px) {
           width: 2rem;
         }
+      }
+
+      &:hover {
+        background-size: 100% 2px;
+        background-position: left bottom;
       }
     }
   }

@@ -22,8 +22,11 @@ export default function ProjectCard({
           <div className="project-card__content">
             <span className="subtitle">Site</span>
             <h3 className="project-name">
-              <b className="client">Client</b>
-              {projectName}
+              <span className="underline">
+                <b className="client">Client</b>
+                <br />
+                {projectName}
+              </span>
             </h3>
             <p className="description">{projectDescription}</p>
           </div>

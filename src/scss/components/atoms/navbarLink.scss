@@ -6,11 +6,19 @@
   display: inline-flex;
   letter-spacing: -0.01em;
   cursor: pointer;
-  transition: font-weight 0.3s, color 0.3s ease-in-out;
+
+  background-image: linear-gradient($secondary-300, $secondary-300);
+  background-size: 0 2px;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+
+  transition: font-weight 0.3s, color 0.3s ease-in-out, background-size 0.5s ease-in-out;
 
   &:hover {
-    color: $secondary-400;
-    transition: color 0.3s ease-in-out;
+    color: $secondary-300;
+    background-size: 100% 2px;
+    background-position: left bottom;
+    transition: color 0.3s ease-in-out,background-size 0.5s ease-in-out;
   }
 
   &.-active {

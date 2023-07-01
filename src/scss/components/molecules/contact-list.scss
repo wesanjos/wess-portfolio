@@ -8,12 +8,18 @@
 
   &__link {
     color: $primary-50;
+    transition: all 0.5s ease-in-out;
 
     @include flex(flex-end, flex-end);
     gap: 0.4rem;
 
     @media screen and (max-width: 960px) {
       font-size: 1.4rem;
+    }
+
+    &:hover {
+      color: $primary-300;
+      transition: all 0.5s ease-in-out;
     }
 
     img {

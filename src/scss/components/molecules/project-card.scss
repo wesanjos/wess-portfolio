@@ -7,6 +7,26 @@
     margin: 0 auto;
   }
 
+  &:hover {
+    .project-card__image {
+      img {
+        transform: scale(1.08);
+        transition: transform 0.5s ease-in-out;
+      }
+    }
+
+    .project-name {
+      .underline {
+        background-size: 100% 2px;
+        background-position: left bottom;
+      }
+    }
+
+    & > .project-card {
+      background: red
+    }
+  }
+
   &__container {
     @include flex(flex-start, flex-start);
     flex-direction: column;
@@ -20,11 +40,16 @@
   &__image {
     max-width: 736px;
     max-height: 426px;
+    overflow: hidden;
 
     img {
       width: 100%;
       height: auto;
       min-width: 420px;
+      transform: scale(1);
+      transition: transform 0.5s ease-in-out;
+
+
       @media screen and (max-width: 1440px) {
         max-width: 736px;
       }
@@ -60,13 +85,20 @@
       line-height: 130%;
       margin-bottom: 0.5rem;
 
+      .underline {
+        background-image: linear-gradient($secondary-300, $secondary-300);
+        background-size: 0 2px;
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        transition: background-size 0.5s ease-in-out;
+      }
+
       @media screen and (max-width: 960px) {
         font-size: 2rem;
       }
 
       b {
         font-weight: 700;
-        display: block;
       }
     }
 

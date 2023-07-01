@@ -23,7 +23,7 @@ export default function HeroContent() {
           </a>
         </p>
 
-        <a href="#works" className="view-works">
+        <a href="#work" className="view-works">
           Ver meus trabalhos
         </a>
       </div>
