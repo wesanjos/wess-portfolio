@@ -12,13 +12,14 @@
   background-position: right bottom;
   background-repeat: no-repeat;
 
-  transition: font-weight 0.3s, color 0.3s ease-in-out, background-size 0.5s ease-in-out;
+  transition: font-weight 0.3s, color 0.3s ease-in-out,
+    background-size 0.5s ease-in-out;
 
   &:hover {
     color: $secondary-300;
     background-size: 100% 2px;
     background-position: left bottom;
-    transition: color 0.3s ease-in-out,background-size 0.5s ease-in-out;
+    transition: color 0.3s ease-in-out, background-size 0.5s ease-in-out;
   }
 
   &.-active {

@@ -1,5 +1,5 @@
 import { cmsService } from '../infra/cms/cmsService';
-import { CMSSectionRender } from '../infra/cms/CMSSectionRender';
+// import { CMSSectionRender } from '../infra/cms/CMSSectionRender';
 import { pageHOC } from '../context/pageHOC';
 
 import queryPageHome from '../infra/graphql/queries/queryPageHome';
