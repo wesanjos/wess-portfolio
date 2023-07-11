@@ -5,7 +5,17 @@ const nextConfig = {
   sassOptions: {
     includePaths: [path.join(__dirname, 'scss')],
   },
-  reactStrictMode: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'www.datocms-assets.com',
+        port: '',
+        pathname: '/101470/**',
+      },
+    ],
+  },
+  reactStrictMode: false,
   swcMinify: true,
 };
 

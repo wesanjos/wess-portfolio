@@ -1,18 +1,14 @@
 import NavbarLink from '../../atoms/NavbarLink';
 
-export default function Navbar() {
+export default function Navbar({ links }) {
   return (
     <nav className="navbar">
       <ul className="navbar__container">
-        <li>
-          <NavbarLink title="Home" id="#home" />
-        </li>
-        <li>
-          <NavbarLink title="Trabalhos" id="#work" />
-        </li>
-        <li>
-          <NavbarLink title="Contato" id="#contact" />
-        </li>
+        {links.map((link) => (
+          <li key={link.id}>
+            <NavbarLink title={link.label} id={link.link} />
+          </li>
+        ))}
       </ul>
     </nav>
   );

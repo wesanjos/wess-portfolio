@@ -1,40 +1,32 @@
 import Image from 'next/image';
+import { StructuredText } from 'react-datocms/structured-text';
 
-export default function HeroContent() {
+export default function HeroContent({ anchor, heroInfo, photoInfo }) {
   return (
     <div className="hero-content">
       <div className="hero-content__container">
-        <h1 className="name">Prazer, Wesley Anjos</h1>
-        <p className="description">
-          Desenvolvedor Front-end especializado na criação de interfaces e
-          soluções eficazes, constantemente em busca de aprimorar a experiência
-          do usuário. Experiência sólida em design e tecnologia, comprometido
-          desde a criação do layout até a fase final do desenvolvimento.
-        </p>
-        <p className="description">
-          Trabalhei com marcas renomadas, como Honda, Bradesco, Mondelez e
-          Medley.
-        </p>
+        <h1 className="name">{heroInfo.name}</h1>
 
-        <p className="current-work">
-          Trabalho na
-          <a href="/" target="_blank" rel="noopener noreferrer">
-            SapientAG2
-          </a>
-        </p>
+        <div className="hero-content__description">
+          <StructuredText data={heroInfo.text} />
+        </div>
 
-        <a href="#work" className="view-works">
-          Ver meus trabalhos
+        <div className="current-work">
+          <StructuredText data={heroInfo.work.content} />
+        </div>
+
+        <a href={`${anchor.linkId}`} className="view-works">
+          {anchor.label}
         </a>
       </div>
 
       <div className="hero-content__image">
         <Image
-          src="/assets/images/wess-anjos.webp"
-          alt="Wesley Anjos"
+          src={photoInfo.photo.url}
+          width={photoInfo.photo.width}
+          height={photoInfo.photo.height}
+          alt={photoInfo.photo.alt}
           priority
-          width={444}
-          height={523}
         />
       </div>
     </div>

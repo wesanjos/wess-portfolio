@@ -48,45 +48,6 @@
       }
     }
 
-    .description {
-      font-weight: 400;
-      font-size: 2.4rem;
-      line-height: 150%;
-      color: $primary-100;
-      margin-bottom: 3.4rem;
-
-      @media screen and (max-width: 1440px) {
-        font-size: 2rem;
-      }
-
-      @media screen and (max-width: 1280px) {
-        font-size: 1.8rem;
-        margin-bottom: 1.8rem;
-      }
-    }
-
-    .current-work {
-      font-weight: 400;
-      font-size: 1.8rem;
-      line-height: 2.8rem;
-      color: $primary-100;
-      margin-bottom: 5rem;
-
-      @media screen and (max-width: 1440px) {
-        font-size: 1.6rem;
-      }
-
-      @media screen and (max-width: 1280px) {
-        margin-bottom: 2rem;
-      }
-
-      a {
-        text-decoration: underline;
-        margin-left: 0.4rem;
-        color: $secondary-300;
-      }
-    }
-
     .view-works {
       font-weight: 400;
       font-size: 1.8rem;
@@ -128,6 +89,25 @@
     }
   }
 
+  &__description {
+    p {
+      font-weight: 400;
+      font-size: 2.4rem;
+      line-height: 150%;
+      color: $primary-100;
+      margin-bottom: 3.4rem;
+
+      @media screen and (max-width: 1440px) {
+        font-size: 2rem;
+      }
+
+      @media screen and (max-width: 1280px) {
+        font-size: 1.8rem;
+        margin-bottom: 1.8rem;
+      }
+    }
+  }
+
   &__image {
     img {
       width: 100%;
@@ -140,6 +120,30 @@
       @media screen and (max-width: 1280px) {
         min-width: 344px;
       }
+    }
+  }
+
+  .current-work {
+    p {
+      font-weight: 400;
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+      color: $primary-100;
+      margin-bottom: 5rem;
+
+      @media screen and (max-width: 1440px) {
+        font-size: 1.6rem;
+      }
+
+      @media screen and (max-width: 1280px) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    a {
+      text-decoration: underline;
+      margin-left: 0.4rem;
+      color: $secondary-300;
     }
   }
 }

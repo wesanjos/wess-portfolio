@@ -1,7 +1,7 @@
-export default function Logo() {
+export default function Logo({ logoInfo }) {
   return (
-    <a href="/" className="logo">
-      <h3>Wess Anjos</h3>
+    <a href={`${logoInfo.logoLink}`} className="logo">
+      <h3>{logoInfo.logoName}</h3>
     </a>
   );
 }
