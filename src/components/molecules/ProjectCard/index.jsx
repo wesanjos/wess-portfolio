@@ -18,6 +18,7 @@ export default function ProjectCard({
               alt={projectImage.alt}
               width={projectImage.width}
               height={projectImage.height}
+              loading="lazy"
             />
           </div>
 

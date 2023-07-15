@@ -16,6 +16,7 @@ export default function ContactList({ currentContacts }) {
               alt={contact.icon.alt}
               width={contact.icon.width}
               height={contact.icon.height}
+              loading="lazy"
             />
             {contact.cta}
           </a>
