@@ -1,13 +1,13 @@
 import ProjectList from '../../molecules/ProjectList';
 import SectionHeader from '../../molecules/SectionHeader';
 
-export default function Portfolio() {
+export default function Portfolio({ workHeader, workList }) {
   return (
     <section className="portfolio" id="work">
-      <SectionHeader title="Meus trabalhos" subtitle="Portfólio" />
+      <SectionHeader title={`${workHeader.title}`} subtitle={`${workHeader.subtitle}`} />
 
       <div className="portfolio__container">
-        <ProjectList />
+        <ProjectList workList={workList} />
       </div>
     </section>
   );

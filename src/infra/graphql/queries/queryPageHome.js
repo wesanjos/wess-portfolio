@@ -77,9 +77,7 @@ query {
             }
             serviceType
             client
-            projectTitle {
-              value
-            }
+            projectTitle
             projectDescription
             projectLink {
               id

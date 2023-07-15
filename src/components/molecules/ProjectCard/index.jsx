@@ -1,6 +1,8 @@
 import Image from 'next/image';
 
 export default function ProjectCard({
+  client,
+  serviceType,
   projectImage,
   projectName,
   projectDescription,
@@ -8,22 +10,22 @@ export default function ProjectCard({
 }) {
   return (
     <article className="project-card">
-      <a href={projectLink}>
+      <a href={projectLink.buttonLink}>
         <div className="project-card__container">
           <div className="project-card__image">
             <Image
-              src={projectImage}
-              alt={projectName}
-              width={736}
-              height={426}
+              src={projectImage.url}
+              alt={projectImage.alt}
+              width={projectImage.width}
+              height={projectImage.height}
             />
           </div>
 
           <div className="project-card__content">
-            <span className="subtitle">Site</span>
+            <span className="subtitle">{serviceType}</span>
             <h3 className="project-name">
               <span className="underline">
-                <b className="client">Client</b>
+                <b className="client">{client}</b>
                 <br />
                 {projectName}
               </span>

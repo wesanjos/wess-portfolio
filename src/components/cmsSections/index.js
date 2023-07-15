@@ -6,7 +6,6 @@ import Portfolio from '../organisms/Portfolio';
 export const cmsSections = {
   ComponentMenuRecord: (props) => <Header {...props} />,
   ComponentHeroRecord: (props) => <Hero {...props} />,
-  // ComponentHeroRecord: <Hero />,
-  // ComponentWorkRecord: <Portfolio />,
+  ComponentWorkRecord: (props) => <Portfolio {...props} />,
   // ComponentFooterRecord: <Footer />,
 };
