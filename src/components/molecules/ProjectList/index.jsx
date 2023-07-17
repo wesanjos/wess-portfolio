@@ -1,4 +1,4 @@
-import { useLayoutEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
@@ -11,7 +11,7 @@ if (typeof window !== 'undefined') {
 export default function ProjectList({ workList }) {
   const refs = useRef([]);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const ctx = gsap.context(() => {
       const isDesktop = gsap.matchMedia();
       const sections = gsap.utils.toArray(refs.current);
