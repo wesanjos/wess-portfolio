@@ -1,5 +1,5 @@
 .project-card {
-  max-width: 73.6rem;
+  max-width: 1152px;
   width: 100%;
   position: relative;
 
@@ -39,8 +39,8 @@
   }
 
   &__image {
-    max-width: 736px;
-    max-height: 426px;
+    max-width: 1152px;
+    max-height: 530px;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -64,10 +64,10 @@
       transform: scale(1);
       transition: transform 0.5s ease-in-out;
       object-fit: cover;
-      max-height: 426px;
+      max-height: 530px;
 
       @media screen and (max-width: 1440px) {
-        max-width: 736px;
+        max-width: 100%;
       }
 
       @media screen and (max-width: 768px) {

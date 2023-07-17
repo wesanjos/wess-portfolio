@@ -1,15 +1,19 @@
 import Image from 'next/image';
+import { forwardRef } from 'react';
 
-export default function ProjectCard({
-  client,
-  serviceType,
-  projectImage,
-  projectName,
-  projectDescription,
-  projectLink,
-}) {
-  return (
-    <article className="project-card">
+export const ProjectCard = forwardRef(
+  (
+    {
+      client,
+      serviceType,
+      projectImage,
+      projectName,
+      projectDescription,
+      projectLink,
+    },
+    ref,
+  ) => (
+    <article className="project-card" ref={ref}>
       <a href={projectLink.buttonLink}>
         <div className="project-card__container">
           <div className="project-card__image">
@@ -36,5 +40,5 @@ export default function ProjectCard({
         </div>
       </a>
     </article>
-  );
-}
+  ),
+);
