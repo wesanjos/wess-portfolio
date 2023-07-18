@@ -8,22 +8,24 @@
   }
 
   &:hover {
-    .project-card__image {
-      &::after {
-        opacity: 0;
-        transition: opacity 0.5s ease-in-out;
+    @media screen and (min-width: 998px) {
+      .project-card__image {
+        &::after {
+          opacity: 0;
+          transition: opacity 0.5s ease-in-out;
+        }
+
+        img {
+          transform: scale(1.08);
+          transition: transform 0.5s ease-in-out;
+        }
       }
 
-      img {
-        transform: scale(1.08);
-        transition: transform 0.5s ease-in-out;
-      }
-    }
-
-    .project-name {
-      .underline {
-        background-size: 100% 2px;
-        background-position: left bottom;
+      .project-name {
+        .underline {
+          background-size: 100% 2px;
+          background-position: left bottom;
+        }
       }
     }
   }
