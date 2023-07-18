@@ -17,7 +17,7 @@
 
         img {
           transform: scale(1.08);
-          transition: transform 0.5s ease-in-out;
+          transition: transform 0.5s cubic-bezier(0.65, 0, 0.35, 1);
         }
       }
 
@@ -64,7 +64,7 @@
       height: auto;
       min-width: 420px;
       transform: scale(1);
-      transition: transform 0.5s ease-in-out;
+      transition: transform 0.5s cubic-bezier(0.65, 0, 0.35, 1);
       object-fit: cover;
       max-height: 530px;
 
@@ -108,7 +108,7 @@
         background-size: 0 1.5px;
         background-position: right bottom;
         background-repeat: no-repeat;
-        transition: background-size 0.5s ease-in-out;
+        transition: background-size 0.5s cubic-bezier(0.65, 0, 0.35, 1);
       }
 
       @media screen and (max-width: 960px) {
