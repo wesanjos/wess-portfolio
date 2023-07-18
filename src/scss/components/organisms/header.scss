@@ -6,6 +6,7 @@
   background: $primary-700;
   height: 7rem;
   @include flex;
+    animation: fade-in 0.7s ease-in-out;
 
   @media screen and (max-width: 768px) {
     margin-top: 1.6rem;
@@ -25,3 +26,5 @@
     }
   }
 }
+
+

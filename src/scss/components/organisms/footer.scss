@@ -3,6 +3,7 @@
   height: 100%;
   min-height: 275px;
   @include flex;
+    animation: fade-in 0.7s ease-in-out;
 
   &__container {
     @include container;

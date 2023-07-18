@@ -9,6 +9,7 @@
   justify-content: center;
   position: relative;
   scroll-margin-top: 30rem;
+    animation: fade-in 0.7s ease-in-out;
 
   @media screen and (max-width: 960px) {
     flex-direction: column;
