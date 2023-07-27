@@ -25,7 +25,8 @@ export default function ProjectList({ workList }) {
             start: '-100px top',
             pin: true,
             scrub: 0.5,
-            end: () => `+=${sections[0].offsetWidth}`,
+            snap: 0.5 / (sections.length - 1),
+            end: () => `+=${window.innerWidth - sections.length}`,
           },
         });
       });
