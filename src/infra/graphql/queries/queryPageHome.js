@@ -88,6 +88,43 @@ query {
             }
           }
         }
+        ... on ComponentMoreProjectRecord{
+          id
+          cta{
+            id
+            buttonLabel
+            buttonLink
+            buttonIcon {
+              id
+              alt
+              url
+              width
+              height
+            }
+          }
+          moreProject{
+            id
+            title
+            projectImage {
+              id
+              url
+              alt
+              width
+              height
+            }
+            serviceType
+            client
+            projectTitle
+            projectDescription
+            projectLink {
+              id
+              title
+              buttonLabel
+              buttonLink
+              buttonTarget
+            }
+          }
+        }
         ... on ComponentFooterRecord {
           id
           footerLogo {

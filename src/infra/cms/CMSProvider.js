@@ -1,6 +1,9 @@
-import React, { createContext, useContext, useMemo } from 'react';
+/* eslint-disable react/jsx-no-constructed-context-values */
+/* eslint-disable no-sequences */
+import React, { createContext, useContext, useMemo, useState } from 'react';
 import get from 'loadsh/get';
 
+export const AppContext = createContext();
 const CMSContext = createContext({
   cmsContent: {},
 });
@@ -23,6 +26,13 @@ export const getCmsContent = (path = '') => {
 
 export default function CMSProvider({ cmsContent, children }) {
   const content = useMemo(() => ({ cmsContent }), []);
+  const [viewProjects, setViewProjects] = useState(false);
 
-  return <CMSContext.Provider value={content}>{children}</CMSContext.Provider>;
+  return (
+    <CMSContext.Provider value={content}>
+      <AppContext.Provider value={{ viewProjects, setViewProjects }}>
+        {children}
+      </AppContext.Provider>
+    </CMSContext.Provider>
+  );
 }

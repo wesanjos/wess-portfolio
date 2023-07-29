@@ -1,0 +1,15 @@
+.list-other-projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.8rem;
+  animation: fade-out 0.7s ease-in-out;
+
+  @media screen and (max-width: 1081px) {
+    grid-template-columns: 1fr;
+  }
+
+  &.--active {
+    margin: 9rem 0 7rem;
+    animation: fade-in 0.7s ease-in-out;
+  }
+}

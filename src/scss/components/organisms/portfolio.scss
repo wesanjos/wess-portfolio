@@ -1,7 +1,14 @@
 .portfolio {
   margin: 6rem 0 12rem 0;
   scroll-margin-top: 10rem;
-    animation: fade-in 0.7s ease-in-out;
+  animation: fade-in 0.7s ease-in-out;
+
+  @media screen and (max-width: 1081px) {
+    width: auto;
+    max-width: none;
+    height: 100%;
+    max-height: none;
+  }
 
   &__container {
     @include container;
