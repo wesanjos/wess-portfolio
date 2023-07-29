@@ -4,11 +4,12 @@ import { AppContext } from '../../../infra/cms/CMSProvider';
 
 export default function ListOtherProjects({ listProjects }) {
   const { viewProjects } = useContext(AppContext);
-
   return (
     <div className={`list-other-projects ${viewProjects ? '--active' : ''}`}>
       {viewProjects
         && listProjects.map((work) => (
+
+
           <ProjectCard
             key={work.id}
             serviceType={work.serviceType}

@@ -14,7 +14,10 @@ export const ProjectCard = forwardRef(
     ref,
   ) => (
     <article className="project-card" ref={ref}>
-      <a href={projectLink.buttonLink}>
+      <a
+        href={projectLink.buttonLink}
+        className={projectLink.buttonLink === '#' ? 'withoutLink' : ''}
+      >
         <div className="project-card__container">
           <div className="project-card__image">
             <Image
@@ -40,12 +43,19 @@ export const ProjectCard = forwardRef(
             </div>
 
             <div className="project-card__link">
-              <img
-                src="assets/icons/icon-preview.svg"
-                alt="Visualizar projeto"
-                loading="lazy"
-              />
-              <span className="text">Ver projeto</span>
+              {projectLink.buttonLink === '#' ? (
+                ''
+              ) : (
+                <>
+                  <Image
+                    src="assets/icons/icon-preview.svg"
+                    alt="Visualizar projeto"
+                    width={42}
+                    height={42}
+                  />
+                  <span className="text">Ver projeto</span>
+                </>
+              )}
             </div>
           </div>
         </div>

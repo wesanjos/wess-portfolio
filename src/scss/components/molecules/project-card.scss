@@ -31,6 +31,10 @@
     }
   }
 
+  .withoutLink {
+    pointer-events: none;
+  }
+
   &__container {
     @include flex(flex-start, flex-start);
     flex-direction: column;
