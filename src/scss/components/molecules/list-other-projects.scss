@@ -11,5 +11,9 @@
   &.--active {
     margin: 9rem 0 7rem;
     animation: fade-in 0.7s ease-in-out;
+
+    @media screen and (max-width: 768px) {
+      margin: 6rem 0 2rem;
+    }
   }
 }
