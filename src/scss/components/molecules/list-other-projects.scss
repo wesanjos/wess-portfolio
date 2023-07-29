@@ -15,5 +15,10 @@
     @media screen and (max-width: 768px) {
       margin: 6rem 0 2rem;
     }
+
+    .project-card__image img {
+      width: 100% !important;
+      min-width: 100% !important;
+    }
   }
 }

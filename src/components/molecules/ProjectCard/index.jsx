@@ -27,15 +27,26 @@ export const ProjectCard = forwardRef(
           </div>
 
           <div className="project-card__content">
-            <span className="subtitle">{serviceType}</span>
-            <h3 className="project-name">
-              <span className="underline">
-                <b className="client">{client}</b>
-                <br />
-                {projectName}
-              </span>
-            </h3>
-            <p className="description">{projectDescription}</p>
+            <div className="wrapper">
+              <span className="subtitle">{serviceType}</span>
+              <h3 className="project-name">
+                <span className="underline">
+                  <b className="client">{client}</b>
+                  <br />
+                  {projectName}
+                </span>
+              </h3>
+              <p className="description">{projectDescription}</p>
+            </div>
+
+            <div className="project-card__link">
+              <img
+                src="assets/icons/icon-preview.svg"
+                alt="Visualizar projeto"
+                loading="lazy"
+              />
+              <span className="text">Ver projeto</span>
+            </div>
           </div>
         </div>
       </a>

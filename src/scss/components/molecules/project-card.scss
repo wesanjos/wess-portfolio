@@ -2,9 +2,15 @@
   max-width: 1152px;
   width: 100%;
   position: relative;
+  background-color: $primary-500;
+  border-radius: 1.8rem;
 
   @media screen and (max-width: 960px) {
     margin: 0 auto;
+  }
+
+  @media screen and (max-width: 768px) {
+    border-radius: 1rem;
   }
 
   &:hover {
@@ -18,7 +24,7 @@
 
       .project-name {
         .underline {
-          background-size: 100% 1.5px;
+          background-size: 100% 2px;
           background-position: left bottom;
         }
       }
@@ -41,6 +47,11 @@
     overflow: hidden;
     position: relative;
     width: 100%;
+    border-radius: 1.8rem 1.8rem 0 0;
+
+    @media screen and (max-width: 768px) {
+      border-radius: 1rem 1rem 0 0;
+    }
 
     img {
       width: 100%;
@@ -50,6 +61,7 @@
       transition: transform 0.5s cubic-bezier(0.65, 0, 0.35, 1);
       object-fit: cover;
       max-height: 1152px;
+      border-radius: 1.8rem 1.8rem 0 0;
 
       @media screen and (max-width: 1440px) {
         max-width: 100%;
@@ -57,15 +69,27 @@
 
       @media screen and (max-width: 768px) {
         min-width: 280px;
+        border-radius: 1rem 1rem 0 0;
       }
     }
   }
 
   &__content {
     position: relative;
-    @include flex(flex-start, flex-start);
-    flex-direction: column;
-    width: 100%;
+    @include flex(space-between, center);
+    width: calc(100% - 3rem);
+    margin: 0.8rem auto 0.6rem;
+    gap: 3rem;
+
+    @media screen and (max-width: 1081px) {
+      gap: 1rem;
+      flex-direction: column;
+      margin-bottom: 2.6rem;
+    }
+
+    .wrapper {
+      width: 100%;
+    }
 
     .subtitle {
       font-size: 1.6rem;
@@ -88,7 +112,7 @@
 
       .underline {
         background-image: linear-gradient($secondary-300, $secondary-300);
-        background-size: 0 1.5px;
+        background-size: 0 2px;
         background-position: right bottom;
         background-repeat: no-repeat;
         transition: background-size 0.5s cubic-bezier(0.65, 0, 0.35, 1);
@@ -107,10 +131,25 @@
       font-size: 1.6rem;
       color: $primary-200;
       max-width: 720px;
+      padding-bottom: 1.3rem;
 
       @media screen and (max-width: 960px) {
         font-size: 1.4rem;
       }
+    }
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    margin-right: 1.6rem;
+    min-width: 70px;
+
+    .text {
+      font-size: 1.3rem;
+      color: $primary-50;
     }
   }
 }
