@@ -15,3 +15,6 @@ Landing Page desenvolvida com propósito de compartilhar meus trabalhos de desen
 - Next.js
 - SASS
 - Atomic Design
+- DatoCMS
+- GraphQL
+- GSAP
