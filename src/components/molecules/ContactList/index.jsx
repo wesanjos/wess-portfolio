@@ -25,7 +25,7 @@ export default function ContactList({ currentContacts }) {
       <li className="contact-list__item">
         <a
           className="contact-list__link"
-          href="assets/pdf/WesleyAnjos_CV.pdf"
+          href="assets/pdf/CV_Wesley_Anjos.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
