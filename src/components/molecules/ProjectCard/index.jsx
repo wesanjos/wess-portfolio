@@ -15,8 +15,8 @@ export const ProjectCard = forwardRef(
   ) => (
     <article className="project-card" ref={ref}>
       <a
-        href={projectLink.buttonLink}
-        className={projectLink.buttonLink === '#' ? 'withoutLink' : ''}
+        href={(projectLink?.buttonLink || '#')}
+        className={(projectLink?.buttonLink || '#') === '#' ? 'withoutLink' : ''}
       >
         <div className="project-card__container">
           <div className="project-card__image">
@@ -43,7 +43,7 @@ export const ProjectCard = forwardRef(
             </div>
 
             <div className="project-card__link">
-              {projectLink.buttonLink === '#' ? (
+              {(projectLink?.buttonLink || '#') === '#' ? (
                 ''
               ) : (
                 <>

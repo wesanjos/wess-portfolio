@@ -22,6 +22,7 @@
     "sass": "^1.54.8"
   },
   "devDependencies": {
+    "@playwright/test": "^1.64.1",
     "eslint": "^7.32.0 || ^8.2.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-next": "^13.4.2",

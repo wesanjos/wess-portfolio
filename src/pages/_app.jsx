@@ -6,7 +6,8 @@ import '../scss/main.scss';
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      {!Component.kanpai && <Head>
+      {!Component.kanpai && (
+      <Head>
         <title>Wesley Anjos | Desenvolvedor Front-end</title>
         <meta name="title" content="Wesley Anjos | Desenvolvedor Front-end" />
         <meta
@@ -44,7 +45,8 @@ function MyApp({ Component, pageProps }) {
           property="twitter:image"
           content="https://www.wessanjos.dev/assets/images/share.png"
         />
-      </Head>}
+      </Head>
+      )}
       <Script id="google-tag-manager" strategy="afterInteractive">
         {`
           (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

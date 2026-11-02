@@ -21,7 +21,7 @@ const nav = [
   ['Contato', '/#contato'],
 ];
 
-function Header({ onDemo }) {
+function Header({ onDemo, page }) {
   const [open, setOpen] = useState(false);
   const menu = useRef(null);
   useEffect(() => {
@@ -37,16 +37,22 @@ function Header({ onDemo }) {
   return (
     <header className={styles.header}>
       <div className={styles.bar}>
-        <a className={styles.brand} href={base} aria-label="Kanpai, início"><img src="/assets/kanpai/363effc9-7804-4d02-a50d-1a95d89284ac.png" alt="" />KANPAI</a>
+        <a className={styles.brand} href={base} aria-label="Kanpai, início">
+          <img src="/assets/kanpai/363effc9-7804-4d02-a50d-1a95d89284ac.png" alt="" />
+          KANPAI
+        </a>
         <nav className={styles.desktop} aria-label="Navegação principal">
-          {nav.map(([label, href]) => <a key={href} href={base + href}>{label}</a>)}
+          {nav.map(([label, href]) => <a key={href} href={base + href} aria-current={page && (`/${page}` === href || `/${page}`.startsWith(`${href}/`)) ? 'page' : undefined}>{label}</a>)}
         </nav>
         <a className={styles.cta} href="#demonstracao" onClick={onDemo}>Agendar avaliação</a>
-        <button ref={menu} className={styles.menuButton} type="button" aria-expanded={open} aria-controls="kanpai-menu" onClick={() => setOpen(!open)}>☰ Menu</button>
-        {open && <nav id="kanpai-menu" className={styles.panel} aria-label="Menu móvel">
-          {nav.map(([label, href]) => <a key={href} href={base + href}>{label}</a>)}
+        <button ref={menu} className={styles.menuButton} type="button" aria-expanded={open} aria-controls="kanpai-menu" onClick={() => setOpen(!open)}>{open ? 'Fechar menu' : '☰ Menu'}</button>
+        {open && (
+        <nav id="kanpai-menu" className={styles.panel} aria-label="Menu móvel">
+          {nav.map(([label, href]) => <a key={href} href={base + href} aria-current={page && (`/${page}` === href || `/${page}`.startsWith(`${href}/`)) ? 'page' : undefined}>{label}</a>)}
           <a href="#demonstracao" onClick={onDemo}>Agendar avaliação</a>
-        </nav>}
+          <span>WhatsApp (41) 99597-1049</span>
+        </nav>
+        )}
       </div>
     </header>
   );
@@ -63,11 +69,13 @@ export default function Kanpai({ page, content: pagesContent, css, footer }) {
     if (!activeControl.current) return;
     const { action, value } = activeControl.current;
     const buttons = contentRef.current?.querySelectorAll('[data-kanpai-action]') || [];
-    [...buttons].find((button) => button.dataset.kanpaiAction === action && button.dataset.kanpaiValue === value)?.focus();
+    [...buttons].find((button) => (
+      button.dataset.kanpaiAction === action && button.dataset.kanpaiValue === value
+    ))?.focus();
     activeControl.current = null;
   }, [filter, category, program]);
   const [id, title, description] = pages[page];
-  const variant = id === 'tratamentos' ? filter : id === 'blog' ? category : id === 'empresas' ? program : null;
+  const variant = { tratamentos: filter, blog: category, empresas: program }[id] || null;
   const patch = pagesContent.variants[variant === null ? id : `${id}:${variant}`];
   const content = pagesContent.initial.slice(0, patch.start) + patch.middle + (patch.end ? pagesContent.initial.slice(-patch.end) : '');
   function showDemo(event) {
@@ -93,16 +101,39 @@ export default function Kanpai({ page, content: pagesContent, css, footer }) {
   return (
     <>
       <Head>
-        <title>{title} | Kanpai</title>
+        <title>
+          {title}
+          {' '}
+          | Kanpai
+        </title>
         <meta name="title" content={`${title} | Kanpai`} />
         <meta name="description" content={description} />
-        <style dangerouslySetInnerHTML={{ __html: css + footer.css }} />
+        <style dangerouslySetInnerHTML={{ __html: `${css}${footer.css}@media (prefers-reduced-motion: reduce) { html:root { scroll-behavior: auto !important; } }` }} />
       </Head>
       <div className={styles.site}>
-        <Header onDemo={showDemo} />
-        {demo && <div role="status" className={styles.notice}>Esta função é demonstrativa e está indisponível nesta apresentação. <button type="button" onClick={() => setDemo(false)}>Fechar</button></div>}
-        <main ref={contentRef} onClick={handleContentClick} onSubmit={showDemo} dangerouslySetInnerHTML={{ __html: content }} />
+        {/* The callbacks delegate events from native links and buttons in the reference. */}
+        {/* eslint-disable-next-line react/jsx-no-bind */}
+        <Header onDemo={showDemo} page={page} />
+        {demo && (
+        <div role="status" className={styles.notice}>
+          Esta função é demonstrativa e está indisponível nesta apresentação.
+          <button type="button" onClick={() => setDemo(false)}>Fechar</button>
+        </div>
+        )}
+        {/* Native controls retain keyboard handling; events bubble to these containers. */}
+        {/* eslint-disable jsx-a11y/click-events-have-key-events */}
+        {/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */}
+        <main
+          ref={contentRef}
+          onClick={handleContentClick}
+          onSubmit={showDemo}
+          dangerouslySetInnerHTML={{ __html: content }}
+        />
+        {/* eslint-enable jsx-a11y/no-noninteractive-element-interactions */}
+        {/* eslint-disable jsx-a11y/no-static-element-interactions */}
         <div onClick={handleContentClick} dangerouslySetInnerHTML={{ __html: footer.html }} />
+        {/* eslint-enable jsx-a11y/click-events-have-key-events */}
+        {/* eslint-enable jsx-a11y/no-static-element-interactions */}
         {id === 'home' && <a className={styles.whatsapp} href="#demonstracao" aria-label="Falar no WhatsApp" onClick={showDemo}>✆</a>}
       </div>
     </>

@@ -29,12 +29,19 @@ export function getStaticProps({ params }) {
   const entries = Object.entries(data).filter(([key]) => key === name || key.startsWith(`${name}:`));
   const initial = entries[0][1].html;
   const variants = Object.fromEntries(entries.map(([key, value]) => {
-    const html = value.html;
+    const { html } = value;
     let start = 0;
-    while (start < initial.length && start < html.length && initial[start] === html[start]) start += 1;
+    while (start < initial.length && start < html.length && initial[start] === html[start]) {
+      start += 1;
+    }
     let end = 0;
-    while (end < initial.length - start && end < html.length - start && initial[initial.length - 1 - end] === html[html.length - 1 - end]) end += 1;
+    while (
+      end < initial.length - start && end < html.length - start
+      && initial[initial.length - 1 - end] === html[html.length - 1 - end]
+    ) end += 1;
     return [key, { start, end, middle: html.slice(start, html.length - end) }];
   }));
-  return { props: { page, content: { initial, variants }, css: entries[0][1].css, footer: data.footer } };
+  return {
+    props: { page, content: { initial, variants }, css: entries[0][1].css, footer: data.footer },
+  };
 }
