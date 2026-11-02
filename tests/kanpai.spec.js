@@ -73,6 +73,32 @@ test('larguras', async ({ page }) => {
         return rect.width > 0 && rect.height > 0 && style.visibility !== 'hidden' && (rect.left < -1 || rect.right > innerWidth + 1);
       }).map((node) => `${node.tagName}: ${node.textContent.trim().slice(0, 60)}`));
       expect(overflow, `${path} at ${width}px`).toEqual([]);
+      const clipped = await page.locator('a, button, input, select, textarea, summary').evaluateAll((nodes) => nodes.flatMap((node) => {
+        const rect = node.getBoundingClientRect();
+        if (!rect.width || !rect.height || getComputedStyle(node).visibility === 'hidden') return [];
+        for (let parent = node.parentElement; parent && parent !== document.body; parent = parent.parentElement) {
+          const style = getComputedStyle(parent);
+          const bounds = parent.getBoundingClientRect();
+          const clipsX = /^(hidden|clip)$/.test(style.overflowX) && (rect.left < bounds.left - 1 || rect.right > bounds.right + 1);
+          const clipsY = /^(hidden|clip)$/.test(style.overflowY) && (rect.top < bounds.top - 1 || rect.bottom > bounds.bottom + 1);
+          if (clipsX || clipsY) return [`${node.tagName}: ${node.textContent.trim().slice(0, 40)}`];
+        }
+        return [];
+      }));
+      expect(clipped, `${path} clipped at ${width}px`).toEqual([]);
+      const truncated = await page.locator('a, button, summary').evaluateAll((nodes) => nodes.flatMap((node) => {
+        const bounds = node.getBoundingClientRect();
+        if (!bounds.width || !bounds.height || getComputedStyle(node).visibility === 'hidden') return [];
+        const walker = document.createTreeWalker(node, NodeFilter.SHOW_TEXT);
+        while (walker.nextNode()) {
+          if (walker.currentNode.parentElement.closest('[aria-hidden="true"]')) continue;
+          const range = document.createRange();
+          range.selectNodeContents(walker.currentNode);
+          if ([...range.getClientRects()].some((rect) => rect.left < bounds.left - 1 || rect.right > bounds.right + 1)) return [`${node.tagName}: ${node.textContent.trim().slice(0, 40)}`];
+        }
+        return [];
+      }));
+      expect(truncated, `${path} text overflow at ${width}px`).toEqual([]);
     }
   }
 });
@@ -100,6 +126,8 @@ test('menu móvel', async ({ page }) => {
     await trigger.focus();
     await page.keyboard.press('Enter');
     await expect(trigger).toHaveAttribute('aria-expanded', 'true');
+    const mobileLinks = await page.getByRole('navigation', { name: 'Menu móvel' }).locator('a').evaluateAll((nodes) => nodes.map((node) => [node.textContent.trim(), node.getAttribute('href')]));
+    expect(mobileLinks).toEqual([['Tratamentos', `${base}/tratamentos`], ['Planos', `${base}/#planos`], ['Para empresas', `${base}/empresas`], ['Sobre', `${base}/sobre`], ['Blog', `${base}/blog`], ['Contato', `${base}/#contato`], ['Agendar avaliação', '#demonstracao']]);
     await page.keyboard.press('Escape');
     await expect(trigger).toHaveAttribute('aria-expanded', 'false');
     await expect(trigger).toBeFocused();
@@ -113,6 +141,7 @@ test('links internos', async ({ page, request }) => {
     for (const link of new Set(links)) expect((await request.get(link)).status(), link).toBe(200);
     const mainAnchors = await page.locator('main a[href]').evaluateAll((nodes) => nodes.map((node) => ({ href: node.getAttribute('href'), text: node.textContent.replace(/\s+/g, ' ').trim() })));
     const routes = { 'Home-v7-ntj6.dc.html': base, 'Tratamentos.dc.html': `${base}/tratamentos`, 'Tratamento-Massoterapia.dc.html': `${base}/tratamentos/massoterapia-clinica`, 'Empresas.dc.html': `${base}/empresas`, 'Sobre.dc.html': `${base}/sobre`, 'Blog.dc.html': `${base}/blog`, 'Artigo.dc.html': `${base}/blog/hernia-de-disco`, 'Agendamento.dc.html': '#demonstracao' };
+    const expectedAnchors = new Map();
     for (const item of reference[path].anchors) {
       const [file, fragment] = item.href.split('#');
       let expected = (routes[file] || file) + (fragment ? `#${fragment}` : '');
@@ -120,7 +149,12 @@ test('links internos', async ({ page, request }) => {
       if (file === 'Blog.dc.html' && /Ver trilha/i.test(item.text)) expected = '#demonstracao';
       if (path === '' && item.text.startsWith('Leia: Hérnia')) expected = `${base}/blog/hernia-de-disco`;
       if (path === '' && item.text.startsWith('Leia: Dor muscular')) expected = '#demonstracao';
-      expect(mainAnchors.some((anchor) => anchor.text === item.text && anchor.href === expected), `${path}: ${item.text} -> ${expected}`).toBe(true);
+      const key = JSON.stringify([item.text, expected]);
+      expectedAnchors.set(key, (expectedAnchors.get(key) || 0) + 1);
+    }
+    for (const [key, count] of expectedAnchors) {
+      const [text, href] = JSON.parse(key);
+      expect(mainAnchors.filter((anchor) => anchor.text === text && anchor.href === href).length, `${path}: ${text} -> ${href}`).toBeGreaterThanOrEqual(count);
     }
     const anchors = await page.locator('a[href]').evaluateAll((nodes) => nodes.map((node) => node.getAttribute('href')));
     for (const href of new Set(anchors)) {
@@ -193,6 +227,25 @@ test('conteúdo da referência', async ({ page }) => {
       for (const [tag, count] of Object.entries(spec.elements)) {
         expect(await section.locator(tag).count(), `${path} section ${i} ${tag}`).toBeGreaterThanOrEqual(count);
       }
+      const structure = await section.locator('*').evaluateAll((elements) => elements.map((element) => {
+        const path = [];
+        for (let current = element; current && current.tagName.toLowerCase() !== 'section'; current = current.parentElement) {
+          path.unshift(current.tagName.toLowerCase());
+        }
+        const styles = {};
+        for (const declaration of (element.getAttribute('style') || '').split(';')) {
+          const split = declaration.indexOf(':');
+          if (split !== -1) styles[declaration.slice(0, split).trim()] = declaration.slice(split + 1).trim();
+        }
+        return { tag: element.tagName.toLowerCase(), path: path.join('>'), class: element.getAttribute('class') || '', alt: element.getAttribute('alt'), styles };
+      }));
+      let nodeCursor = 0;
+      for (const node of spec.nodes) {
+        const styles = Object.fromEntries(Object.entries(node.styles).map(([key, value]) => [key, value.replace('minmax(320px, 1fr)', 'minmax(min(100%, 320px), 1fr)').replace('minmax(300px, 1fr)', 'minmax(min(100%, 300px), 1fr)')]));
+        const found = structure.findIndex((actual, index) => index >= nodeCursor && actual.tag === node.tag && actual.path === node.path && actual.class === node.class && (!('alt' in node) || actual.alt === node.alt) && Object.entries(styles).every(([key, value]) => actual.styles[key] === value));
+        expect(found, `${path} section ${i}: ${node.path} ${JSON.stringify(styles)}`).toBeGreaterThanOrEqual(nodeCursor);
+        nodeCursor = found + 1;
+      }
       const layout = await section.locator('*').evaluateAll((elements) => elements.map((element) => ({
         tag: element.tagName.toLowerCase(),
         display: getComputedStyle(element).display,
@@ -240,6 +293,8 @@ test('conteúdo da referência', async ({ page }) => {
     if (path === '/sobre') {
       await expect(region).toHaveCSS('grid-auto-rows', '220px');
       expect(await region.locator('img').count()).toBe(4);
+      await expect(region.locator('img').nth(0)).toHaveCSS('grid-row-start', 'span 2');
+      await expect(region.locator('img').nth(3)).toHaveCSS('grid-column-start', 'span 2');
     }
     const images = await page.locator('main img').evaluateAll((nodes) => nodes.map((node) => {
       const path = [];
@@ -411,11 +466,18 @@ test('todos os filtros e programas preservam seus estados', async ({ page }) => 
     for (let index = 0; index < names.length; index += 1) {
       const href = names[index] === 'Massoterapia clínica' ? `${base}/tratamentos/massoterapia-clinica` : names[index] === 'Fisioterapia' ? `${base}#contato` : '#demonstracao';
       await expect(cards.nth(index).locator('a')).toHaveAttribute('href', href);
+      const card = cards.nth(index);
+      await expect(card).toHaveCSS('display', 'flex');
+      await expect(card).toHaveCSS('flex-direction', 'column');
+      expect(await card.evaluate((node) => [...node.children].map((child) => child.tagName.toLowerCase()))).toEqual(['div', 'p', 'ul', 'div']);
+      await expect(card.locator(':scope > div').last()).toHaveCSS('display', 'flex');
+      await expect(card.locator(':scope > div').last().locator(':scope > a')).toHaveAttribute('href', href);
     }
-    const demoAction = page.locator('main article a[href="#demonstracao"]').first();
-    if (await demoAction.count()) {
-      await demoAction.click();
+    const demoActions = page.locator('main article a[href="#demonstracao"]');
+    for (let index = 0; index < await demoActions.count(); index += 1) {
+      await demoActions.nth(index).click();
       await expect(page.getByRole('status')).toContainText('demonstrativa');
+      await expect(page.getByRole('status')).not.toContainText(/enviado|sucesso/i);
       await page.getByRole('status').getByRole('button', { name: 'Fechar' }).click();
     }
   }
@@ -434,11 +496,16 @@ test('todos os filtros e programas preservam seus estados', async ({ page }) => 
     for (let index = 0; index < names.length; index += 1) {
       await expect(cards.nth(index).locator('h3')).toContainText(names[index]);
       await expect(cards.nth(index)).toHaveAttribute('href', names[index] === 'Hérnia de disco' ? `${base}/blog/hernia-de-disco` : '#demonstracao');
+      await expect(cards.nth(index)).toHaveCSS('display', 'flex');
+      await expect(cards.nth(index)).toHaveCSS('flex-direction', 'column');
+      expect(await cards.nth(index).evaluate((node) => [...node.children].map((child) => child.tagName.toLowerCase()))).toEqual(['img', 'span', 'h3', 'span']);
+      await expect(cards.nth(index).locator(':scope > img')).toHaveAttribute('alt', '');
     }
-    const demoAction = page.locator('main section').nth(3).locator('a[href="#demonstracao"]').first();
-    if (await demoAction.count()) {
-      await demoAction.click();
+    const demoActions = page.locator('main section').nth(3).locator('a[href="#demonstracao"]');
+    for (let index = 0; index < await demoActions.count(); index += 1) {
+      await demoActions.nth(index).click();
       await expect(page.getByRole('status')).toContainText('demonstrativa');
+      await expect(page.getByRole('status')).not.toContainText(/enviado|sucesso/i);
       await page.getByRole('status').getByRole('button', { name: 'Fechar' }).click();
     }
   }
@@ -447,6 +514,14 @@ test('todos os filtros e programas preservam seus estados', async ({ page }) => 
     const button = page.getByRole('tab', { name: new RegExp(name, 'i') });
     await button.click();
     await expect(button).toHaveAttribute('aria-selected', 'true');
+    const tabs = page.getByRole('tablist', { name: 'Programas' });
+    const panel = page.getByRole('tabpanel');
+    await expect(tabs).toHaveCSS('display', 'flex');
+    await expect(tabs).toHaveCSS('flex-direction', 'column');
+    await expect(panel).toHaveCSS('display', 'flex');
+    await expect(panel).toHaveCSS('flex-direction', 'column');
+    expect(await panel.evaluate((node) => [...node.children].map((child) => child.tagName.toLowerCase()))).toEqual(['h3', 'p', 'dl', 'div', 'a']);
+    await expect(tabs.locator('..')).toHaveCSS('display', 'flex');
     await expect(page.getByText(duration, { exact: true })).toBeVisible();
     await expect(page.locator('#programas').getByRole('link', { name: new RegExp(`Pedir proposta de ${name}`, 'i') })).toHaveAttribute('href', '#proposta');
     const descriptions = {
@@ -463,5 +538,11 @@ test('todos os filtros e programas preservam seus estados', async ({ page }) => 
       'Palestras': ['Presencial', 'Sob proposta', 'Ergonomia no posto de trabalho', 'Dor nas costas', 'Estresse e sono'],
     };
     for (const text of details[name]) await expect(page.locator('#programas')).toContainText(text);
+    await page.locator('#programas').getByRole('link', { name: new RegExp(`Pedir proposta de ${name}`, 'i') }).click();
+    await expect(page).toHaveURL(`${base}/empresas#proposta`);
+    await page.getByRole('button', { name: /Enviar pedido de proposta/i }).click();
+    await expect(page.getByRole('status')).toContainText('demonstrativa');
+    await expect(page.getByRole('status')).not.toContainText(/enviado|sucesso/i);
+    await page.getByRole('status').getByRole('button', { name: 'Fechar' }).click();
   }
 });
