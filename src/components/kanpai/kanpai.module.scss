@@ -16,13 +16,15 @@
 .desktop { display: flex; gap: 24px; margin-left: auto; }
 .desktop a, .panel a { color: #0f2a22; text-decoration: none; font-size: 14px; font-weight: 600; }
 .cta { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 20px; border-radius: 999px; background: #0b7a4b; color: white; font-weight: 700; font-size: 14px; text-decoration: none; }
+.end { display: flex; align-items: center; gap: 8px; }
 .menuButton { display: none; font-size: 14px; font-weight: 700; border: 1px solid #dce7df; border-radius: 999px; padding: 10px 14px; }
 .panel { position: absolute; top: calc(100% + 8px); right: 0; min-width: 240px; padding: 20px; display: flex; flex-direction: column; gap: 18px; background: #fff; border-radius: 20px; box-shadow: 0 12px 32px #0f2a2226; }
 .notice { position: relative; z-index: 51; max-width: 1240px; margin: 12px auto; padding: 16px 20px; border-radius: 12px; background: #eaf2ec; color: #0f2a22; }
 .notice button { margin-left: 12px; text-decoration: underline; font-weight: 700; }
 @media (max-width: 800px) {
   .desktop, .header .cta { display: none; }
-  .menuButton { display: block; margin-left: auto; }
+  .end { margin-left: auto; }
+  .menuButton { display: block; }
   .site h1 { overflow-wrap: anywhere; }
 }
 @media (prefers-reduced-motion: reduce) {

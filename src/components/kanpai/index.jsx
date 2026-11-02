@@ -44,15 +44,17 @@ function Header({ onDemo, page }) {
         <nav className={styles.desktop} aria-label="Navegação principal">
           {nav.map(([label, href]) => <a key={href} href={base + href} aria-current={page && (`/${page}` === href || `/${page}`.startsWith(`${href}/`)) ? 'page' : undefined}>{label}</a>)}
         </nav>
-        <a className={styles.cta} href="#demonstracao" onClick={onDemo}>Agendar avaliação</a>
-        <button ref={menu} className={styles.menuButton} type="button" aria-expanded={open} aria-controls="kanpai-menu" onClick={() => setOpen(!open)}>{open ? 'Fechar menu' : '☰ Menu'}</button>
-        {open && (
-        <nav id="kanpai-menu" className={styles.panel} aria-label="Menu móvel">
-          {nav.map(([label, href]) => <a key={href} href={base + href} aria-current={page && (`/${page}` === href || `/${page}`.startsWith(`${href}/`)) ? 'page' : undefined}>{label}</a>)}
-          <a href="#demonstracao" onClick={onDemo}>Agendar avaliação</a>
-          <span>WhatsApp (41) 99597-1049</span>
-        </nav>
-        )}
+        <div className={styles.end}>
+          <a className={styles.cta} href="#demonstracao" onClick={onDemo}>Agendar avaliação</a>
+          <button ref={menu} className={styles.menuButton} type="button" aria-expanded={open} aria-controls="kanpai-menu" onClick={() => setOpen(!open)}>{open ? 'Fechar menu' : '☰ Menu'}</button>
+          {open && (
+          <nav id="kanpai-menu" className={styles.panel} aria-label="Menu móvel">
+            {nav.map(([label, href]) => <a key={href} href={base + href} aria-current={page && (`/${page}` === href || `/${page}`.startsWith(`${href}/`)) ? 'page' : undefined}>{label}</a>)}
+            <a href="#demonstracao" onClick={onDemo}>Agendar avaliação</a>
+            <span>WhatsApp (41) 99597-1049</span>
+          </nav>
+          )}
+        </div>
       </div>
     </header>
   );

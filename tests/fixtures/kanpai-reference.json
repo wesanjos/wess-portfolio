@@ -7249,6 +7249,1935 @@
         "href": "Agendamento.dc.html",
         "text": "Agendar avaliação"
       }
+    ],
+    "tree": [
+      {
+        "tag": "div",
+        "children": [
+          {
+            "tag": "section",
+            "children": [
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "span",
+                        "children": [
+                          {
+                            "tag": "span",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "h1",
+                        "children": [
+                          {
+                            "tag": "em",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "p",
+                        "children": []
+                      },
+                      {
+                        "tag": "div",
+                        "children": [
+                          {
+                            "tag": "div",
+                            "children": [
+                              {
+                                "tag": "a",
+                                "children": [
+                                  {
+                                    "tag": "svg",
+                                    "children": [
+                                      {
+                                        "tag": "path",
+                                        "children": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "a",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "span",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "children": [
+                          {
+                            "tag": "span",
+                            "children": []
+                          },
+                          {
+                            "tag": "span",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "children": []
+                              },
+                              {
+                                "tag": "br",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "div",
+                        "children": [
+                          {
+                            "tag": "img",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "figure",
+                        "children": [
+                          {
+                            "tag": "blockquote",
+                            "children": []
+                          },
+                          {
+                            "tag": "figcaption",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "span",
+                        "children": [
+                          {
+                            "tag": "span",
+                            "children": []
+                          },
+                          {
+                            "tag": "span",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "section",
+            "children": [
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "h2",
+                        "children": [
+                          {
+                            "tag": "em",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "p",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "article",
+                        "children": [
+                          {
+                            "tag": "span",
+                            "children": []
+                          },
+                          {
+                            "tag": "h3",
+                            "children": []
+                          },
+                          {
+                            "tag": "p",
+                            "children": []
+                          },
+                          {
+                            "tag": "img",
+                            "children": []
+                          },
+                          {
+                            "tag": "a",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "children": [
+                          {
+                            "tag": "article",
+                            "children": [
+                              {
+                                "tag": "h3",
+                                "children": []
+                              },
+                              {
+                                "tag": "p",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "article",
+                            "children": [
+                              {
+                                "tag": "h3",
+                                "children": []
+                              },
+                              {
+                                "tag": "p",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "article",
+                            "children": [
+                              {
+                                "tag": "h3",
+                                "children": []
+                              },
+                              {
+                                "tag": "p",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "article",
+                            "children": [
+                              {
+                                "tag": "h3",
+                                "children": []
+                              },
+                              {
+                                "tag": "p",
+                                "children": []
+                              },
+                              {
+                                "tag": "a",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "p",
+                    "children": [
+                      {
+                        "tag": "strong",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "section",
+            "children": [
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "h2",
+                        "children": [
+                          {
+                            "tag": "em",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "p",
+                        "children": []
+                      },
+                      {
+                        "tag": "div",
+                        "children": [
+                          {
+                            "tag": "div",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "div",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "div",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "ol",
+                    "children": [
+                      {
+                        "tag": "li",
+                        "children": [
+                          {
+                            "tag": "span",
+                            "children": []
+                          },
+                          {
+                            "tag": "span",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "li",
+                        "children": [
+                          {
+                            "tag": "span",
+                            "children": []
+                          },
+                          {
+                            "tag": "span",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "li",
+                        "children": [
+                          {
+                            "tag": "span",
+                            "children": []
+                          },
+                          {
+                            "tag": "span",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "li",
+                        "children": [
+                          {
+                            "tag": "span",
+                            "children": []
+                          },
+                          {
+                            "tag": "span",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "li",
+                        "children": [
+                          {
+                            "tag": "a",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "section",
+            "children": [
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "h2",
+                        "children": [
+                          {
+                            "tag": "em",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "p",
+                        "children": []
+                      },
+                      {
+                        "tag": "img",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "details",
+                        "children": [
+                          {
+                            "tag": "summary",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "children": [
+                                  {
+                                    "tag": "h3",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "span",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "div",
+                            "children": [
+                              {
+                                "tag": "p",
+                                "children": []
+                              },
+                              {
+                                "tag": "div",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "div",
+                                "children": [
+                                  {
+                                    "tag": "a",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "a",
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "details",
+                        "children": [
+                          {
+                            "tag": "summary",
+                            "children": [
+                              {
+                                "tag": "h3",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "div",
+                            "children": [
+                              {
+                                "tag": "p",
+                                "children": []
+                              },
+                              {
+                                "tag": "div",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "div",
+                                "children": [
+                                  {
+                                    "tag": "a",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "a",
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "details",
+                        "children": [
+                          {
+                            "tag": "summary",
+                            "children": [
+                              {
+                                "tag": "h3",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "div",
+                            "children": [
+                              {
+                                "tag": "p",
+                                "children": []
+                              },
+                              {
+                                "tag": "div",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "a",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "details",
+                        "children": [
+                          {
+                            "tag": "summary",
+                            "children": [
+                              {
+                                "tag": "h3",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "div",
+                            "children": [
+                              {
+                                "tag": "p",
+                                "children": []
+                              },
+                              {
+                                "tag": "div",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "a",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "details",
+                        "children": [
+                          {
+                            "tag": "summary",
+                            "children": [
+                              {
+                                "tag": "h3",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "div",
+                            "children": [
+                              {
+                                "tag": "p",
+                                "children": []
+                              },
+                              {
+                                "tag": "div",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "a",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "details",
+                        "children": [
+                          {
+                            "tag": "summary",
+                            "children": [
+                              {
+                                "tag": "h3",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "div",
+                            "children": [
+                              {
+                                "tag": "p",
+                                "children": []
+                              },
+                              {
+                                "tag": "div",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "a",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "details",
+                        "children": [
+                          {
+                            "tag": "summary",
+                            "children": [
+                              {
+                                "tag": "h3",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "div",
+                            "children": [
+                              {
+                                "tag": "p",
+                                "children": []
+                              },
+                              {
+                                "tag": "div",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "a",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "details",
+                        "children": [
+                          {
+                            "tag": "summary",
+                            "children": [
+                              {
+                                "tag": "h3",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "div",
+                            "children": [
+                              {
+                                "tag": "p",
+                                "children": []
+                              },
+                              {
+                                "tag": "div",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "a",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "details",
+                        "children": [
+                          {
+                            "tag": "summary",
+                            "children": [
+                              {
+                                "tag": "h3",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "div",
+                            "children": [
+                              {
+                                "tag": "p",
+                                "children": []
+                              },
+                              {
+                                "tag": "div",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "a",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "details",
+                        "children": [
+                          {
+                            "tag": "summary",
+                            "children": [
+                              {
+                                "tag": "h3",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "div",
+                            "children": [
+                              {
+                                "tag": "p",
+                                "children": []
+                              },
+                              {
+                                "tag": "div",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "a",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "details",
+                        "children": [
+                          {
+                            "tag": "summary",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "children": [
+                                  {
+                                    "tag": "h3",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "span",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "div",
+                            "children": [
+                              {
+                                "tag": "p",
+                                "children": []
+                              },
+                              {
+                                "tag": "a",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "section",
+            "children": [
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "span",
+                        "children": []
+                      },
+                      {
+                        "tag": "span",
+                        "children": []
+                      },
+                      {
+                        "tag": "span",
+                        "children": []
+                      },
+                      {
+                        "tag": "span",
+                        "children": []
+                      },
+                      {
+                        "tag": "a",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "figure",
+                        "children": [
+                          {
+                            "tag": "blockquote",
+                            "children": [
+                              {
+                                "tag": "em",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "figcaption",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "children": [
+                          {
+                            "tag": "figure",
+                            "children": [
+                              {
+                                "tag": "blockquote",
+                                "children": []
+                              },
+                              {
+                                "tag": "figcaption",
+                                "children": [
+                                  {
+                                    "tag": "strong",
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "figure",
+                            "children": [
+                              {
+                                "tag": "blockquote",
+                                "children": []
+                              },
+                              {
+                                "tag": "figcaption",
+                                "children": [
+                                  {
+                                    "tag": "strong",
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "a",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "section",
+            "children": [
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "img",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "h2",
+                        "children": [
+                          {
+                            "tag": "em",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "p",
+                        "children": []
+                      },
+                      {
+                        "tag": "p",
+                        "children": []
+                      },
+                      {
+                        "tag": "p",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "section",
+            "children": [
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "h2",
+                    "children": [
+                      {
+                        "tag": "em",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "div",
+                        "children": [
+                          {
+                            "tag": "span",
+                            "children": []
+                          },
+                          {
+                            "tag": "span",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "p",
+                            "children": []
+                          },
+                          {
+                            "tag": "a",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "children": [
+                          {
+                            "tag": "span",
+                            "children": []
+                          },
+                          {
+                            "tag": "span",
+                            "children": []
+                          },
+                          {
+                            "tag": "span",
+                            "children": []
+                          },
+                          {
+                            "tag": "p",
+                            "children": []
+                          },
+                          {
+                            "tag": "div",
+                            "children": [
+                              {
+                                "tag": "a",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "children": [
+                          {
+                            "tag": "span",
+                            "children": []
+                          },
+                          {
+                            "tag": "span",
+                            "children": []
+                          },
+                          {
+                            "tag": "span",
+                            "children": []
+                          },
+                          {
+                            "tag": "p",
+                            "children": []
+                          },
+                          {
+                            "tag": "a",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "span",
+                        "children": [
+                          {
+                            "tag": "span",
+                            "children": []
+                          },
+                          {
+                            "tag": "span",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "span",
+                        "children": [
+                          {
+                            "tag": "span",
+                            "children": []
+                          },
+                          {
+                            "tag": "span",
+                            "children": []
+                          },
+                          {
+                            "tag": "span",
+                            "children": []
+                          },
+                          {
+                            "tag": "span",
+                            "children": []
+                          },
+                          {
+                            "tag": "span",
+                            "children": []
+                          },
+                          {
+                            "tag": "span",
+                            "children": []
+                          },
+                          {
+                            "tag": "span",
+                            "children": []
+                          },
+                          {
+                            "tag": "span",
+                            "children": []
+                          },
+                          {
+                            "tag": "span",
+                            "children": []
+                          },
+                          {
+                            "tag": "span",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "section",
+            "children": [
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "h2",
+                        "children": [
+                          {
+                            "tag": "em",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "a",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "article",
+                        "children": [
+                          {
+                            "tag": "a",
+                            "children": [
+                              {
+                                "tag": "img",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "children": []
+                              },
+                              {
+                                "tag": "h3",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "p",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "children": [
+                          {
+                            "tag": "a",
+                            "children": [
+                              {
+                                "tag": "img",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "a",
+                            "children": [
+                              {
+                                "tag": "img",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "a",
+                            "children": [
+                              {
+                                "tag": "img",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "a",
+                            "children": [
+                              {
+                                "tag": "img",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "a",
+                            "children": [
+                              {
+                                "tag": "img",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "p",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "section",
+            "children": [
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "h2",
+                        "children": [
+                          {
+                            "tag": "em",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "p",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "details",
+                        "children": [
+                          {
+                            "tag": "summary",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "p",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "details",
+                        "children": [
+                          {
+                            "tag": "summary",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "p",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "details",
+                        "children": [
+                          {
+                            "tag": "summary",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "p",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "details",
+                        "children": [
+                          {
+                            "tag": "summary",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "p",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "details",
+                        "children": [
+                          {
+                            "tag": "summary",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "p",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "details",
+                        "children": [
+                          {
+                            "tag": "summary",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "p",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "details",
+                        "children": [
+                          {
+                            "tag": "summary",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "p",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "section",
+            "children": [
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "h2",
+                        "children": [
+                          {
+                            "tag": "em",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "ol",
+                        "children": [
+                          {
+                            "tag": "li",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "li",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "li",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "children": [
+                          {
+                            "tag": "a",
+                            "children": [
+                              {
+                                "tag": "svg",
+                                "children": [
+                                  {
+                                    "tag": "path",
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "span",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "img",
+                        "children": []
+                      },
+                      {
+                        "tag": "div",
+                        "children": [
+                          {
+                            "tag": "div",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "children": [
+                                  {
+                                    "tag": "br",
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "div",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
     ]
   },
   "/tratamentos": {
@@ -9128,6 +11057,583 @@
       {
         "href": "Home-v7-ntj6.dc.html#planos",
         "text": "Ver planos e valores →"
+      }
+    ],
+    "tree": [
+      {
+        "tag": "div",
+        "children": [
+          {
+            "tag": "section",
+            "children": [
+              {
+                "tag": "nav",
+                "children": [
+                  {
+                    "tag": "a",
+                    "children": []
+                  },
+                  {
+                    "tag": "span",
+                    "children": []
+                  },
+                  {
+                    "tag": "span",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "h1",
+                    "children": [
+                      {
+                        "tag": "em",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "p",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "section",
+            "children": [
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "span",
+                    "children": []
+                  },
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "dynamic": "sc-for",
+                        "tag": "button"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "p",
+                "children": []
+              },
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "dynamic": "sc-for",
+                    "tag": "article"
+                  }
+                ]
+              },
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "span",
+                    "children": []
+                  },
+                  {
+                    "tag": "ul",
+                    "children": [
+                      {
+                        "tag": "li",
+                        "children": []
+                      },
+                      {
+                        "tag": "li",
+                        "children": []
+                      },
+                      {
+                        "tag": "li",
+                        "children": []
+                      },
+                      {
+                        "tag": "li",
+                        "children": []
+                      },
+                      {
+                        "tag": "li",
+                        "children": []
+                      },
+                      {
+                        "tag": "li",
+                        "children": []
+                      },
+                      {
+                        "tag": "li",
+                        "children": []
+                      },
+                      {
+                        "tag": "li",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "section",
+            "children": [
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "h2",
+                    "children": [
+                      {
+                        "tag": "em",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "p",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "figure",
+                    "children": [
+                      {
+                        "tag": "img",
+                        "children": []
+                      },
+                      {
+                        "tag": "figcaption",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "figure",
+                    "children": [
+                      {
+                        "tag": "img",
+                        "children": []
+                      },
+                      {
+                        "tag": "figcaption",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "figure",
+                    "children": [
+                      {
+                        "tag": "img",
+                        "children": []
+                      },
+                      {
+                        "tag": "figcaption",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "figure",
+                    "children": [
+                      {
+                        "tag": "img",
+                        "children": []
+                      },
+                      {
+                        "tag": "figcaption",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "section",
+            "children": [
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "h2",
+                        "children": [
+                          {
+                            "tag": "em",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "p",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "a",
+                        "children": []
+                      },
+                      {
+                        "tag": "span",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "section",
+            "children": [
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "h2",
+                    "children": [
+                      {
+                        "tag": "em",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "a",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "sc-raw-table",
+                    "children": [
+                      {
+                        "tag": "sc-raw-caption",
+                        "children": []
+                      },
+                      {
+                        "tag": "sc-raw-thead",
+                        "children": [
+                          {
+                            "tag": "sc-raw-tr",
+                            "children": [
+                              {
+                                "tag": "sc-raw-th",
+                                "children": []
+                              },
+                              {
+                                "tag": "sc-raw-th",
+                                "children": []
+                              },
+                              {
+                                "tag": "sc-raw-th",
+                                "children": []
+                              },
+                              {
+                                "tag": "sc-raw-th",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "sc-raw-tbody",
+                        "children": [
+                          {
+                            "tag": "sc-raw-tr",
+                            "children": [
+                              {
+                                "tag": "sc-raw-th",
+                                "children": []
+                              },
+                              {
+                                "tag": "sc-raw-td",
+                                "children": []
+                              },
+                              {
+                                "tag": "sc-raw-td",
+                                "children": []
+                              },
+                              {
+                                "tag": "sc-raw-td",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "sc-raw-tr",
+                            "children": [
+                              {
+                                "tag": "sc-raw-th",
+                                "children": []
+                              },
+                              {
+                                "tag": "sc-raw-td",
+                                "children": []
+                              },
+                              {
+                                "tag": "sc-raw-td",
+                                "children": []
+                              },
+                              {
+                                "tag": "sc-raw-td",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "sc-raw-tr",
+                            "children": [
+                              {
+                                "tag": "sc-raw-th",
+                                "children": []
+                              },
+                              {
+                                "tag": "sc-raw-td",
+                                "children": []
+                              },
+                              {
+                                "tag": "sc-raw-td",
+                                "children": []
+                              },
+                              {
+                                "tag": "sc-raw-td",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "sc-raw-tr",
+                            "children": [
+                              {
+                                "tag": "sc-raw-th",
+                                "children": []
+                              },
+                              {
+                                "tag": "sc-raw-td",
+                                "children": []
+                              },
+                              {
+                                "tag": "sc-raw-td",
+                                "children": []
+                              },
+                              {
+                                "tag": "sc-raw-td",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "sc-raw-tr",
+                            "children": [
+                              {
+                                "tag": "sc-raw-th",
+                                "children": []
+                              },
+                              {
+                                "tag": "sc-raw-td",
+                                "children": []
+                              },
+                              {
+                                "tag": "sc-raw-td",
+                                "children": []
+                              },
+                              {
+                                "tag": "sc-raw-td",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "sc-raw-tr",
+                            "children": [
+                              {
+                                "tag": "sc-raw-th",
+                                "children": []
+                              },
+                              {
+                                "tag": "sc-raw-td",
+                                "children": []
+                              },
+                              {
+                                "tag": "sc-raw-td",
+                                "children": []
+                              },
+                              {
+                                "tag": "sc-raw-td",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "sc-raw-tr",
+                            "children": [
+                              {
+                                "tag": "sc-raw-th",
+                                "children": []
+                              },
+                              {
+                                "tag": "sc-raw-td",
+                                "children": []
+                              },
+                              {
+                                "tag": "sc-raw-td",
+                                "children": []
+                              },
+                              {
+                                "tag": "sc-raw-td",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "sc-raw-tr",
+                            "children": [
+                              {
+                                "tag": "sc-raw-th",
+                                "children": []
+                              },
+                              {
+                                "tag": "sc-raw-td",
+                                "children": []
+                              },
+                              {
+                                "tag": "sc-raw-td",
+                                "children": []
+                              },
+                              {
+                                "tag": "sc-raw-td",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "p",
+                "children": []
+              },
+              {
+                "tag": "p",
+                "children": [
+                  {
+                    "tag": "strong",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "section",
+            "children": [
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "h2",
+                    "children": [
+                      {
+                        "tag": "em",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "details",
+                        "children": [
+                          {
+                            "tag": "summary",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "p",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "details",
+                        "children": [
+                          {
+                            "tag": "summary",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "p",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "details",
+                        "children": [
+                          {
+                            "tag": "summary",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "p",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   },
@@ -11434,6 +13940,724 @@
         "href": "Agendamento.dc.html",
         "text": "Agendar avaliação"
       }
+    ],
+    "tree": [
+      {
+        "tag": "div",
+        "children": [
+          {
+            "tag": "section",
+            "children": [
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "nav",
+                        "children": [
+                          {
+                            "tag": "a",
+                            "children": []
+                          },
+                          {
+                            "tag": "span",
+                            "children": []
+                          },
+                          {
+                            "tag": "a",
+                            "children": []
+                          },
+                          {
+                            "tag": "span",
+                            "children": []
+                          },
+                          {
+                            "tag": "span",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "h1",
+                        "children": [
+                          {
+                            "tag": "em",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "p",
+                        "children": []
+                      },
+                      {
+                        "tag": "dl",
+                        "children": [
+                          {
+                            "tag": "div",
+                            "children": [
+                              {
+                                "tag": "dt",
+                                "children": []
+                              },
+                              {
+                                "tag": "dd",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "div",
+                            "children": [
+                              {
+                                "tag": "dt",
+                                "children": []
+                              },
+                              {
+                                "tag": "dd",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "div",
+                            "children": [
+                              {
+                                "tag": "dt",
+                                "children": []
+                              },
+                              {
+                                "tag": "dd",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "div",
+                            "children": [
+                              {
+                                "tag": "dt",
+                                "children": []
+                              },
+                              {
+                                "tag": "dd",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "children": [
+                          {
+                            "tag": "a",
+                            "children": []
+                          },
+                          {
+                            "tag": "span",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "div",
+                        "children": [
+                          {
+                            "tag": "img",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "children": [
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "section",
+                    "children": [
+                      {
+                        "tag": "h2",
+                        "children": [
+                          {
+                            "tag": "em",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "p",
+                        "children": []
+                      },
+                      {
+                        "tag": "p",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "section",
+                    "children": [
+                      {
+                        "tag": "h2",
+                        "children": [
+                          {
+                            "tag": "em",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "children": [
+                          {
+                            "tag": "div",
+                            "children": [
+                              {
+                                "tag": "h3",
+                                "children": []
+                              },
+                              {
+                                "tag": "ul",
+                                "children": [
+                                  {
+                                    "tag": "li",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "li",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "li",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "li",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "li",
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "div",
+                            "children": [
+                              {
+                                "tag": "h3",
+                                "children": []
+                              },
+                              {
+                                "tag": "ul",
+                                "children": [
+                                  {
+                                    "tag": "li",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "li",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "li",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "li",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "p",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "section",
+                    "children": [
+                      {
+                        "tag": "h2",
+                        "children": [
+                          {
+                            "tag": "em",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "ol",
+                        "children": [
+                          {
+                            "tag": "li",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "li",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "li",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "li",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "section",
+                    "children": [
+                      {
+                        "tag": "h2",
+                        "children": [
+                          {
+                            "tag": "em",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "children": [
+                          {
+                            "tag": "a",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "a",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "a",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "section",
+                    "children": [
+                      {
+                        "tag": "h2",
+                        "children": []
+                      },
+                      {
+                        "tag": "blockquote",
+                        "children": [
+                          {
+                            "tag": "em",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "children": [
+                          {
+                            "tag": "span",
+                            "children": [
+                              {
+                                "tag": "strong",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "span",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "section",
+                    "children": [
+                      {
+                        "tag": "h2",
+                        "children": [
+                          {
+                            "tag": "em",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "children": [
+                          {
+                            "tag": "details",
+                            "children": [
+                              {
+                                "tag": "summary",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "p",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "details",
+                            "children": [
+                              {
+                                "tag": "summary",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "p",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "details",
+                            "children": [
+                              {
+                                "tag": "summary",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "p",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "details",
+                            "children": [
+                              {
+                                "tag": "summary",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "p",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "section",
+                    "children": [
+                      {
+                        "tag": "h2",
+                        "children": []
+                      },
+                      {
+                        "tag": "div",
+                        "children": [
+                          {
+                            "tag": "a",
+                            "children": [
+                              {
+                                "tag": "img",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "a",
+                            "children": [
+                              {
+                                "tag": "img",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "aside",
+                "children": [
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "span",
+                        "children": []
+                      },
+                      {
+                        "tag": "span",
+                        "children": []
+                      },
+                      {
+                        "tag": "span",
+                        "children": [
+                          {
+                            "tag": "span",
+                            "children": []
+                          },
+                          {
+                            "tag": "span",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "span",
+                        "children": []
+                      },
+                      {
+                        "tag": "a",
+                        "children": []
+                      },
+                      {
+                        "tag": "a",
+                        "children": []
+                      },
+                      {
+                        "tag": "span",
+                        "children": [
+                          {
+                            "tag": "span",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "section",
+            "children": [
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "h2",
+                    "children": [
+                      {
+                        "tag": "em",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "a",
+                        "children": []
+                      },
+                      {
+                        "tag": "span",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
     ]
   },
   "/empresas": {
@@ -13679,6 +16903,727 @@
         "href": "#programas",
         "text": "Ver programas"
       }
+    ],
+    "tree": [
+      {
+        "tag": "div",
+        "children": [
+          {
+            "tag": "section",
+            "children": [
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "nav",
+                        "children": [
+                          {
+                            "tag": "a",
+                            "children": []
+                          },
+                          {
+                            "tag": "span",
+                            "children": []
+                          },
+                          {
+                            "tag": "span",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "h1",
+                        "children": [
+                          {
+                            "tag": "em",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "p",
+                        "children": []
+                      },
+                      {
+                        "tag": "div",
+                        "children": [
+                          {
+                            "tag": "a",
+                            "children": []
+                          },
+                          {
+                            "tag": "a",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "span",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "figure",
+                    "children": [
+                      {
+                        "tag": "img",
+                        "children": []
+                      },
+                      {
+                        "tag": "figcaption",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "section",
+            "children": [
+              {
+                "tag": "span",
+                "children": []
+              },
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "span",
+                    "children": []
+                  },
+                  {
+                    "tag": "span",
+                    "children": []
+                  },
+                  {
+                    "tag": "span",
+                    "children": []
+                  },
+                  {
+                    "tag": "span",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "section",
+            "children": [
+              {
+                "tag": "h2",
+                "children": [
+                  {
+                    "tag": "em",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "dynamic": "sc-for",
+                        "tag": "button"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "h3",
+                        "children": []
+                      },
+                      {
+                        "tag": "p",
+                        "children": []
+                      },
+                      {
+                        "tag": "dl",
+                        "children": [
+                          {
+                            "tag": "div",
+                            "children": [
+                              {
+                                "tag": "dt",
+                                "children": []
+                              },
+                              {
+                                "tag": "dd",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "div",
+                            "children": [
+                              {
+                                "tag": "dt",
+                                "children": []
+                              },
+                              {
+                                "tag": "dd",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "div",
+                            "children": [
+                              {
+                                "tag": "dt",
+                                "children": []
+                              },
+                              {
+                                "tag": "dd",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "children": [
+                          {
+                            "tag": "span",
+                            "children": []
+                          },
+                          {
+                            "tag": "ul",
+                            "children": [
+                              {
+                                "dynamic": "sc-for",
+                                "tag": "li"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "a",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "section",
+            "children": [
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "h2",
+                        "children": [
+                          {
+                            "tag": "em",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "p",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "div",
+                        "children": [
+                          {
+                            "tag": "h3",
+                            "children": []
+                          },
+                          {
+                            "tag": "p",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "children": [
+                          {
+                            "tag": "h3",
+                            "children": []
+                          },
+                          {
+                            "tag": "p",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "children": [
+                          {
+                            "tag": "h3",
+                            "children": []
+                          },
+                          {
+                            "tag": "p",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "children": [
+                          {
+                            "tag": "h3",
+                            "children": []
+                          },
+                          {
+                            "tag": "p",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "section",
+            "children": [
+              {
+                "tag": "h2",
+                "children": [
+                  {
+                    "tag": "em",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "tag": "ol",
+                "children": [
+                  {
+                    "tag": "li",
+                    "children": [
+                      {
+                        "tag": "span",
+                        "children": []
+                      },
+                      {
+                        "tag": "span",
+                        "children": []
+                      },
+                      {
+                        "tag": "span",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "children": [
+                      {
+                        "tag": "span",
+                        "children": []
+                      },
+                      {
+                        "tag": "span",
+                        "children": []
+                      },
+                      {
+                        "tag": "span",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "children": [
+                      {
+                        "tag": "span",
+                        "children": []
+                      },
+                      {
+                        "tag": "span",
+                        "children": []
+                      },
+                      {
+                        "tag": "span",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "children": [
+                      {
+                        "tag": "span",
+                        "children": []
+                      },
+                      {
+                        "tag": "span",
+                        "children": []
+                      },
+                      {
+                        "tag": "span",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "section",
+            "children": [
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "h2",
+                        "children": [
+                          {
+                            "tag": "em",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "p",
+                        "children": []
+                      },
+                      {
+                        "tag": "ol",
+                        "children": [
+                          {
+                            "tag": "li",
+                            "children": []
+                          },
+                          {
+                            "tag": "li",
+                            "children": []
+                          },
+                          {
+                            "tag": "li",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "children": [
+                          {
+                            "tag": "span",
+                            "children": []
+                          },
+                          {
+                            "tag": "span",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "form",
+                    "children": [
+                      {
+                        "tag": "div",
+                        "children": [
+                          {
+                            "tag": "label",
+                            "children": []
+                          },
+                          {
+                            "tag": "input",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "children": [
+                          {
+                            "tag": "label",
+                            "children": []
+                          },
+                          {
+                            "tag": "input",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "children": [
+                          {
+                            "tag": "label",
+                            "children": []
+                          },
+                          {
+                            "tag": "input",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "children": [
+                          {
+                            "tag": "label",
+                            "children": []
+                          },
+                          {
+                            "tag": "sc-raw-select",
+                            "children": [
+                              {
+                                "tag": "option",
+                                "children": []
+                              },
+                              {
+                                "tag": "option",
+                                "children": []
+                              },
+                              {
+                                "tag": "option",
+                                "children": []
+                              },
+                              {
+                                "tag": "option",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "children": [
+                          {
+                            "tag": "label",
+                            "children": []
+                          },
+                          {
+                            "tag": "input",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "children": [
+                          {
+                            "tag": "label",
+                            "children": []
+                          },
+                          {
+                            "tag": "input",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "fieldset",
+                        "children": [
+                          {
+                            "tag": "legend",
+                            "children": []
+                          },
+                          {
+                            "tag": "div",
+                            "children": [
+                              {
+                                "tag": "label",
+                                "children": [
+                                  {
+                                    "tag": "input",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "label",
+                                "children": [
+                                  {
+                                    "tag": "input",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "label",
+                                "children": [
+                                  {
+                                    "tag": "input",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "label",
+                                "children": [
+                                  {
+                                    "tag": "input",
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "children": [
+                          {
+                            "tag": "label",
+                            "children": []
+                          },
+                          {
+                            "tag": "textarea",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "label",
+                        "children": [
+                          {
+                            "tag": "input",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "button",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "section",
+            "children": [
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "h2",
+                    "children": [
+                      {
+                        "tag": "em",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "details",
+                        "children": [
+                          {
+                            "tag": "summary",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "p",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "details",
+                        "children": [
+                          {
+                            "tag": "summary",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "p",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "details",
+                        "children": [
+                          {
+                            "tag": "summary",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "p",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "details",
+                        "children": [
+                          {
+                            "tag": "summary",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "p",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
     ]
   },
   "/sobre": {
@@ -15305,6 +19250,451 @@
         "href": "Agendamento.dc.html",
         "text": "Agendar avaliação"
       }
+    ],
+    "tree": [
+      {
+        "tag": "div",
+        "children": [
+          {
+            "tag": "section",
+            "children": [
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "nav",
+                    "children": [
+                      {
+                        "tag": "a",
+                        "children": []
+                      },
+                      {
+                        "tag": "span",
+                        "children": []
+                      },
+                      {
+                        "tag": "span",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "h1",
+                    "children": [
+                      {
+                        "tag": "em",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "p",
+                    "children": []
+                  },
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "a",
+                        "children": []
+                      },
+                      {
+                        "tag": "a",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "img",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "span",
+                        "children": []
+                      },
+                      {
+                        "tag": "span",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "section",
+            "children": [
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "h2",
+                    "children": [
+                      {
+                        "tag": "em",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "p",
+                        "children": []
+                      },
+                      {
+                        "tag": "p",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "ol",
+                "children": [
+                  {
+                    "tag": "li",
+                    "children": [
+                      {
+                        "tag": "span",
+                        "children": []
+                      },
+                      {
+                        "tag": "span",
+                        "children": []
+                      },
+                      {
+                        "tag": "span",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "children": [
+                      {
+                        "tag": "span",
+                        "children": []
+                      },
+                      {
+                        "tag": "span",
+                        "children": []
+                      },
+                      {
+                        "tag": "span",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "children": [
+                      {
+                        "tag": "span",
+                        "children": []
+                      },
+                      {
+                        "tag": "span",
+                        "children": []
+                      },
+                      {
+                        "tag": "span",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "children": [
+                      {
+                        "tag": "span",
+                        "children": []
+                      },
+                      {
+                        "tag": "span",
+                        "children": []
+                      },
+                      {
+                        "tag": "span",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "section",
+            "children": [
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "span",
+                        "children": []
+                      },
+                      {
+                        "tag": "h2",
+                        "children": [
+                          {
+                            "tag": "em",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "p",
+                        "children": []
+                      },
+                      {
+                        "tag": "p",
+                        "children": []
+                      },
+                      {
+                        "tag": "p",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "div",
+                        "children": [
+                          {
+                            "tag": "span",
+                            "children": []
+                          },
+                          {
+                            "tag": "dl",
+                            "children": [
+                              {
+                                "tag": "div",
+                                "children": [
+                                  {
+                                    "tag": "dt",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "dd",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "div",
+                                "children": [
+                                  {
+                                    "tag": "dt",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "dd",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "div",
+                                "children": [
+                                  {
+                                    "tag": "dt",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "dd",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "div",
+                                "children": [
+                                  {
+                                    "tag": "dt",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "dd",
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "p",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "p",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "section",
+            "children": [
+              {
+                "tag": "h2",
+                "children": [
+                  {
+                    "tag": "em",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "h3",
+                        "children": []
+                      },
+                      {
+                        "tag": "p",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "h3",
+                        "children": []
+                      },
+                      {
+                        "tag": "p",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "h3",
+                        "children": []
+                      },
+                      {
+                        "tag": "p",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "section",
+            "children": [
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "h2",
+                    "children": [
+                      {
+                        "tag": "em",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "a",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "img",
+                    "children": []
+                  },
+                  {
+                    "tag": "img",
+                    "children": []
+                  },
+                  {
+                    "tag": "img",
+                    "children": []
+                  },
+                  {
+                    "tag": "img",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "section",
+            "children": [
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "h2",
+                    "children": [
+                      {
+                        "tag": "em",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "a",
+                        "children": []
+                      },
+                      {
+                        "tag": "span",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
     ]
   },
   "/blog": {
@@ -16247,6 +20637,280 @@
         "href": "Blog.dc.html",
         "text": "Ver trilha · 3 artigos →"
       }
+    ],
+    "tree": [
+      {
+        "tag": "div",
+        "children": [
+          {
+            "tag": "section",
+            "children": [
+              {
+                "tag": "nav",
+                "children": [
+                  {
+                    "tag": "a",
+                    "children": []
+                  },
+                  {
+                    "tag": "span",
+                    "children": []
+                  },
+                  {
+                    "tag": "span",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "h1",
+                    "children": [
+                      {
+                        "tag": "em",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "form",
+                    "children": [
+                      {
+                        "tag": "label",
+                        "children": []
+                      },
+                      {
+                        "tag": "div",
+                        "children": [
+                          {
+                            "tag": "input",
+                            "children": []
+                          },
+                          {
+                            "tag": "button",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "p",
+                "children": []
+              }
+            ]
+          },
+          {
+            "tag": "section",
+            "children": [
+              {
+                "tag": "a",
+                "children": [
+                  {
+                    "tag": "img",
+                    "children": []
+                  },
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "span",
+                        "children": []
+                      },
+                      {
+                        "tag": "h2",
+                        "children": []
+                      },
+                      {
+                        "tag": "p",
+                        "children": []
+                      },
+                      {
+                        "tag": "span",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "section",
+            "children": [
+              {
+                "tag": "h2",
+                "children": [
+                  {
+                    "tag": "em",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "h3",
+                        "children": []
+                      },
+                      {
+                        "tag": "p",
+                        "children": []
+                      },
+                      {
+                        "tag": "a",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "h3",
+                        "children": []
+                      },
+                      {
+                        "tag": "p",
+                        "children": []
+                      },
+                      {
+                        "tag": "a",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "h3",
+                        "children": []
+                      },
+                      {
+                        "tag": "p",
+                        "children": []
+                      },
+                      {
+                        "tag": "a",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "section",
+            "children": [
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "h2",
+                    "children": [
+                      {
+                        "tag": "em",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "dynamic": "sc-for",
+                        "tag": "button"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "dynamic": "sc-for",
+                    "tag": "a"
+                  }
+                ]
+              },
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "button",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "section",
+            "children": [
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "h2",
+                        "children": [
+                          {
+                            "tag": "em",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "p",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "form",
+                    "children": [
+                      {
+                        "tag": "label",
+                        "children": []
+                      },
+                      {
+                        "tag": "div",
+                        "children": [
+                          {
+                            "tag": "input",
+                            "children": []
+                          },
+                          {
+                            "tag": "button",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "span",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
     ]
   },
   "/blog/hernia-de-disco": {
@@ -16943,6 +21607,917 @@
         "href": "Tratamento-Massoterapia.dc.html",
         "text": "Tratamento relacionado Massoterapia clínica Para dor lombar, ciático e tensão muscular, com avaliação individual. Ver tratamento →"
       }
+    ],
+    "tree": [
+      {
+        "tag": "div",
+        "children": [
+          {
+            "tag": "header",
+            "children": [
+              {
+                "tag": "nav",
+                "children": [
+                  {
+                    "tag": "a",
+                    "children": []
+                  },
+                  {
+                    "tag": "span",
+                    "children": []
+                  },
+                  {
+                    "tag": "a",
+                    "children": []
+                  },
+                  {
+                    "tag": "span",
+                    "children": []
+                  },
+                  {
+                    "tag": "span",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "tag": "h1",
+                "children": [
+                  {
+                    "tag": "em",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "span",
+                    "children": [
+                      {
+                        "tag": "img",
+                        "children": []
+                      },
+                      {
+                        "tag": "span",
+                        "children": [
+                          {
+                            "tag": "span",
+                            "children": []
+                          },
+                          {
+                            "tag": "span",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "span",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "children": [
+              {
+                "tag": "img",
+                "children": []
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "children": [
+              {
+                "tag": "nav",
+                "children": [
+                  {
+                    "tag": "span",
+                    "children": []
+                  },
+                  {
+                    "tag": "a",
+                    "children": []
+                  },
+                  {
+                    "tag": "a",
+                    "children": []
+                  },
+                  {
+                    "tag": "a",
+                    "children": []
+                  },
+                  {
+                    "tag": "a",
+                    "children": []
+                  },
+                  {
+                    "tag": "a",
+                    "children": []
+                  },
+                  {
+                    "tag": "a",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "tag": "article",
+                "children": [
+                  {
+                    "tag": "section",
+                    "children": [
+                      {
+                        "tag": "span",
+                        "children": []
+                      },
+                      {
+                        "tag": "p",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "h2",
+                    "children": []
+                  },
+                  {
+                    "tag": "p",
+                    "children": []
+                  },
+                  {
+                    "tag": "p",
+                    "children": []
+                  },
+                  {
+                    "tag": "h2",
+                    "children": []
+                  },
+                  {
+                    "tag": "ul",
+                    "children": [
+                      {
+                        "tag": "li",
+                        "children": []
+                      },
+                      {
+                        "tag": "li",
+                        "children": []
+                      },
+                      {
+                        "tag": "li",
+                        "children": []
+                      },
+                      {
+                        "tag": "li",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "p",
+                    "children": []
+                  },
+                  {
+                    "tag": "section",
+                    "children": [
+                      {
+                        "tag": "h2",
+                        "children": []
+                      },
+                      {
+                        "tag": "ul",
+                        "children": [
+                          {
+                            "tag": "li",
+                            "children": []
+                          },
+                          {
+                            "tag": "li",
+                            "children": []
+                          },
+                          {
+                            "tag": "li",
+                            "children": []
+                          },
+                          {
+                            "tag": "li",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "h2",
+                    "children": []
+                  },
+                  {
+                    "tag": "p",
+                    "children": []
+                  },
+                  {
+                    "tag": "p",
+                    "children": []
+                  },
+                  {
+                    "tag": "aside",
+                    "children": [
+                      {
+                        "tag": "div",
+                        "children": [
+                          {
+                            "tag": "span",
+                            "children": []
+                          },
+                          {
+                            "tag": "span",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "a",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "h2",
+                    "children": []
+                  },
+                  {
+                    "tag": "p",
+                    "children": []
+                  },
+                  {
+                    "tag": "p",
+                    "children": []
+                  },
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "p",
+                        "children": []
+                      },
+                      {
+                        "tag": "p",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "img",
+                        "children": []
+                      },
+                      {
+                        "tag": "div",
+                        "children": [
+                          {
+                            "tag": "span",
+                            "children": []
+                          },
+                          {
+                            "tag": "span",
+                            "children": []
+                          },
+                          {
+                            "tag": "a",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "section",
+            "children": [
+              {
+                "tag": "div",
+                "children": [
+                  {
+                    "tag": "h2",
+                    "children": []
+                  },
+                  {
+                    "tag": "div",
+                    "children": [
+                      {
+                        "tag": "a",
+                        "children": [
+                          {
+                            "tag": "img",
+                            "children": []
+                          },
+                          {
+                            "tag": "span",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "a",
+                        "children": [
+                          {
+                            "tag": "img",
+                            "children": []
+                          },
+                          {
+                            "tag": "span",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "a",
+                "children": [
+                  {
+                    "tag": "span",
+                    "children": []
+                  },
+                  {
+                    "tag": "span",
+                    "children": []
+                  },
+                  {
+                    "tag": "span",
+                    "children": []
+                  },
+                  {
+                    "tag": "span",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
     ]
+  },
+  "footerTree": [
+    {
+      "tag": "footer",
+      "children": [
+        {
+          "tag": "div",
+          "children": [
+            {
+              "tag": "div",
+              "children": [
+                {
+                  "tag": "div",
+                  "children": [
+                    {
+                      "tag": "span",
+                      "children": [
+                        {
+                          "tag": "img",
+                          "children": []
+                        },
+                        {
+                          "tag": "span",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "p",
+                      "children": []
+                    },
+                    {
+                      "tag": "span",
+                      "children": []
+                    },
+                    {
+                      "tag": "a",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "nav",
+                  "children": [
+                    {
+                      "tag": "span",
+                      "children": []
+                    },
+                    {
+                      "tag": "a",
+                      "children": []
+                    },
+                    {
+                      "tag": "a",
+                      "children": []
+                    },
+                    {
+                      "tag": "a",
+                      "children": []
+                    },
+                    {
+                      "tag": "a",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "nav",
+                  "children": [
+                    {
+                      "tag": "span",
+                      "children": []
+                    },
+                    {
+                      "tag": "a",
+                      "children": []
+                    },
+                    {
+                      "tag": "a",
+                      "children": []
+                    },
+                    {
+                      "tag": "a",
+                      "children": []
+                    },
+                    {
+                      "tag": "a",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "div",
+                  "children": [
+                    {
+                      "tag": "span",
+                      "children": []
+                    },
+                    {
+                      "tag": "span",
+                      "children": []
+                    },
+                    {
+                      "tag": "span",
+                      "children": [
+                        {
+                          "tag": "br",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "span",
+                      "children": []
+                    },
+                    {
+                      "tag": "a",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "children": [
+                {
+                  "tag": "p",
+                  "children": []
+                },
+                {
+                  "tag": "span",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dynamic": {
+    "tratamentos": {
+      "Ver todos": [
+        {
+          "name": "Massoterapia clínica",
+          "desc": "Terapia manual que trata dores musculares, tensões crônicas e disfunções posturais olhando para a causa da dor.",
+          "tags": [
+            "Dor lombar",
+            "Ciatalgia",
+            "Postura"
+          ],
+          "time": "1 hora",
+          "price": "incluso nos planos",
+          "badge": "ESPECIALIDADE"
+        },
+        {
+          "name": "Acupuntura",
+          "desc": "Técnicas orientais e ocidentais integradas para aliviar dores e equilibrar o corpo.",
+          "tags": [
+            "Dores crônicas",
+            "Ciatalgia",
+            "Estresse"
+          ],
+          "time": "1 hora",
+          "price": "incluso nos planos",
+          "badge": null
+        },
+        {
+          "name": "Ventosaterapia",
+          "desc": "Sucção que relaxa a musculatura, melhora a circulação e alivia dores nas costas e ombros.",
+          "tags": [
+            "Contraturas",
+            "Costas e ombros"
+          ],
+          "time": "1 hora",
+          "price": "incluso nos planos",
+          "badge": null
+        },
+        {
+          "name": "Ajustes de coluna",
+          "desc": "Manobras manuais para melhorar a mobilidade da coluna, feitas só depois da avaliação e quando indicadas.",
+          "tags": [
+            "Mobilidade",
+            "Rigidez"
+          ],
+          "time": "1 hora",
+          "price": "incluso nos planos",
+          "badge": null
+        },
+        {
+          "name": "Fotobiomodulação",
+          "desc": "Luz de baixa intensidade como recurso complementar no alívio da dor e na recuperação dos tecidos.",
+          "tags": [
+            "Alívio da dor",
+            "Recuperação"
+          ],
+          "time": "1 hora",
+          "price": "incluso nos planos",
+          "badge": null
+        },
+        {
+          "name": "Reflexologia podal",
+          "desc": "Pressão em pontos específicos dos pés para relaxamento profundo e bem-estar.",
+          "tags": [
+            "Relaxamento",
+            "Bem-estar"
+          ],
+          "time": "1 hora",
+          "price": "incluso nos planos",
+          "badge": null
+        },
+        {
+          "name": "Massagem relaxante",
+          "desc": "Para desacelerar e aliviar dores leves do dia a dia.",
+          "tags": [
+            "Relaxamento",
+            "Bem-estar"
+          ],
+          "time": "1 hora",
+          "price": "incluso nos planos",
+          "badge": null
+        },
+        {
+          "name": "Moxaterapia",
+          "desc": "Recurso da medicina tradicional chinesa, aplicado como complemento do plano.",
+          "tags": [
+            "Complementar"
+          ],
+          "time": "1 hora",
+          "price": "incluso nos planos",
+          "badge": null
+        },
+        {
+          "name": "Fisioterapia",
+          "desc": "Avaliação funcional e reabilitação, após a conclusão da graduação do Ronaldo.",
+          "tags": [
+            "Reabilitação"
+          ],
+          "time": "Em breve",
+          "price": "graduação em andamento",
+          "badge": "EM BREVE"
+        }
+      ],
+      "Dor lombar e ciático": [
+        {
+          "name": "Massoterapia clínica",
+          "desc": "Terapia manual que trata dores musculares, tensões crônicas e disfunções posturais olhando para a causa da dor.",
+          "tags": [
+            "Dor lombar",
+            "Ciatalgia",
+            "Postura"
+          ],
+          "time": "1 hora",
+          "price": "incluso nos planos",
+          "badge": "ESPECIALIDADE"
+        },
+        {
+          "name": "Acupuntura",
+          "desc": "Técnicas orientais e ocidentais integradas para aliviar dores e equilibrar o corpo.",
+          "tags": [
+            "Dores crônicas",
+            "Ciatalgia",
+            "Estresse"
+          ],
+          "time": "1 hora",
+          "price": "incluso nos planos",
+          "badge": null
+        },
+        {
+          "name": "Ajustes de coluna",
+          "desc": "Manobras manuais para melhorar a mobilidade da coluna, feitas só depois da avaliação e quando indicadas.",
+          "tags": [
+            "Mobilidade",
+            "Rigidez"
+          ],
+          "time": "1 hora",
+          "price": "incluso nos planos",
+          "badge": null
+        },
+        {
+          "name": "Fotobiomodulação",
+          "desc": "Luz de baixa intensidade como recurso complementar no alívio da dor e na recuperação dos tecidos.",
+          "tags": [
+            "Alívio da dor",
+            "Recuperação"
+          ],
+          "time": "1 hora",
+          "price": "incluso nos planos",
+          "badge": null
+        },
+        {
+          "name": "Moxaterapia",
+          "desc": "Recurso da medicina tradicional chinesa, aplicado como complemento do plano.",
+          "tags": [
+            "Complementar"
+          ],
+          "time": "1 hora",
+          "price": "incluso nos planos",
+          "badge": null
+        },
+        {
+          "name": "Fisioterapia",
+          "desc": "Avaliação funcional e reabilitação, após a conclusão da graduação do Ronaldo.",
+          "tags": [
+            "Reabilitação"
+          ],
+          "time": "Em breve",
+          "price": "graduação em andamento",
+          "badge": "EM BREVE"
+        }
+      ],
+      "Pescoço e ombros": [
+        {
+          "name": "Massoterapia clínica",
+          "desc": "Terapia manual que trata dores musculares, tensões crônicas e disfunções posturais olhando para a causa da dor.",
+          "tags": [
+            "Dor lombar",
+            "Ciatalgia",
+            "Postura"
+          ],
+          "time": "1 hora",
+          "price": "incluso nos planos",
+          "badge": "ESPECIALIDADE"
+        },
+        {
+          "name": "Ventosaterapia",
+          "desc": "Sucção que relaxa a musculatura, melhora a circulação e alivia dores nas costas e ombros.",
+          "tags": [
+            "Contraturas",
+            "Costas e ombros"
+          ],
+          "time": "1 hora",
+          "price": "incluso nos planos",
+          "badge": null
+        },
+        {
+          "name": "Ajustes de coluna",
+          "desc": "Manobras manuais para melhorar a mobilidade da coluna, feitas só depois da avaliação e quando indicadas.",
+          "tags": [
+            "Mobilidade",
+            "Rigidez"
+          ],
+          "time": "1 hora",
+          "price": "incluso nos planos",
+          "badge": null
+        },
+        {
+          "name": "Fisioterapia",
+          "desc": "Avaliação funcional e reabilitação, após a conclusão da graduação do Ronaldo.",
+          "tags": [
+            "Reabilitação"
+          ],
+          "time": "Em breve",
+          "price": "graduação em andamento",
+          "badge": "EM BREVE"
+        }
+      ],
+      "Estresse e tensão": [
+        {
+          "name": "Acupuntura",
+          "desc": "Técnicas orientais e ocidentais integradas para aliviar dores e equilibrar o corpo.",
+          "tags": [
+            "Dores crônicas",
+            "Ciatalgia",
+            "Estresse"
+          ],
+          "time": "1 hora",
+          "price": "incluso nos planos",
+          "badge": null
+        },
+        {
+          "name": "Reflexologia podal",
+          "desc": "Pressão em pontos específicos dos pés para relaxamento profundo e bem-estar.",
+          "tags": [
+            "Relaxamento",
+            "Bem-estar"
+          ],
+          "time": "1 hora",
+          "price": "incluso nos planos",
+          "badge": null
+        },
+        {
+          "name": "Massagem relaxante",
+          "desc": "Para desacelerar e aliviar dores leves do dia a dia.",
+          "tags": [
+            "Relaxamento",
+            "Bem-estar"
+          ],
+          "time": "1 hora",
+          "price": "incluso nos planos",
+          "badge": null
+        }
+      ],
+      "Cansaço muscular": [
+        {
+          "name": "Ventosaterapia",
+          "desc": "Sucção que relaxa a musculatura, melhora a circulação e alivia dores nas costas e ombros.",
+          "tags": [
+            "Contraturas",
+            "Costas e ombros"
+          ],
+          "time": "1 hora",
+          "price": "incluso nos planos",
+          "badge": null
+        },
+        {
+          "name": "Fotobiomodulação",
+          "desc": "Luz de baixa intensidade como recurso complementar no alívio da dor e na recuperação dos tecidos.",
+          "tags": [
+            "Alívio da dor",
+            "Recuperação"
+          ],
+          "time": "1 hora",
+          "price": "incluso nos planos",
+          "badge": null
+        },
+        {
+          "name": "Massagem relaxante",
+          "desc": "Para desacelerar e aliviar dores leves do dia a dia.",
+          "tags": [
+            "Relaxamento",
+            "Bem-estar"
+          ],
+          "time": "1 hora",
+          "price": "incluso nos planos",
+          "badge": null
+        },
+        {
+          "name": "Fisioterapia",
+          "desc": "Avaliação funcional e reabilitação, após a conclusão da graduação do Ronaldo.",
+          "tags": [
+            "Reabilitação"
+          ],
+          "time": "Em breve",
+          "price": "graduação em andamento",
+          "badge": "EM BREVE"
+        }
+      ]
+    },
+    "blog": {
+      "Todos": [
+        {
+          "title": "Quiropraxia: o que é, para que serve e quais são os benefícios para a coluna?",
+          "cat": "Coluna",
+          "time": "6 min",
+          "date": "9 de out."
+        },
+        {
+          "title": "Dor muscular: quando a massoterapia pode ajudar e quando procurar um profissional",
+          "cat": "Massoterapia",
+          "time": "4 min",
+          "date": "5 de out."
+        },
+        {
+          "title": "Síndrome do piriforme: quando a dor ciática não vem da coluna",
+          "cat": "Coluna e ciático",
+          "time": "5 min",
+          "date": "28 de set."
+        },
+        {
+          "title": "Fibromialgia: entenda os sintomas, as causas e como melhorar a qualidade de vida",
+          "cat": "Dor crônica",
+          "time": "6 min",
+          "date": "16 de set."
+        },
+        {
+          "title": "Liberação miofascial: o que é, para que serve e por que funciona",
+          "cat": "Técnicas",
+          "time": "5 min",
+          "date": "2 de set."
+        },
+        {
+          "title": "Hérnia de disco: entenda a condição, os sintomas e as possibilidades de tratamento",
+          "cat": "Coluna e ciático",
+          "time": "7 min",
+          "date": "22 de out."
+        }
+      ],
+      "Coluna e ciático": [
+        {
+          "title": "Quiropraxia: o que é, para que serve e quais são os benefícios para a coluna?",
+          "cat": "Coluna",
+          "time": "6 min",
+          "date": "9 de out."
+        },
+        {
+          "title": "Síndrome do piriforme: quando a dor ciática não vem da coluna",
+          "cat": "Coluna e ciático",
+          "time": "5 min",
+          "date": "28 de set."
+        },
+        {
+          "title": "Hérnia de disco: entenda a condição, os sintomas e as possibilidades de tratamento",
+          "cat": "Coluna e ciático",
+          "time": "7 min",
+          "date": "22 de out."
+        }
+      ],
+      "Massoterapia": [
+        {
+          "title": "Dor muscular: quando a massoterapia pode ajudar e quando procurar um profissional",
+          "cat": "Massoterapia",
+          "time": "4 min",
+          "date": "5 de out."
+        }
+      ],
+      "Dor crônica": [
+        {
+          "title": "Fibromialgia: entenda os sintomas, as causas e como melhorar a qualidade de vida",
+          "cat": "Dor crônica",
+          "time": "6 min",
+          "date": "16 de set."
+        }
+      ],
+      "Técnicas": [
+        {
+          "title": "Liberação miofascial: o que é, para que serve e por que funciona",
+          "cat": "Técnicas",
+          "time": "5 min",
+          "date": "2 de set."
+        }
+      ]
+    }
   }
 }

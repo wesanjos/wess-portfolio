@@ -2,6 +2,30 @@ const { test, expect } = require('@playwright/test');
 const fs = require('node:fs');
 const reference = require('./fixtures/kanpai-reference.json');
 
+function expectReferenceTree(expected, actual, location) {
+  let cursor = 0;
+  for (const node of expected) {
+    if (node.dynamic) {
+      const start = cursor;
+      while (cursor < actual.length && actual[cursor].tag === node.tag) cursor += 1;
+      expect(cursor, `${location} dynamic ${node.tag}`).toBeGreaterThan(start);
+    } else {
+      expect(actual[cursor]?.tag, `${location} child ${cursor}`).toBe(node.tag);
+      expectReferenceTree(node.children, actual[cursor].children, `${location}>${node.tag}[${cursor}]`);
+      cursor += 1;
+    }
+  }
+  expect(actual.length, `${location} unexpected children`).toBe(cursor);
+}
+
+async function elementTree(locator) {
+  return locator.evaluateAll((roots) => {
+    const read = (node) => ({ tag: node.tagName.toLowerCase(), children: [...node.children].map(read) });
+    return roots.map(read);
+  });
+}
+
+
 const base = '/projetos/kanpai';
 const pages = [
   ['', /dor nas costas/i],
@@ -37,6 +61,14 @@ test('menu e rodapé', async ({ page }) => {
     const footer = page.getByRole('contentinfo');
     await expect(footer).toBeVisible();
     await expect(header.locator(':scope > div')).toHaveCSS('display', 'flex');
+    const headerChildren = await header.locator(':scope > div > *').evaluateAll((nodes) => nodes.map((node) => node.tagName.toLowerCase()));
+    expect(headerChildren).toEqual(['a', 'nav', 'div']);
+    const brand = header.locator(':scope > div > a').first();
+    await expect(brand).toHaveAttribute('aria-label', 'Kanpai, início');
+    expect(await brand.evaluate((node) => [...node.children].map((child) => child.tagName.toLowerCase()))).toEqual(['img']);
+    const headerActions = await header.locator(':scope > div > div > *').evaluateAll((nodes) => nodes.map((node) => node.tagName.toLowerCase()));
+    expect(headerActions).toEqual(['a', 'button']);
+    expectReferenceTree(reference.footerTree, await elementTree(footer), `${path} footer`);
     await expect(header.locator('nav[aria-label="Navegação principal"]')).toHaveCSS('display', 'flex');
     await expect(footer.locator(':scope > div')).toHaveCSS('display', 'flex');
     await expect(footer.locator(':scope > div > div').first()).toHaveCSS('display', 'flex');
@@ -218,6 +250,7 @@ test('conteúdo da referência', async ({ page }) => {
       last = index;
     }
     const expected = reference[path];
+    expectReferenceTree(expected.tree, await elementTree(page.locator('main > *')), `${path} main`);
     const sections = page.locator('main section');
     await expect(sections).toHaveCount(expected.sections.length);
     for (let i = 0; i < expected.sections.length; i += 1) {
@@ -467,6 +500,13 @@ test('todos os filtros e programas preservam seus estados', async ({ page }) => 
       const href = names[index] === 'Massoterapia clínica' ? `${base}/tratamentos/massoterapia-clinica` : names[index] === 'Fisioterapia' ? `${base}#contato` : '#demonstracao';
       await expect(cards.nth(index).locator('a')).toHaveAttribute('href', href);
       const card = cards.nth(index);
+      const source = reference.dynamic.tratamentos[label][index];
+      await expect(card.locator(':scope > p')).toHaveText(source.desc);
+      await expect(card.locator(':scope > ul > li')).toHaveText(source.tags);
+      await expect(card.locator(':scope > div').last()).toContainText(source.time);
+      await expect(card.locator(':scope > div').last()).toContainText(source.price);
+      if (source.badge) await expect(card.locator(':scope > div').first().locator('span')).toHaveText(source.badge);
+      else await expect(card.locator(':scope > div').first().locator('span')).toHaveCount(0);
       await expect(card).toHaveCSS('display', 'flex');
       await expect(card).toHaveCSS('flex-direction', 'column');
       expect(await card.evaluate((node) => [...node.children].map((child) => child.tagName.toLowerCase()))).toEqual(['div', 'p', 'ul', 'div']);
@@ -496,6 +536,10 @@ test('todos os filtros e programas preservam seus estados', async ({ page }) => 
     for (let index = 0; index < names.length; index += 1) {
       await expect(cards.nth(index).locator('h3')).toContainText(names[index]);
       await expect(cards.nth(index)).toHaveAttribute('href', names[index] === 'Hérnia de disco' ? `${base}/blog/hernia-de-disco` : '#demonstracao');
+      const source = reference.dynamic.blog[label][index];
+      await expect(cards.nth(index).locator('h3')).toHaveText(source.title);
+      await expect(cards.nth(index).locator(':scope > span').first()).toHaveText(`${source.cat} · ${source.time}`);
+      await expect(cards.nth(index).locator(':scope > span').last()).toHaveText(source.date);
       await expect(cards.nth(index)).toHaveCSS('display', 'flex');
       await expect(cards.nth(index)).toHaveCSS('flex-direction', 'column');
       expect(await cards.nth(index).evaluate((node) => [...node.children].map((child) => child.tagName.toLowerCase()))).toEqual(['img', 'span', 'h3', 'span']);
@@ -516,6 +560,7 @@ test('todos os filtros e programas preservam seus estados', async ({ page }) => 
     await expect(button).toHaveAttribute('aria-selected', 'true');
     const tabs = page.getByRole('tablist', { name: 'Programas' });
     const panel = page.getByRole('tabpanel');
+    await expect(tabs.getByRole('tab')).toHaveCount(4);
     await expect(tabs).toHaveCSS('display', 'flex');
     await expect(tabs).toHaveCSS('flex-direction', 'column');
     await expect(panel).toHaveCSS('display', 'flex');
@@ -544,5 +589,62 @@ test('todos os filtros e programas preservam seus estados', async ({ page }) => 
     await expect(page.getByRole('status')).toContainText('demonstrativa');
     await expect(page.getByRole('status')).not.toContainText(/enviado|sucesso/i);
     await page.getByRole('status').getByRole('button', { name: 'Fechar' }).click();
+  }
+});
+
+test('ordem e acesso por teclado em todas as telas', async ({ page }) => {
+  test.setTimeout(180000);
+  for (const width of [320, 1440]) {
+    await page.setViewportSize({ width, height: 900 });
+    for (const [path] of pages) {
+      await page.goto(base + path);
+      const unfocusable = await page.locator('a[href], button, input, select, textarea, summary').evaluateAll((nodes) => nodes.filter((node) => node.type !== 'hidden' && (node.disabled || node.tabIndex !== 0)).map((node) => node.getAttribute('aria-label') || node.textContent.trim() || node.tagName));
+      expect(unfocusable, `${path} at ${width}: controls removed from keyboard order`).toEqual([]);
+      const expected = await page.evaluate(() => {
+        const candidates = [...document.querySelectorAll('a[href], button, input, select, textarea, summary, [tabindex]')];
+        return candidates.filter((node) => {
+          const style = getComputedStyle(node);
+          const bounds = node.getBoundingClientRect();
+          for (let parent = node.parentElement; parent; parent = parent.parentElement) {
+            if (parent.tagName === 'DETAILS' && !parent.open && !parent.querySelector(':scope > summary')?.contains(node)) return false;
+          }
+          return node.tabIndex >= 0 && !node.disabled && node.type !== 'hidden' && style.visibility !== 'hidden' && bounds.width > 0 && bounds.height > 0;
+        }).map((node, index) => {
+          node.dataset.testTabOrder = String(index);
+          return { index: String(index), label: node.getAttribute('aria-label') || node.textContent.trim() || node.getAttribute('name') || node.tagName };
+        });
+      });
+      expect(expected.length, `${path} at ${width}`).toBeGreaterThan(0);
+      for (const control of expected) {
+        await page.keyboard.press('Tab');
+        const focused = await page.evaluate(() => document.activeElement?.dataset.testTabOrder);
+        expect(focused, `${path} at ${width}: ${control.label}`).toBe(control.index);
+      }
+      const details = page.locator('main details');
+      for (let index = 0; index < await details.count(); index += 1) {
+        const detail = details.nth(index);
+        const summary = detail.locator(':scope > summary');
+        await summary.focus();
+        if (!(await detail.evaluate((node) => node.open))) await page.keyboard.press('Enter');
+        await expect(detail).toHaveJSProperty('open', true);
+        const children = detail.locator('a[href], button, input, select, textarea');
+        for (let child = 0; child < await children.count(); child += 1) {
+          if (!(await children.nth(child).isVisible())) continue;
+          await page.keyboard.press('Tab');
+          await expect(children.nth(child)).toBeFocused();
+        }
+      }
+      if (width === 320) {
+        const trigger = page.getByRole('button', { name: /menu/i });
+        await trigger.focus();
+        await page.keyboard.press('Enter');
+        const links = page.getByRole('navigation', { name: 'Menu móvel' }).locator('a');
+        await expect(links).toHaveCount(7);
+        for (let index = 0; index < await links.count(); index += 1) {
+          await page.keyboard.press('Tab');
+          await expect(links.nth(index)).toBeFocused();
+        }
+      }
+    }
   }
 });

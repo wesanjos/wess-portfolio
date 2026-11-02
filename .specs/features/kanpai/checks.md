@@ -57,6 +57,9 @@ Proof: `npm run lint`
 **C15** - Páginas não adicionam dependência de interface (AC 19). ✅
 Proof: `node tests/kanpai-dependencies.cjs`
 
+**C16** - Nas sete telas, controles visíveis seguem a ordem de leitura ao usar Tab em 320 e 1440 pixels, incluindo menus móveis e conteúdo de acordeões (AC 13). ✅
+Proof: `npx playwright test tests/kanpai.spec.js -g 'ordem e acesso por teclado'`
+
 ## Coverage
 
 | Set (size) | Member -> proof | Unproven |
@@ -69,6 +72,7 @@ Proof: `node tests/kanpai-dependencies.cjs`
 | `GET /projetos/kanpai/blog` statuses (1) | 200 C1 | - |
 | `GET /projetos/kanpai/blog/[slug]` statuses (2) | 200 C1 · 404 C2 | - |
 | Portas (3) | URLs C1 · dados locais C13 · Playwright C1 | - |
+| Teclado (7) | home C16 · tratamentos C16 · massoterapia C16 · empresas C16 · sobre C16 · blog C16 · artigo C16 | - |
 
 ## Test policy
 
