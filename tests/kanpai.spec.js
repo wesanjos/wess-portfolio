@@ -752,3 +752,49 @@ test('ordem e acesso por teclado em todas as telas', async ({ page }) => {
     }
   }
 });
+
+test('conteúdo da referência: layout computado por instância', async ({ page }) => {
+  test.setTimeout(120000);
+  const layouts = require('./fixtures/kanpai-computed-layout.json');
+  // These source grids overflow at 320px; AC 12 requires a single-column adaptation.
+  const mobileAdaptations = {
+    '': { '1:0.1.1': 4, '4:0.1.1': 2 },
+    '/tratamentos/massoterapia-clinica': { '0:0.0.3': 4, '4:1': 3 },
+  };
+  for (const width of [320, 768, 1440]) {
+    await page.setViewportSize({ width, height: 900 });
+    for (const [path] of pages) {
+      await page.goto(base + path);
+      const sections = page.locator('main section');
+      const expectedSections = layouts[path][width];
+      await expect(sections).toHaveCount(expectedSections.length);
+      for (let sectionIndex = 0; sectionIndex < expectedSections.length; sectionIndex += 1) {
+        const expected = expectedSections[sectionIndex].map((node) => {
+          const rows = width === 320 ? mobileAdaptations[path]?.[`${sectionIndex}:${node.path.join('.')}`] : undefined;
+          return rows ? { ...node, columns: 1, rows, ratios: [1] } : node;
+        });
+        const actual = await sections.nth(sectionIndex).evaluate((root, nodes) => nodes.map((node) => {
+          let element = root;
+          for (const index of node.path) element = element?.children[index];
+          if (!element) return null;
+          const style = getComputedStyle(element);
+          const tracks = (value) => value === 'none' ? 0 : value.split(/\s+/).filter(Boolean).length;
+          const colValues = style.display.includes('grid') ? style.gridTemplateColumns.split(/\s+/).map(parseFloat) : [];
+          const total = colValues.reduce((a, b) => a + b, 0);
+          const ratios = colValues.length && total ? colValues.map((value) => Number((value / total).toFixed(2))) : null;
+          return { path: node.path, tag: element.tagName.toLowerCase(), display: style.display, direction: style.flexDirection, wrap: style.flexWrap, align: style.alignItems, justify: style.justifyContent, order: style.order, columns: style.display.includes('grid') ? tracks(style.gridTemplateColumns) : null, rows: style.display.includes('grid') ? tracks(style.gridTemplateRows) : null, ratios, rowStart: style.gridRowStart, rowEnd: style.gridRowEnd, columnStart: style.gridColumnStart, columnEnd: style.gridColumnEnd };
+        }), expected);
+        expect(actual, `${path} section ${sectionIndex} at ${width}px`).toEqual(expected);
+      }
+      const expectedFooter = layouts.footer[width][0];
+      const actualFooter = await page.getByRole('contentinfo').evaluate((root, nodes) => nodes.map((node) => {
+        let element = root;
+        for (const index of node.path) element = element?.children[index];
+        if (!element) return null;
+        const style = getComputedStyle(element);
+        return { path: node.path, tag: element.tagName.toLowerCase(), display: style.display, direction: style.flexDirection, wrap: style.flexWrap, align: style.alignItems, justify: style.justifyContent, order: style.order, columns: null, rows: null, ratios: null, rowStart: style.gridRowStart, rowEnd: style.gridRowEnd, columnStart: style.gridColumnStart, columnEnd: style.gridColumnEnd };
+      }), expectedFooter);
+      expect(actualFooter, `${path} footer at ${width}px`).toEqual(expectedFooter);
+    }
+  }
+});
