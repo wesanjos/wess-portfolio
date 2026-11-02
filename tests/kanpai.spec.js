@@ -36,6 +36,10 @@ test('menu e rodapé', async ({ page }) => {
     const header = page.getByRole('banner');
     const footer = page.getByRole('contentinfo');
     await expect(footer).toBeVisible();
+    await expect(header.locator(':scope > div')).toHaveCSS('display', 'flex');
+    await expect(header.locator('nav[aria-label="Navegação principal"]')).toHaveCSS('display', 'flex');
+    await expect(footer.locator(':scope > div')).toHaveCSS('display', 'flex');
+    await expect(footer.locator(':scope > div > div').first()).toHaveCSS('display', 'flex');
     await expect(header.getByRole('link', { name: /Kanpai, início/ })).toHaveAttribute('href', base);
     for (const label of ['Tratamentos', 'Planos', 'Para empresas', 'Sobre', 'Blog', 'Contato']) {
       await expect(header.getByRole('link', { name: label, exact: true })).toBeAttached();
@@ -44,6 +48,12 @@ test('menu e rodapé', async ({ page }) => {
     await expect(footer).toContainText('WhatsApp (41) 99597-1049');
     await expect(footer.getByRole('navigation', { name: 'Tratamentos' })).toContainText('Massoterapia clínica');
     await expect(footer.getByRole('navigation', { name: 'Kanpai' })).toContainText('Para empresas');
+    const desktopLinks = await header.locator('nav[aria-label="Navegação principal"] a').evaluateAll((nodes) => nodes.map((node) => [node.textContent.trim(), node.getAttribute('href')]));
+    expect(desktopLinks).toEqual([['Tratamentos', `${base}/tratamentos`], ['Planos', `${base}/#planos`], ['Para empresas', `${base}/empresas`], ['Sobre', `${base}/sobre`], ['Blog', `${base}/blog`], ['Contato', `${base}/#contato`]]);
+    const treatmentLinks = await footer.getByRole('navigation', { name: 'Tratamentos' }).locator('a').evaluateAll((nodes) => nodes.map((node) => [node.textContent.trim(), node.getAttribute('href')]));
+    expect(treatmentLinks).toEqual([['Massoterapia clínica', `${base}/tratamentos/massoterapia-clinica`], ['Acupuntura', `${base}/tratamentos`], ['Ventosaterapia', `${base}/tratamentos`], ['Todos os tratamentos', `${base}/tratamentos`]]);
+    const footerLinks = await footer.getByRole('navigation', { name: 'Kanpai' }).locator('a').evaluateAll((nodes) => nodes.map((node) => [node.textContent.trim(), node.getAttribute('href')]));
+    expect(footerLinks).toEqual([['Sobre', `${base}/sobre`], ['Planos e valores', `${base}#planos`], ['Para empresas', `${base}/empresas`], ['Blog', `${base}/blog`]]);
     if (path) {
       const section = path.startsWith('/tratamentos/') ? '/tratamentos' : path.startsWith('/blog/') ? '/blog' : path;
       await expect(header.locator('a[aria-current="page"]').first()).toHaveAttribute('href', base + section);
@@ -57,6 +67,12 @@ test('larguras', async ({ page }) => {
     for (const [path] of pages) {
       await page.goto(base + path);
       expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
+      const overflow = await page.locator('a, button, input, select, textarea').evaluateAll((nodes) => nodes.filter((node) => {
+        const rect = node.getBoundingClientRect();
+        const style = getComputedStyle(node);
+        return rect.width > 0 && rect.height > 0 && style.visibility !== 'hidden' && (rect.left < -1 || rect.right > innerWidth + 1);
+      }).map((node) => `${node.tagName}: ${node.textContent.trim().slice(0, 60)}`));
+      expect(overflow, `${path} at ${width}px`).toEqual([]);
     }
   }
 });
@@ -72,6 +88,8 @@ test('menu móvel', async ({ page }) => {
   await expect(menu).toHaveAttribute('aria-expanded', 'false');
   await expect(menu).toBeFocused();
   await menu.click();
+  await expect(page.getByRole('navigation', { name: 'Menu móvel' })).toHaveCSS('display', 'flex');
+  await expect(page.getByRole('navigation', { name: 'Menu móvel' })).toHaveCSS('flex-direction', 'column');
   await expect(page.getByText('WhatsApp (41) 99597-1049', { exact: true }).first()).toBeVisible();
   await menu.click();
   await expect(menu).toHaveAttribute('aria-expanded', 'false');
@@ -93,6 +111,17 @@ test('links internos', async ({ page, request }) => {
     await page.goto(base + path);
     const links = await page.locator('a[href^="/projetos/kanpai"]').evaluateAll((nodes) => nodes.map((node) => node.getAttribute('href').split('#')[0]));
     for (const link of new Set(links)) expect((await request.get(link)).status(), link).toBe(200);
+    const mainAnchors = await page.locator('main a[href]').evaluateAll((nodes) => nodes.map((node) => ({ href: node.getAttribute('href'), text: node.textContent.replace(/\s+/g, ' ').trim() })));
+    const routes = { 'Home-v7-ntj6.dc.html': base, 'Tratamentos.dc.html': `${base}/tratamentos`, 'Tratamento-Massoterapia.dc.html': `${base}/tratamentos/massoterapia-clinica`, 'Empresas.dc.html': `${base}/empresas`, 'Sobre.dc.html': `${base}/sobre`, 'Blog.dc.html': `${base}/blog`, 'Artigo.dc.html': `${base}/blog/hernia-de-disco`, 'Agendamento.dc.html': '#demonstracao' };
+    for (const item of reference[path].anchors) {
+      const [file, fragment] = item.href.split('#');
+      let expected = (routes[file] || file) + (fragment ? `#${fragment}` : '');
+      if (file === 'Artigo.dc.html' && !/hérnia/i.test(item.text)) expected = '#demonstracao';
+      if (file === 'Blog.dc.html' && /Ver trilha/i.test(item.text)) expected = '#demonstracao';
+      if (path === '' && item.text.startsWith('Leia: Hérnia')) expected = `${base}/blog/hernia-de-disco`;
+      if (path === '' && item.text.startsWith('Leia: Dor muscular')) expected = '#demonstracao';
+      expect(mainAnchors.some((anchor) => anchor.text === item.text && anchor.href === expected), `${path}: ${item.text} -> ${expected}`).toBe(true);
+    }
     const anchors = await page.locator('a[href]').evaluateAll((nodes) => nodes.map((node) => node.getAttribute('href')));
     for (const href of new Set(anchors)) {
       if (!href.includes('#') || href === '#demonstracao') continue;
@@ -164,6 +193,64 @@ test('conteúdo da referência', async ({ page }) => {
       for (const [tag, count] of Object.entries(spec.elements)) {
         expect(await section.locator(tag).count(), `${path} section ${i} ${tag}`).toBeGreaterThanOrEqual(count);
       }
+      const layout = await section.locator('*').evaluateAll((elements) => elements.map((element) => ({
+        tag: element.tagName.toLowerCase(),
+        display: getComputedStyle(element).display,
+        columns: (element.getAttribute('style')?.match(/grid-template-columns\s*:\s*([^;]+)/i) || [])[1]?.trim() || '',
+        direction: element.style.flexDirection,
+        wrap: element.style.flexWrap,
+      })));
+      const expectedLayouts = new Map();
+      for (const item of spec.layout) {
+        const adjusted = { ...item, columns: item.columns.replace('minmax(320px, 1fr)', 'minmax(min(100%, 320px), 1fr)').replace('minmax(300px, 1fr)', 'minmax(min(100%, 300px), 1fr)') };
+        const key = JSON.stringify(adjusted);
+        expectedLayouts.set(key, (expectedLayouts.get(key) || 0) + 1);
+      }
+      for (const [key, count] of expectedLayouts) {
+        const item = JSON.parse(key);
+        const matching = layout.filter((node) => node.tag === item.tag && node.display === item.display && node.columns === item.columns && node.direction === item.direction && node.wrap === item.wrap);
+        expect(matching.length, `${path} section ${i} layout ${key}`).toBeGreaterThanOrEqual(count);
+      }
+      const alts = await section.locator('img').evaluateAll((nodes) => nodes.map((node) => node.getAttribute('alt')));
+      for (const alt of new Set(spec.images)) {
+        expect(alts.filter((value) => value === alt).length, `${path} section ${i} image ${alt}`).toBeGreaterThanOrEqual(spec.images.filter((value) => value === alt).length);
+      }
+    }
+    // The desktop reference gives each screen a concrete grid or two-column composition.
+    const composition = {
+      '': [1, 'div[style*="display: grid"]', 'grid'],
+      '/tratamentos': [1, 'div[style*="display: grid"]', 'grid'],
+      '/tratamentos/massoterapia-clinica': [4, 'div[style*="display: grid"]', 'grid'],
+      '/empresas': [5, 'form', 'grid'],
+      '/sobre': [4, 'div[style*="grid-auto-rows"]', 'grid'],
+      '/blog': [3, 'div[style*="display: grid"]', 'grid'],
+      '/blog/hernia-de-disco': [null, 'nav[aria-label="Neste artigo"]', 'flex'],
+    };
+    const [sectionIndex, selector, display] = composition[path];
+    const container = sectionIndex === null ? page.locator('main') : sections.nth(sectionIndex);
+    const region = container.locator(selector).first();
+    await expect(region).toHaveCSS('display', display);
+    if (display === 'grid') {
+      const columns = await region.evaluate((node) => getComputedStyle(node).gridTemplateColumns.split(' ').filter(Boolean).length);
+      expect(columns, `${path} desktop columns`).toBeGreaterThanOrEqual(2);
+    } else {
+      await expect(region).toHaveCSS('flex-direction', 'column');
+      await expect(region.locator('..')).toHaveCSS('display', 'flex');
+    }
+    if (path === '/sobre') {
+      await expect(region).toHaveCSS('grid-auto-rows', '220px');
+      expect(await region.locator('img').count()).toBe(4);
+    }
+    const images = await page.locator('main img').evaluateAll((nodes) => nodes.map((node) => {
+      const path = [];
+      for (let element = node; element && element.tagName.toLowerCase() !== 'main'; element = element.parentElement) path.unshift(element.tagName.toLowerCase());
+      return { alt: node.getAttribute('alt'), path: path.join('>') };
+    }));
+    let imageCursor = 0;
+    for (const image of expected.allImages) {
+      const found = images.findIndex((actual, index) => index >= imageCursor && actual.alt === image.alt && actual.path === image.path);
+      expect(found, `${path} imagem ${image.alt}`).toBeGreaterThanOrEqual(imageCursor);
+      imageCursor = found + 1;
     }
     const actualNodes = await page.locator('main').evaluate((root) => {
       const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
@@ -193,13 +280,16 @@ test('conteúdo da referência', async ({ page }) => {
 
 test('movimento reduzido', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });
+  await page.setViewportSize({ width: 320, height: 800 });
   for (const [path] of pages) {
     await page.goto(base + path);
+    await page.getByRole('contentinfo').getByRole('link', { name: 'Agendar avaliação' }).click();
+    await page.getByRole('button', { name: /menu/i }).click();
     expect(await page.evaluate(() => getComputedStyle(document.documentElement).scrollBehavior)).toBe('auto');
-    const motions = await page.locator('main').evaluate((root) => [...root.querySelectorAll('*')].flatMap((element) => {
-      const style = getComputedStyle(element);
+    const motions = await page.locator('html').evaluate((root) => [root, ...root.querySelectorAll('*')].flatMap((element) => [null, '::before', '::after'].flatMap((pseudo) => {
+      const style = getComputedStyle(element, pseudo);
       return [style.animationDuration, style.transitionDuration].flatMap((value) => value.split(',').map((duration) => duration.trim()));
-    }));
+    })));
     expect(motions.every((duration) => parseFloat(duration) <= (duration.endsWith('ms') ? 0.01 : 0.00001))).toBe(true);
   }
 });
@@ -231,6 +321,11 @@ test('ações demonstrativas', async ({ page }) => {
       await page.getByRole('status').getByRole('button', { name: 'Fechar' }).click();
     }
   }
+  await page.goto(`${base}/blog`);
+  await page.getByLabel('Seu e-mail').fill('teste@example.com');
+  await page.getByRole('button', { name: 'Quero receber' }).click();
+  await expect(page.getByRole('status')).toContainText('demonstrativa');
+  await expect(page.getByRole('status')).not.toContainText(/enviado|sucesso/i);
   await page.goto(`${base}/empresas`);
   await page.getByRole('button', { name: /Enviar pedido de proposta/i }).click();
   await expect(page.getByRole('status')).toContainText('demonstrativa');
@@ -299,18 +394,53 @@ test('filtros preservam foco de teclado', async ({ page }) => {
 
 test('todos os filtros e programas preservam seus estados', async ({ page }) => {
   await page.goto(`${base}/tratamentos`);
-  for (const [label, count] of [['Ver todos', 9], ['Dor lombar e ciático', 6], ['Pescoço e ombros', 4], ['Estresse e tensão', 3], ['Cansaço muscular', 4]]) {
+  const treatments = {
+    'Ver todos': ['Massoterapia clínica', 'Acupuntura', 'Ventosaterapia', 'Ajustes de coluna', 'Fotobiomodulação', 'Reflexologia podal', 'Massagem relaxante', 'Moxaterapia', 'Fisioterapia'],
+    'Dor lombar e ciático': ['Massoterapia clínica', 'Acupuntura', 'Ajustes de coluna', 'Fotobiomodulação', 'Moxaterapia', 'Fisioterapia'],
+    'Pescoço e ombros': ['Massoterapia clínica', 'Ventosaterapia', 'Ajustes de coluna', 'Fisioterapia'],
+    'Estresse e tensão': ['Acupuntura', 'Reflexologia podal', 'Massagem relaxante'],
+    'Cansaço muscular': ['Ventosaterapia', 'Fotobiomodulação', 'Massagem relaxante', 'Fisioterapia'],
+  };
+  for (const [label, names] of Object.entries(treatments)) {
     const button = page.getByRole('button', { name: label, exact: true });
     await button.click();
     await expect(button).toHaveAttribute('aria-pressed', 'true');
-    await expect(page.getByText(/tratamentos costumam ajudar|Mostrando todos os/)).toContainText(String(count));
+    await expect(page.getByText(/tratamentos costumam ajudar|Mostrando todos os/)).toContainText(String(names.length));
+    await expect(page.locator('main article h2')).toHaveText(names);
+    const cards = page.locator('main article');
+    for (let index = 0; index < names.length; index += 1) {
+      const href = names[index] === 'Massoterapia clínica' ? `${base}/tratamentos/massoterapia-clinica` : names[index] === 'Fisioterapia' ? `${base}#contato` : '#demonstracao';
+      await expect(cards.nth(index).locator('a')).toHaveAttribute('href', href);
+    }
+    const demoAction = page.locator('main article a[href="#demonstracao"]').first();
+    if (await demoAction.count()) {
+      await demoAction.click();
+      await expect(page.getByRole('status')).toContainText('demonstrativa');
+      await page.getByRole('status').getByRole('button', { name: 'Fechar' }).click();
+    }
   }
   await page.goto(`${base}/blog`);
-  for (const [label, text] of [['Todos', 'Quiropraxia'], ['Coluna e ciático', 'Síndrome do piriforme'], ['Massoterapia', 'Dor muscular'], ['Dor crônica', 'Fibromialgia'], ['Técnicas', 'Liberação miofascial']]) {
+  const posts = {
+    'Todos': ['Quiropraxia', 'Dor muscular', 'Síndrome do piriforme', 'Fibromialgia', 'Liberação miofascial', 'Hérnia de disco'],
+    'Coluna e ciático': ['Quiropraxia', 'Síndrome do piriforme', 'Hérnia de disco'],
+    'Massoterapia': ['Dor muscular'], 'Dor crônica': ['Fibromialgia'], 'Técnicas': ['Liberação miofascial'],
+  };
+  for (const [label, names] of Object.entries(posts)) {
     const button = page.getByRole('button', { name: label, exact: true });
     await button.click();
     await expect(button).toHaveAttribute('aria-pressed', 'true');
-    await expect(page.getByRole('heading', { name: new RegExp(text, 'i') }).first()).toBeVisible();
+    const cards = page.locator('main section').nth(3).locator('a:has(h3)');
+    await expect(cards).toHaveCount(names.length);
+    for (let index = 0; index < names.length; index += 1) {
+      await expect(cards.nth(index).locator('h3')).toContainText(names[index]);
+      await expect(cards.nth(index)).toHaveAttribute('href', names[index] === 'Hérnia de disco' ? `${base}/blog/hernia-de-disco` : '#demonstracao');
+    }
+    const demoAction = page.locator('main section').nth(3).locator('a[href="#demonstracao"]').first();
+    if (await demoAction.count()) {
+      await demoAction.click();
+      await expect(page.getByRole('status')).toContainText('demonstrativa');
+      await page.getByRole('status').getByRole('button', { name: 'Fechar' }).click();
+    }
   }
   await page.goto(`${base}/empresas`);
   for (const [name, duration] of [['Ginástica laboral', '10 a 15 min por sessão'], ['SIPAT', '1 a 5 dias'], ['Quick massagem', '10 a 15 min por pessoa'], ['Palestras', '45 a 60 min']]) {
@@ -318,5 +448,20 @@ test('todos os filtros e programas preservam seus estados', async ({ page }) => 
     await button.click();
     await expect(button).toHaveAttribute('aria-selected', 'true');
     await expect(page.getByText(duration, { exact: true })).toBeVisible();
+    await expect(page.locator('#programas').getByRole('link', { name: new RegExp(`Pedir proposta de ${name}`, 'i') })).toHaveAttribute('href', '#proposta');
+    const descriptions = {
+      'Ginástica laboral': 'Exercícios simples, seguros e adaptados à rotina de trabalho, conduzidos por profissionais capacitados. Ajudam a reduzir dores musculares, aliviar tensões, melhorar a postura e aumentar a disposição ao longo do dia.',
+      'SIPAT': 'Programa completo para a Semana Interna de Prevenção de Acidentes do Trabalho, com palestras, vivências práticas e atividades sobre saúde física, prevenção de lesões, estresse e sedentarismo.',
+      'Quick massagem': 'Sessões curtas de massagem em cadeira própria, para aliviar a tensão de pescoço, ombros e costas sem tirar a pessoa da rotina.',
+      'Palestras': 'Conversas práticas sobre postura, ergonomia, prevenção de dores e autocuidado, com linguagem simples e exemplos do dia a dia da equipe.',
+    };
+    await expect(page.locator('#programas')).toContainText(descriptions[name]);
+    const details = {
+      'Ginástica laboral': ['No local, em grupo', 'A partir de R$ 80', 'Alongamento guiado', 'Exercícios de mobilidade', 'Orientação postural', 'Turmas por setor'],
+      'SIPAT': ['Personalizado por empresa', 'Sob proposta', 'Palestras de ergonomia', 'Ginástica laboral guiada', 'Quick massagem', 'Demonstrações de autocuidado'],
+      'Quick massagem': ['No local, individual', 'Sob proposta', 'Cadeira de quick massagem', 'Agenda por horário', 'Ações pontuais ou recorrentes'],
+      'Palestras': ['Presencial', 'Sob proposta', 'Ergonomia no posto de trabalho', 'Dor nas costas', 'Estresse e sono'],
+    };
+    for (const text of details[name]) await expect(page.locator('#programas')).toContainText(text);
   }
 });

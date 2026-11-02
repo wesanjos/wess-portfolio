@@ -79,7 +79,68 @@
           "h1": 1,
           "p": 1,
           "img": 1
-        }
+        },
+        "layout": [
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "figure",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          }
+        ],
+        "images": [
+          "Ronaldo Parpinelli, terapeuta da Kanpai, de jaleco branco diante de uma parede de folhagens"
+        ]
       },
       {
         "id": "para-quem",
@@ -181,7 +242,75 @@
           "article": 5,
           "h3": 5,
           "img": 1
-        }
+        },
+        "layout": [
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "article",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "grid",
+            "columns": "repeat(auto-fit, minmax(230px, 1fr))",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "article",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "article",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "article",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "article",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          }
+        ],
+        "images": [
+          "Paciente em sessão de ventosaterapia nas costas, no consultório da Kanpai"
+        ]
       },
       {
         "id": "avaliacao",
@@ -301,7 +430,115 @@
           "h2": 1,
           "p": 1,
           "ol": 1
-        }
+        },
+        "layout": [
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "grid",
+            "columns": "repeat(2, minmax(0, 1fr))",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "ol",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "li",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "li",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "li",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "li",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          }
+        ],
+        "images": []
       },
       {
         "id": "tratamentos",
@@ -792,7 +1029,432 @@
           "p": 12,
           "img": 1,
           "h3": 11
-        }
+        },
+        "layout": [
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "summary",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "summary",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "summary",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "summary",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "summary",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "summary",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "summary",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "summary",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "summary",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "summary",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "summary",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          }
+        ],
+        "images": [
+          "Sessão de acupuntura nas costas de uma paciente no espaço Kanpai"
+        ]
       },
       {
         "id": "depoimentos",
@@ -888,7 +1550,80 @@
             "path": "div>section>div>div>a"
           }
         ],
-        "elements": {}
+        "elements": {},
+        "layout": [
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "figure",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "figcaption",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "grid",
+            "columns": "repeat(auto-fit, minmax(240px, 1fr))",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "figure",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "figure",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          }
+        ],
+        "images": []
       },
       {
         "id": "sobre",
@@ -923,7 +1658,26 @@
           "img": 1,
           "h2": 1,
           "p": 3
-        }
+        },
+        "layout": [
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          }
+        ],
+        "images": [
+          "Ronaldo Parpinelli no consultório da Kanpai, com o logo da marca na parede"
+        ]
       },
       {
         "id": "planos",
@@ -1077,7 +1831,80 @@
         "elements": {
           "h2": 1,
           "p": 3
-        }
+        },
+        "layout": [
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          }
+        ],
+        "images": []
       },
       {
         "id": "blog",
@@ -1174,7 +2001,129 @@
           "img": 6,
           "h3": 1,
           "p": 2
-        }
+        },
+        "layout": [
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "article",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "a",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "a",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "a",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "a",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "a",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "a",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          }
+        ],
+        "images": [
+          "Ilustração de uma hérnia de disco pressionando o nervo na coluna lombar",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
       },
       {
         "id": "duvidas",
@@ -1303,7 +2252,80 @@
         "elements": {
           "h2": 1,
           "p": 8
-        }
+        },
+        "layout": [
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "summary",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "summary",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "summary",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "summary",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "summary",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "summary",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "summary",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          }
+        ],
+        "images": []
       },
       {
         "id": "contato",
@@ -1388,7 +2410,89 @@
           "h2": 1,
           "ol": 1,
           "img": 1
-        }
+        },
+        "layout": [
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "ol",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "li",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "li",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "li",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          }
+        ],
+        "images": [
+          "Mapa com a localização da Kanpai na R. Alexandrina Thibes de Campos, 423, Tatuquara, Curitiba"
+        ]
       }
     ],
     "allText": [
@@ -2682,6 +3786,178 @@
         "text": "Seg a sex, 8h às 20h · Sáb, 8h às 13h",
         "path": "div>section>div>div>div>div>span"
       }
+    ],
+    "allImages": [
+      {
+        "alt": "Ronaldo Parpinelli, terapeuta da Kanpai, de jaleco branco diante de uma parede de folhagens",
+        "path": "div>section>div>div>div>img"
+      },
+      {
+        "alt": "Paciente em sessão de ventosaterapia nas costas, no consultório da Kanpai",
+        "path": "div>section>div>div>article>img"
+      },
+      {
+        "alt": "Sessão de acupuntura nas costas de uma paciente no espaço Kanpai",
+        "path": "div>section>div>div>img"
+      },
+      {
+        "alt": "Ronaldo Parpinelli no consultório da Kanpai, com o logo da marca na parede",
+        "path": "div>section>div>div>img"
+      },
+      {
+        "alt": "Ilustração de uma hérnia de disco pressionando o nervo na coluna lombar",
+        "path": "div>section>div>div>article>a>img"
+      },
+      {
+        "alt": "",
+        "path": "div>section>div>div>div>a>img"
+      },
+      {
+        "alt": "",
+        "path": "div>section>div>div>div>a>img"
+      },
+      {
+        "alt": "",
+        "path": "div>section>div>div>div>a>img"
+      },
+      {
+        "alt": "",
+        "path": "div>section>div>div>div>a>img"
+      },
+      {
+        "alt": "",
+        "path": "div>section>div>div>div>a>img"
+      },
+      {
+        "alt": "Mapa com a localização da Kanpai na R. Alexandrina Thibes de Campos, 423, Tatuquara, Curitiba",
+        "path": "div>section>div>div>img"
+      }
+    ],
+    "anchors": [
+      {
+        "href": "Agendamento.dc.html",
+        "text": "Agendar avaliação"
+      },
+      {
+        "href": "#avaliacao",
+        "text": "Como é a 1ª consulta"
+      },
+      {
+        "href": "Agendamento.dc.html",
+        "text": "Agendar avaliação"
+      },
+      {
+        "href": "Empresas.dc.html",
+        "text": "Pedir orçamento →"
+      },
+      {
+        "href": "Agendamento.dc.html",
+        "text": "Agendar minha avaliação"
+      },
+      {
+        "href": "Agendamento.dc.html",
+        "text": "Agendar massoterapia clínica →"
+      },
+      {
+        "href": "#blog",
+        "text": "Leia: Dor muscular, quando a massoterapia pode ajudar"
+      },
+      {
+        "href": "Agendamento.dc.html",
+        "text": "Agendar acupuntura →"
+      },
+      {
+        "href": "#blog",
+        "text": "Leia: Hérnia de disco, sintomas e tratamentos"
+      },
+      {
+        "href": "Agendamento.dc.html",
+        "text": "Agendar ventosaterapia →"
+      },
+      {
+        "href": "Agendamento.dc.html",
+        "text": "Agendar massagem terapêutica →"
+      },
+      {
+        "href": "Agendamento.dc.html",
+        "text": "Agendar massagem relaxante →"
+      },
+      {
+        "href": "Agendamento.dc.html",
+        "text": "Agendar moxaterapia →"
+      },
+      {
+        "href": "Agendamento.dc.html",
+        "text": "Agendar avaliação →"
+      },
+      {
+        "href": "Agendamento.dc.html",
+        "text": "Agendar avaliação →"
+      },
+      {
+        "href": "Agendamento.dc.html",
+        "text": "Agendar reflexologia →"
+      },
+      {
+        "href": "Tratamentos.dc.html",
+        "text": "Ver todos os tratamentos →"
+      },
+      {
+        "href": "#contato",
+        "text": "Quero ser avisado →"
+      },
+      {
+        "href": "Agendamento.dc.html",
+        "text": "Quero começar meu tratamento"
+      },
+      {
+        "href": "#depoimentos",
+        "text": "Ler as 102 avaliações no Google →"
+      },
+      {
+        "href": "Agendamento.dc.html",
+        "text": "Começar pelo mensal →"
+      },
+      {
+        "href": "Agendamento.dc.html",
+        "text": "Quero 5 sessões"
+      },
+      {
+        "href": "Agendamento.dc.html",
+        "text": "Quero 10 sessões →"
+      },
+      {
+        "href": "Blog.dc.html",
+        "text": "Ver todos os artigos →"
+      },
+      {
+        "href": "Artigo.dc.html",
+        "text": "Coluna e ciático · 7 min de leitura Hérnia de disco: entenda a condição, os sintomas e as possibilidades de tratamento"
+      },
+      {
+        "href": "Artigo.dc.html",
+        "text": "Coluna · 6 min · 9 de out.Quiropraxia: o que é, para que serve e quais são os benefícios para a coluna?"
+      },
+      {
+        "href": "Artigo.dc.html",
+        "text": "Massoterapia · 4 min · 5 de out.Dor muscular: quando a massoterapia pode ajudar e quando procurar um profissional"
+      },
+      {
+        "href": "Artigo.dc.html",
+        "text": "Coluna e ciático · 5 minSíndrome do piriforme: quando a dor ciática não vem da coluna"
+      },
+      {
+        "href": "Artigo.dc.html",
+        "text": "Dor crônica · 6 minFibromialgia: entenda os sintomas, as causas e como melhorar a qualidade de vida"
+      },
+      {
+        "href": "Artigo.dc.html",
+        "text": "Técnicas · 5 minLiberação miofascial: o que é, para que serve e por que funciona"
+      },
+      {
+        "href": "Agendamento.dc.html",
+        "text": "Agendar avaliação"
+      }
     ]
   },
   "/tratamentos": {
@@ -2724,7 +4000,17 @@
           "nav": 1,
           "h1": 1,
           "p": 1
-        }
+        },
+        "layout": [
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          }
+        ],
+        "images": []
       },
       {
         "id": null,
@@ -2783,7 +4069,38 @@
         "elements": {
           "p": 1,
           "ul": 1
-        }
+        },
+        "layout": [
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "div",
+            "display": "grid",
+            "columns": "repeat(auto-fill, minmax(320px, 1fr))",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          }
+        ],
+        "images": []
       },
       {
         "id": null,
@@ -2828,7 +4145,57 @@
           "h2": 1,
           "p": 1,
           "img": 4
-        }
+        },
+        "layout": [
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "div",
+            "display": "grid",
+            "columns": "repeat(auto-fit, minmax(240px, 1fr))",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "figure",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "figure",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "figure",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "figure",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          }
+        ],
+        "images": [
+          "Ventosas aplicadas nas costas de uma paciente",
+          "Eletrodos de eletroterapia posicionados na coxa e no joelho",
+          "Pedras quentes posicionadas ao longo das costas",
+          "Sementes de auriculoterapia aplicadas na orelha"
+        ]
       },
       {
         "id": null,
@@ -2862,7 +4229,31 @@
         "elements": {
           "h2": 1,
           "p": 1
-        }
+        },
+        "layout": [
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          }
+        ],
+        "images": []
       },
       {
         "id": null,
@@ -3086,7 +4477,17 @@
         "elements": {
           "h2": 1,
           "p": 2
-        }
+        },
+        "layout": [
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          }
+        ],
+        "images": []
       },
       {
         "id": null,
@@ -3150,7 +4551,9 @@
         "elements": {
           "h2": 1,
           "p": 3
-        }
+        },
+        "layout": [],
+        "images": []
       }
     ],
     "allText": [
@@ -3564,6 +4967,38 @@
         "text": "Não. Elas são complementares. Se você já faz acompanhamento médico, siga com ele e conte na avaliação.",
         "path": "div>section>div>div>details>p"
       }
+    ],
+    "allImages": [
+      {
+        "alt": "Ventosas aplicadas nas costas de uma paciente",
+        "path": "div>section>div>figure>img"
+      },
+      {
+        "alt": "Eletrodos de eletroterapia posicionados na coxa e no joelho",
+        "path": "div>section>div>figure>img"
+      },
+      {
+        "alt": "Pedras quentes posicionadas ao longo das costas",
+        "path": "div>section>div>figure>img"
+      },
+      {
+        "alt": "Sementes de auriculoterapia aplicadas na orelha",
+        "path": "div>section>div>figure>img"
+      }
+    ],
+    "anchors": [
+      {
+        "href": "Home-v7-ntj6.dc.html",
+        "text": "Início"
+      },
+      {
+        "href": "Agendamento.dc.html",
+        "text": "Agendar avaliação"
+      },
+      {
+        "href": "Home-v7-ntj6.dc.html#planos",
+        "text": "Ver planos e valores →"
+      }
     ]
   },
   "/tratamentos/massoterapia-clinica": {
@@ -3667,7 +5102,40 @@
           "h1": 1,
           "p": 1,
           "img": 1
-        }
+        },
+        "layout": [
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          }
+        ],
+        "images": [
+          "Ronaldo Parpinelli no consultório da Kanpai, ao lado da maca"
+        ]
       },
       {
         "id": null,
@@ -3696,7 +5164,9 @@
         "elements": {
           "h2": 1,
           "p": 2
-        }
+        },
+        "layout": [],
+        "images": []
       },
       {
         "id": null,
@@ -3777,7 +5247,45 @@
           "h3": 2,
           "ul": 2,
           "p": 1
-        }
+        },
+        "layout": [
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "ul",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "ul",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          }
+        ],
+        "images": []
       },
       {
         "id": null,
@@ -3856,7 +5364,73 @@
         "elements": {
           "h2": 1,
           "ol": 1
-        }
+        },
+        "layout": [
+          {
+            "tag": "ol",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "li",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "li",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "li",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "li",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          }
+        ],
+        "images": []
       },
       {
         "id": null,
@@ -3919,7 +5493,38 @@
         ],
         "elements": {
           "h2": 1
-        }
+        },
+        "layout": [
+          {
+            "tag": "div",
+            "display": "grid",
+            "columns": "repeat(auto-fit, minmax(240px, 1fr))",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "a",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "a",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "a",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          }
+        ],
+        "images": []
       },
       {
         "id": null,
@@ -3967,7 +5572,17 @@
         ],
         "elements": {
           "h2": 1
-        }
+        },
+        "layout": [
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          }
+        ],
+        "images": []
       },
       {
         "id": null,
@@ -4046,7 +5661,9 @@
         "elements": {
           "h2": 1,
           "p": 4
-        }
+        },
+        "layout": [],
+        "images": []
       },
       {
         "id": null,
@@ -4080,7 +5697,27 @@
         "elements": {
           "h2": 1,
           "img": 2
-        }
+        },
+        "layout": [
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          }
+        ],
+        "images": [
+          "",
+          ""
+        ]
       },
       {
         "id": null,
@@ -4108,7 +5745,24 @@
         ],
         "elements": {
           "h2": 1
-        }
+        },
+        "layout": [
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          }
+        ],
+        "images": []
       }
     ],
     "allText": [
@@ -4617,6 +6271,66 @@
         "text": "Resposta pelo WhatsApp em até 2 horas",
         "path": "div>section>div>div>span"
       }
+    ],
+    "allImages": [
+      {
+        "alt": "Ronaldo Parpinelli no consultório da Kanpai, ao lado da maca",
+        "path": "div>section>div>div>div>img"
+      },
+      {
+        "alt": "",
+        "path": "div>div>div>section>div>a>img"
+      },
+      {
+        "alt": "",
+        "path": "div>div>div>section>div>a>img"
+      }
+    ],
+    "anchors": [
+      {
+        "href": "Home-v7-ntj6.dc.html",
+        "text": "Início"
+      },
+      {
+        "href": "Tratamentos.dc.html",
+        "text": "Tratamentos"
+      },
+      {
+        "href": "Agendamento.dc.html",
+        "text": "Agendar massoterapia clínica"
+      },
+      {
+        "href": "Tratamentos.dc.html",
+        "text": "AcupunturaPara dores crônicas e ciatalgia. 1 hora · incluso nos planosVer tratamento →"
+      },
+      {
+        "href": "Tratamentos.dc.html",
+        "text": "VentosaterapiaPara contraturas nas costas e ombros. 1 hora · incluso nos planosVer tratamento →"
+      },
+      {
+        "href": "Tratamentos.dc.html",
+        "text": "Ajustes de colunaPara rigidez e mobilidade, quando indicados. 1 hora · incluso nos planosVer tratamento →"
+      },
+      {
+        "href": "Artigo.dc.html",
+        "text": "Massoterapia · 4 minDor muscular: quando a massoterapia pode ajudar e quando procurar um profissional"
+      },
+      {
+        "href": "Artigo.dc.html",
+        "text": "Coluna e ciático · 7 minHérnia de disco: entenda a condição, os sintomas e as possibilidades de tratamento"
+      },
+      {
+        "href": "Agendamento.dc.html",
+        "text": "Agendar avaliação"
+      },
+      {
+        "href": "Agendamento.dc.html",
+        "text": "Falar no WhatsApp"
+      },
+      {
+        "href": "Agendamento.dc.html",
+        "text": "Agendar avaliação"
+      }
     ]
   },
   "/empresas": {
@@ -4680,7 +6394,40 @@
           "h1": 1,
           "p": 1,
           "img": 1
-        }
+        },
+        "layout": [
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "figure",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          }
+        ],
+        "images": [
+          "Ronaldo com a equipe de uma empresa atendida, todos de uniforme branco, em frente à fábrica"
+        ]
       },
       {
         "id": null,
@@ -4711,7 +6458,45 @@
             "path": "div>section>div>span"
           }
         ],
-        "elements": {}
+        "elements": {},
+        "layout": [
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          }
+        ],
+        "images": []
       },
       {
         "id": "programas",
@@ -4757,7 +6542,38 @@
           "h3": 1,
           "p": 1,
           "ul": 1
-        }
+        },
+        "layout": [
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          }
+        ],
+        "images": []
       },
       {
         "id": null,
@@ -4822,7 +6638,31 @@
           "h2": 1,
           "p": 5,
           "h3": 4
-        }
+        },
+        "layout": [
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "grid",
+            "columns": "repeat(auto-fit, minmax(240px, 1fr))",
+            "direction": "",
+            "wrap": ""
+          }
+        ],
+        "images": []
       },
       {
         "id": null,
@@ -4901,7 +6741,45 @@
         "elements": {
           "h2": 1,
           "ol": 1
-        }
+        },
+        "layout": [
+          {
+            "tag": "ol",
+            "display": "grid",
+            "columns": "repeat(auto-fit, minmax(230px, 1fr))",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "li",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "li",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "li",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "li",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          }
+        ],
+        "images": []
       },
       {
         "id": "proposta",
@@ -5042,7 +6920,59 @@
           "p": 1,
           "ol": 1,
           "form": 1
-        }
+        },
+        "layout": [
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "ol",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "form",
+            "display": "grid",
+            "columns": "repeat(auto-fit, minmax(220px, 1fr))",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "fieldset",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          }
+        ],
+        "images": []
       },
       {
         "id": null,
@@ -5121,7 +7051,9 @@
         "elements": {
           "h2": 1,
           "p": 4
-        }
+        },
+        "layout": [],
+        "images": []
       }
     ],
     "allText": [
@@ -5560,6 +7492,26 @@
         "text": "Sim. Emitimos nota fiscal para todos os programas contratados por empresas.",
         "path": "div>section>div>div>details>p"
       }
+    ],
+    "allImages": [
+      {
+        "alt": "Ronaldo com a equipe de uma empresa atendida, todos de uniforme branco, em frente à fábrica",
+        "path": "div>section>div>figure>img"
+      }
+    ],
+    "anchors": [
+      {
+        "href": "Home-v7-ntj6.dc.html",
+        "text": "Início"
+      },
+      {
+        "href": "#proposta",
+        "text": "Solicitar proposta"
+      },
+      {
+        "href": "#programas",
+        "text": "Ver programas"
+      }
     ]
   },
   "/sobre": {
@@ -5623,7 +7575,40 @@
           "h1": 1,
           "p": 1,
           "img": 1
-        }
+        },
+        "layout": [
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          }
+        ],
+        "images": [
+          "Ronaldo Parpinelli no consultório da Kanpai, com o logo da marca na parede"
+        ]
       },
       {
         "id": "historia",
@@ -5713,7 +7698,59 @@
           "h2": 1,
           "p": 2,
           "ol": 1
-        }
+        },
+        "layout": [
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "ol",
+            "display": "grid",
+            "columns": "repeat(auto-fit, minmax(240px, 1fr))",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "li",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "li",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "li",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "li",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          }
+        ],
+        "images": []
       },
       {
         "id": null,
@@ -5807,7 +7844,73 @@
         "elements": {
           "h2": 1,
           "p": 5
-        }
+        },
+        "layout": [
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "dl",
+            "display": "grid",
+            "columns": "1fr 1fr",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          }
+        ],
+        "images": []
       },
       {
         "id": null,
@@ -5857,7 +7960,38 @@
           "h2": 1,
           "h3": 3,
           "p": 3
-        }
+        },
+        "layout": [
+          {
+            "tag": "div",
+            "display": "grid",
+            "columns": "repeat(auto-fit, minmax(260px, 1fr))",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          }
+        ],
+        "images": []
       },
       {
         "id": null,
@@ -5881,7 +8015,29 @@
         "elements": {
           "h2": 1,
           "img": 4
-        }
+        },
+        "layout": [
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "div",
+            "display": "grid",
+            "columns": "repeat(auto-fit, minmax(260px, 1fr))",
+            "direction": "",
+            "wrap": ""
+          }
+        ],
+        "images": [
+          "Sala de atendimento da Kanpai durante sessões de acupuntura",
+          "Sala de atendimento com o logo da Kanpai na parede",
+          "Parede de certificados do Ronaldo no consultório",
+          "Sessão de ventosaterapia na Kanpai"
+        ]
       },
       {
         "id": null,
@@ -5909,7 +8065,24 @@
         ],
         "elements": {
           "h2": 1
-        }
+        },
+        "layout": [
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          }
+        ],
+        "images": []
       }
     ],
     "allText": [
@@ -6203,6 +8376,50 @@
         "text": "Você fala direto com o Ronaldo",
         "path": "div>section>div>div>span"
       }
+    ],
+    "allImages": [
+      {
+        "alt": "Ronaldo Parpinelli no consultório da Kanpai, com o logo da marca na parede",
+        "path": "div>section>div>div>img"
+      },
+      {
+        "alt": "Sala de atendimento da Kanpai durante sessões de acupuntura",
+        "path": "div>section>div>img"
+      },
+      {
+        "alt": "Sala de atendimento com o logo da Kanpai na parede",
+        "path": "div>section>div>img"
+      },
+      {
+        "alt": "Parede de certificados do Ronaldo no consultório",
+        "path": "div>section>div>img"
+      },
+      {
+        "alt": "Sessão de ventosaterapia na Kanpai",
+        "path": "div>section>div>img"
+      }
+    ],
+    "anchors": [
+      {
+        "href": "Home-v7-ntj6.dc.html",
+        "text": "Início"
+      },
+      {
+        "href": "Agendamento.dc.html",
+        "text": "Agendar avaliação"
+      },
+      {
+        "href": "#historia",
+        "text": "Conhecer a história"
+      },
+      {
+        "href": "Home-v7-ntj6.dc.html#contato",
+        "text": "Como chegar →"
+      },
+      {
+        "href": "Agendamento.dc.html",
+        "text": "Agendar avaliação"
+      }
     ]
   },
   "/blog": {
@@ -6256,7 +8473,31 @@
           "h1": 1,
           "form": 1,
           "p": 1
-        }
+        },
+        "layout": [
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "form",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          }
+        ],
+        "images": []
       },
       {
         "id": null,
@@ -6286,7 +8527,26 @@
           "img": 1,
           "h2": 1,
           "p": 1
-        }
+        },
+        "layout": [
+          {
+            "tag": "a",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          }
+        ],
+        "images": [
+          "Ilustração de uma hérnia de disco pressionando o nervo na coluna lombar"
+        ]
       },
       {
         "id": null,
@@ -6351,7 +8611,38 @@
           "h2": 1,
           "h3": 3,
           "p": 3
-        }
+        },
+        "layout": [
+          {
+            "tag": "div",
+            "display": "grid",
+            "columns": "repeat(auto-fit, minmax(300px, 1fr))",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          }
+        ],
+        "images": []
       },
       {
         "id": null,
@@ -6374,7 +8665,38 @@
         ],
         "elements": {
           "h2": 1
-        }
+        },
+        "layout": [
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "div",
+            "display": "grid",
+            "columns": "repeat(auto-fill, minmax(300px, 1fr))",
+            "direction": "",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": ""
+          }
+        ],
+        "images": []
       },
       {
         "id": null,
@@ -6414,7 +8736,38 @@
           "h2": 1,
           "p": 1,
           "form": 1
-        }
+        },
+        "layout": [
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "form",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "",
+            "wrap": "wrap"
+          }
+        ],
+        "images": []
       }
     ],
     "allText": [
@@ -6578,6 +8931,34 @@
         "text": "Você pode sair a qualquer momento. Ao assinar, concorda com a política de privacidade.",
         "path": "div>section>div>form>span"
       }
+    ],
+    "allImages": [
+      {
+        "alt": "Ilustração de uma hérnia de disco pressionando o nervo na coluna lombar",
+        "path": "div>section>a>img"
+      }
+    ],
+    "anchors": [
+      {
+        "href": "Home-v7-ntj6.dc.html",
+        "text": "Início"
+      },
+      {
+        "href": "Artigo.dc.html",
+        "text": "Em destaque · Coluna e ciático · 7 min Hérnia de disco: entenda a condição, os sintomas e as possibilidades de tratamento O que é, quais são os sintomas mais comuns, quando a avaliação médica vem primeiro e como as terapias manuais podem complementar o tratamento. Ler artigo →"
+      },
+      {
+        "href": "Blog.dc.html",
+        "text": "Ver trilha · 3 artigos →"
+      },
+      {
+        "href": "Blog.dc.html",
+        "text": "Ver trilha · 3 artigos →"
+      },
+      {
+        "href": "Blog.dc.html",
+        "text": "Ver trilha · 3 artigos →"
+      }
     ]
   },
   "/blog/hernia-de-disco": {
@@ -6598,7 +8979,9 @@
         ],
         "elements": {
           "p": 1
-        }
+        },
+        "layout": [],
+        "images": []
       },
       {
         "id": "alerta",
@@ -6632,7 +9015,9 @@
         "elements": {
           "h2": 1,
           "ul": 1
-        }
+        },
+        "layout": [],
+        "images": []
       },
       {
         "id": null,
@@ -6686,7 +9071,41 @@
         "elements": {
           "h2": 1,
           "img": 2
-        }
+        },
+        "layout": [
+          {
+            "tag": "div",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "span",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          },
+          {
+            "tag": "a",
+            "display": "flex",
+            "columns": "",
+            "direction": "column",
+            "wrap": ""
+          }
+        ],
+        "images": [
+          "",
+          ""
+        ]
       }
     ],
     "allText": [
@@ -6969,6 +9388,82 @@
         "tag": "span",
         "text": "Ver tratamento →",
         "path": "div>section>a>span"
+      }
+    ],
+    "allImages": [
+      {
+        "alt": "",
+        "path": "div>header>div>span>img"
+      },
+      {
+        "alt": "Ilustração de uma hérnia de disco pressionando o nervo na coluna lombar",
+        "path": "div>div>img"
+      },
+      {
+        "alt": "",
+        "path": "div>div>article>div>img"
+      },
+      {
+        "alt": "",
+        "path": "div>section>div>div>a>img"
+      },
+      {
+        "alt": "",
+        "path": "div>section>div>div>a>img"
+      }
+    ],
+    "anchors": [
+      {
+        "href": "Home-v7-ntj6.dc.html",
+        "text": "Início"
+      },
+      {
+        "href": "Blog.dc.html",
+        "text": "Blog"
+      },
+      {
+        "href": "#resumo",
+        "text": "Resposta rápida"
+      },
+      {
+        "href": "#oque",
+        "text": "O que é hérnia de disco"
+      },
+      {
+        "href": "#sintomas",
+        "text": "Sintomas mais comuns"
+      },
+      {
+        "href": "#alerta",
+        "text": "Quando procurar um médico"
+      },
+      {
+        "href": "#tratamento",
+        "text": "Possibilidades de tratamento"
+      },
+      {
+        "href": "#kanpai",
+        "text": "Como as terapias manuais ajudam"
+      },
+      {
+        "href": "Agendamento.dc.html",
+        "text": "Agendar avaliação"
+      },
+      {
+        "href": "Sobre.dc.html",
+        "text": "Conhecer o Ronaldo →"
+      },
+      {
+        "href": "Artigo.dc.html",
+        "text": "Coluna e ciático · 5 minSíndrome do piriforme: quando a dor ciática não vem da coluna"
+      },
+      {
+        "href": "Artigo.dc.html",
+        "text": "Massoterapia · 4 minDor muscular: quando a massoterapia pode ajudar e quando procurar um profissional"
+      },
+      {
+        "href": "Tratamento-Massoterapia.dc.html",
+        "text": "Tratamento relacionado Massoterapia clínica Para dor lombar, ciático e tensão muscular, com avaliação individual. Ver tratamento →"
       }
     ]
   }
