@@ -10,8 +10,23 @@ function expectReferenceTree(expected, actual, location) {
       while (cursor < actual.length && actual[cursor].tag === node.tag) cursor += 1;
       expect(cursor, `${location} dynamic ${node.tag}`).toBeGreaterThan(start);
     } else {
-      expect(actual[cursor]?.tag, `${location} child ${cursor}`).toBe(node.tag);
-      expectReferenceTree(node.children, actual[cursor].children, `${location}>${node.tag}[${cursor}]`);
+      const current = actual[cursor];
+      expect(current?.tag, `${location} child ${cursor}`).toBe(node.tag);
+      expect(current.class, `${location}>${node.tag}[${cursor}] class`).toBe(node.class);
+      if ('alt' in node) expect(current.alt, `${location}>${node.tag}[${cursor}] alt`).toBe(node.alt);
+      for (const [property, original] of Object.entries(node.styles)) {
+        const value = original.replace('minmax(320px, 1fr)', 'minmax(min(100%, 320px), 1fr)').replace('minmax(300px, 1fr)', 'minmax(min(100%, 300px), 1fr)');
+        expect(current.styles[property], `${location}>${node.tag}[${cursor}] ${property}`).toBe(value);
+        const computedName = { display: 'display', 'flex-direction': 'direction', 'flex-wrap': 'wrap', 'align-items': 'align', 'justify-content': 'justify', order: 'order', position: 'position' }[property];
+        let computedValue = value;
+        if (property === 'display' && ['flex', 'inline-flex', 'grid', 'inline-grid'].includes(current.parentDisplay)) {
+          if (value === 'inline-flex') computedValue = 'flex';
+          if (value === 'inline-grid') computedValue = 'grid';
+          if (value === 'inline' || value === 'inline-block') computedValue = 'block';
+        }
+        if (computedName) expect(current.computed[computedName], `${location}>${node.tag}[${cursor}] computed ${property}`).toBe(computedValue);
+      }
+      expectReferenceTree(node.children, current.children, `${location}>${node.tag}[${cursor}]`);
       cursor += 1;
     }
   }
@@ -20,7 +35,15 @@ function expectReferenceTree(expected, actual, location) {
 
 async function elementTree(locator) {
   return locator.evaluateAll((roots) => {
-    const read = (node) => ({ tag: node.tagName.toLowerCase(), children: [...node.children].map(read) });
+    const read = (node) => {
+      const styles = {};
+      for (const declaration of (node.getAttribute('style') || '').split(';')) {
+        const split = declaration.indexOf(':');
+        if (split !== -1) styles[declaration.slice(0, split).trim()] = declaration.slice(split + 1).trim();
+      }
+      const computed = getComputedStyle(node);
+      return { tag: node.tagName.toLowerCase(), parentDisplay: node.parentElement ? getComputedStyle(node.parentElement).display : '', class: node.getAttribute('class') || '', alt: node.getAttribute('alt'), styles, computed: { display: computed.display, direction: computed.flexDirection, wrap: computed.flexWrap, align: computed.alignItems, justify: computed.justifyContent, order: computed.order, position: computed.position }, children: [...node.children].map(read) };
+    };
     return roots.map(read);
   });
 }
@@ -69,6 +92,52 @@ test('menu e rodapé', async ({ page }) => {
     const headerActions = await header.locator(':scope > div > div > *').evaluateAll((nodes) => nodes.map((node) => node.tagName.toLowerCase()));
     expect(headerActions).toEqual(['a', 'button']);
     expectReferenceTree(reference.footerTree, await elementTree(footer), `${path} footer`);
+    const footerNodes = await footer.evaluate((root) => [root, ...root.querySelectorAll('*')].map((node) => {
+      const ancestry = [];
+      for (let current = node; current; current = current.parentElement) {
+        ancestry.unshift(current.tagName.toLowerCase());
+        if (current === root) break;
+      }
+      const styles = {};
+      for (const declaration of (node.getAttribute('style') || '').split(';')) {
+        const split = declaration.indexOf(':');
+        if (split !== -1) styles[declaration.slice(0, split).trim()] = declaration.slice(split + 1).trim();
+      }
+      const computed = getComputedStyle(node);
+      return { tag: node.tagName.toLowerCase(), parentDisplay: node.parentElement ? getComputedStyle(node.parentElement).display : '', path: ancestry.join('>'), class: node.getAttribute('class') || '', styles, display: computed.display, direction: computed.flexDirection, wrap: computed.flexWrap, align: computed.alignItems, justify: computed.justifyContent };
+    }));
+    expect(footerNodes).toHaveLength(reference.footerLayout.length);
+    for (let index = 0; index < reference.footerLayout.length; index += 1) {
+      const expected = reference.footerLayout[index];
+      const actual = footerNodes[index];
+      expect([actual.tag, actual.path, actual.class], `${path} footer element ${index}`).toEqual([expected.tag, expected.path, expected.class]);
+      for (const [property, value] of Object.entries(expected.styles)) {
+        expect(actual.styles[property], `${path} footer ${expected.path} ${property}`).toBe(value);
+      }
+      if (expected.styles.display) {
+        let display = expected.styles.display;
+        if (['flex', 'inline-flex', 'grid', 'inline-grid'].includes(actual.parentDisplay)) {
+          if (display === 'inline-flex') display = 'flex';
+          if (display === 'inline-grid') display = 'grid';
+          if (display === 'inline' || display === 'inline-block') display = 'block';
+        }
+        expect(actual.display, `${path} footer ${expected.path} display`).toBe(display);
+      }
+      if (expected.styles['flex-direction']) expect(actual.direction, `${path} footer ${expected.path} direction`).toBe(expected.styles['flex-direction']);
+      if (expected.styles['flex-wrap']) expect(actual.wrap, `${path} footer ${expected.path} wrap`).toBe(expected.styles['flex-wrap']);
+      if (expected.styles['align-items']) expect(actual.align, `${path} footer ${expected.path} alignment`).toBe(expected.styles['align-items']);
+      if (expected.styles['justify-content']) expect(actual.justify, `${path} footer ${expected.path} justification`).toBe(expected.styles['justify-content']);
+    }
+    await expect(footer.getByRole('navigation', { name: 'Tratamentos' })).toHaveCSS('flex-direction', 'column');
+    await expect(footer.getByRole('navigation', { name: 'Kanpai' })).toHaveCSS('flex-direction', 'column');
+    await expect(header.locator(':scope > div')).toHaveCSS('flex-direction', 'row');
+    await expect(header.locator(':scope > div')).toHaveCSS('align-items', 'center');
+    await expect(header.locator(':scope > div')).toHaveCSS('justify-content', 'space-between');
+    await expect(brand).toHaveCSS('display', 'flex');
+    await expect(brand).toHaveCSS('align-items', 'center');
+    await expect(header.locator('nav[aria-label="Navegação principal"]')).toHaveCSS('flex-wrap', 'wrap');
+    await expect(header.locator(':scope > div > div')).toHaveCSS('display', 'flex');
+    await expect(header.locator(':scope > div > div')).toHaveCSS('align-items', 'center');
     await expect(header.locator('nav[aria-label="Navegação principal"]')).toHaveCSS('display', 'flex');
     await expect(footer.locator(':scope > div')).toHaveCSS('display', 'flex');
     await expect(footer.locator(':scope > div > div').first()).toHaveCSS('display', 'flex');
@@ -598,6 +667,41 @@ test('ordem e acesso por teclado em todas as telas', async ({ page }) => {
     await page.setViewportSize({ width, height: 900 });
     for (const [path] of pages) {
       await page.goto(base + path);
+      const visualOrder = await page.evaluate(() => {
+        const selector = 'a[href], button, input, select, textarea, summary';
+        function visibleControl(node) {
+          const controls = [node, ...node.querySelectorAll(selector)].filter((item) => item.matches(selector));
+          return controls.some((item) => {
+            for (let parent = item.parentElement; parent; parent = parent.parentElement) {
+              if (parent.tagName === 'DETAILS' && !parent.open && !parent.querySelector(':scope > summary')?.contains(item)) return false;
+            }
+            const rect = item.getBoundingClientRect();
+            return item.tabIndex >= 0 && !item.disabled && rect.width > 0 && rect.height > 0 && getComputedStyle(item).visibility !== 'hidden';
+          });
+        }
+        const errors = [];
+        for (const group of document.querySelectorAll('body *')) {
+          const style = getComputedStyle(group);
+          if (!['flex', 'inline-flex', 'grid', 'inline-grid'].includes(style.display)) continue;
+          const children = [...group.children].filter((child) => {
+            const childStyle = getComputedStyle(child);
+            const rect = child.getBoundingClientRect();
+            return !['absolute', 'fixed'].includes(childStyle.position) && rect.width > 0 && rect.height > 0 && childStyle.visibility !== 'hidden' && visibleControl(child);
+          });
+          for (let index = 1; index < children.length; index += 1) {
+            const previous = children[index - 1].getBoundingClientRect();
+            const next = children[index].getBoundingClientRect();
+            const vertical = style.flexDirection.startsWith('column') && style.display.includes('flex');
+            const nowrapRow = style.display.includes('flex') && style.flexDirection.startsWith('row') && style.flexWrap === 'nowrap';
+            const sameRow = Math.abs(next.top - previous.top) < 12 || (Math.min(previous.bottom, next.bottom) - Math.max(previous.top, next.top)) > Math.min(previous.height, next.height) * 0.75;
+            if ((vertical && next.top < previous.top - 2) || (nowrapRow && next.left < previous.left - 2) || (!vertical && !nowrapRow && ((sameRow && next.left < previous.left - 2) || (!sameRow && next.top < previous.top - 2)))) {
+              errors.push(`${group.tagName.toLowerCase()}.${group.className}: ${index - 1} -> ${index}`);
+            }
+          }
+        }
+        return errors;
+      });
+      expect(visualOrder, `${path} at ${width}: visual order differs from DOM`).toEqual([]);
       const unfocusable = await page.locator('a[href], button, input, select, textarea, summary').evaluateAll((nodes) => nodes.filter((node) => node.type !== 'hidden' && (node.disabled || node.tabIndex !== 0)).map((node) => node.getAttribute('aria-label') || node.textContent.trim() || node.tagName));
       expect(unfocusable, `${path} at ${width}: controls removed from keyboard order`).toEqual([]);
       const expected = await page.evaluate(() => {
