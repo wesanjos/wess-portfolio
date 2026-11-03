@@ -1,11 +1,14 @@
+@use '../../abstracts/colors';
+@use '../../utilities/mixins';
+
 .subtitle {
   font-size: 1.8rem;
   line-height: 150%;
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: -0.6rem;
-  background: $main-gradient;
-  @include gradient-text();
+  background: colors.$main-gradient;
+  @include mixins.gradient-text();
   width: max-content;
 
   @media screen and (max-width: 1280px) {

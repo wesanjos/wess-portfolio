@@ -1,14 +1,12 @@
-/* eslint-disable react/jsx-no-constructed-context-values */
-/* eslint-disable no-sequences */
 import React, { createContext, useContext, useMemo, useState } from 'react';
-import get from 'loadsh/get';
+import get from 'lodash/get';
 
 export const AppContext = createContext();
 const CMSContext = createContext({
   cmsContent: {},
 });
 
-export const getCmsContent = (path = '') => {
+export const useCmsContent = (path = '') => {
   const { cmsContent } = useContext(CMSContext);
 
   if (path === '') return cmsContent;
@@ -25,7 +23,7 @@ export const getCmsContent = (path = '') => {
 };
 
 export default function CMSProvider({ cmsContent, children }) {
-  const content = useMemo(() => ({ cmsContent }), []);
+  const content = useMemo(() => ({ cmsContent }), [cmsContent]);
   const [viewProjects, setViewProjects] = useState(false);
 
   return (

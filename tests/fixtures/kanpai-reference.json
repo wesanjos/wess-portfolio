@@ -5085,7 +5085,7 @@
           },
           {
             "tag": "p",
-            "text": "O atendimento é particular. Para quem faz sessões com frequência, os pacotes de 5 e 10 sessões reduzem o valor por sessão. Emitimos recibo para você solicitar reembolso, quando o seu plano permitir.",
+            "text": "O atendimento é particular. Para quem faz sessões com frequência, os pacotes de 5 e 10 sessões reduzem o valor por sessão.",
             "path": "div>section>div>div>details>p"
           }
         ],
@@ -6999,7 +6999,7 @@
       },
       {
         "tag": "p",
-        "text": "O atendimento é particular. Para quem faz sessões com frequência, os pacotes de 5 e 10 sessões reduzem o valor por sessão. Emitimos recibo para você solicitar reembolso, quando o seu plano permitir.",
+        "text": "O atendimento é particular. Para quem faz sessões com frequência, os pacotes de 5 e 10 sessões reduzem o valor por sessão.",
         "path": "div>section>div>div>details>p"
       },
       {

@@ -1,0 +1,171 @@
+{
+  "schema": 1,
+  "promote_threshold": 2,
+  "window_days": 45,
+  "quarantine_threshold": 2,
+  "next_id": 10,
+  "lessons": [
+    {
+      "id": "L-001",
+      "key": "ac_gap::verify link fragments and destination content as well as response status",
+      "text": "Verify link fragments and destination content as well as response status.",
+      "signal": "ac_gap",
+      "scope": "",
+      "status": "candidate",
+      "features": [
+        "kanpai"
+      ],
+      "recurrence": 1,
+      "harmful": 0,
+      "evidence": [
+        "C4"
+      ],
+      "created": "2026-11-02T19:09:14Z",
+      "last_seen": "2026-11-02T19:09:14Z"
+    },
+    {
+      "id": "L-002",
+      "key": "surviving_mutant::assert the exact page title when metadata correctness is required",
+      "text": "Assert the exact page title when metadata correctness is required.",
+      "signal": "surviving_mutant",
+      "scope": "",
+      "status": "candidate",
+      "features": [
+        "kanpai"
+      ],
+      "recurrence": 1,
+      "harmful": 0,
+      "evidence": [
+        "C6"
+      ],
+      "created": "2026-11-02T19:09:24Z",
+      "last_seen": "2026-11-02T19:09:24Z"
+    },
+    {
+      "id": "L-003",
+      "key": "surviving_mutant::assert placement of children within grids not only the container layout",
+      "text": "Assert placement of children within grids, not only the container layout.",
+      "signal": "surviving_mutant",
+      "scope": "ui",
+      "status": "candidate",
+      "features": [
+        "kanpai"
+      ],
+      "recurrence": 1,
+      "harmful": 0,
+      "evidence": [
+        "C7: grid-row span 2 -> span 1 (ui)"
+      ],
+      "created": "2026-11-02T19:39:54Z",
+      "last_seen": "2026-11-02T19:39:54Z"
+    },
+    {
+      "id": "L-004",
+      "key": "surviving_mutant::assert the order of sibling regions when a reference fixes their composition",
+      "text": "Assert the order of sibling regions when a reference fixes their composition",
+      "signal": "surviving_mutant",
+      "scope": "ui",
+      "status": "candidate",
+      "features": [
+        "kanpai"
+      ],
+      "recurrence": 1,
+      "harmful": 0,
+      "evidence": [
+        "src/components/kanpai/index.jsx:40-47 (ui)"
+      ],
+      "created": "2026-11-02T20:13:36Z",
+      "last_seen": "2026-11-02T20:13:36Z"
+    },
+    {
+      "id": "L-005",
+      "key": "ac_gap::verify keyboard traversal across every interactive control when the acceptance criterion requires it",
+      "text": "Verify keyboard traversal across every interactive control when the acceptance criterion requires it",
+      "signal": "ac_gap",
+      "scope": "ui",
+      "status": "candidate",
+      "features": [
+        "kanpai"
+      ],
+      "recurrence": 1,
+      "harmful": 0,
+      "evidence": [
+        "plan.md AC13 (ui)"
+      ],
+      "created": "2026-11-02T20:13:36Z",
+      "last_seen": "2026-11-02T20:13:36Z"
+    },
+    {
+      "id": "L-006",
+      "key": "surviving_mutant::assert the direction of each layout region when the reference fixes its composition",
+      "text": "Assert the direction of each layout region when the reference fixes its composition.",
+      "signal": "surviving_mutant",
+      "scope": "ui",
+      "status": "candidate",
+      "features": [
+        "kanpai"
+      ],
+      "recurrence": 1,
+      "harmful": 0,
+      "evidence": [
+        "footer.html navigation flex-direction column -> row (ui)"
+      ],
+      "created": "2026-11-02T21:15:05Z",
+      "last_seen": "2026-11-02T21:15:05Z"
+    },
+    {
+      "id": "L-007",
+      "key": "ac_gap::bind layout assertions to the exact region described by the reference",
+      "text": "Bind layout assertions to the exact region described by the reference.",
+      "signal": "ac_gap",
+      "scope": "ui",
+      "status": "candidate",
+      "features": [
+        "kanpai"
+      ],
+      "recurrence": 1,
+      "harmful": 0,
+      "evidence": [
+        "C7 (ui)"
+      ],
+      "created": "2026-11-02T21:15:05Z",
+      "last_seen": "2026-11-02T21:15:05Z"
+    },
+    {
+      "id": "L-008",
+      "key": "gate_fail::verify each reference layout region before treating a green browser suite as complete",
+      "text": "Verify each reference layout region before treating a green browser suite as complete.",
+      "signal": "gate_fail",
+      "scope": "ui",
+      "status": "candidate",
+      "features": [
+        "kanpai"
+      ],
+      "recurrence": 1,
+      "harmful": 0,
+      "evidence": [
+        "verification.md Gate (ui)"
+      ],
+      "created": "2026-11-02T21:15:05Z",
+      "last_seen": "2026-11-02T21:15:05Z"
+    },
+    {
+      "id": "L-009",
+      "key": "surviving_mutant::assert computed grid columns for each layout instance rather than relying on inline declarations",
+      "text": "Assert computed grid columns for each layout instance rather than relying on inline declarations.",
+      "signal": "surviving_mutant",
+      "scope": "ui",
+      "status": "candidate",
+      "features": [
+        "kanpai"
+      ],
+      "recurrence": 1,
+      "harmful": 0,
+      "evidence": [
+        "tests/kanpai.spec.js:351 (ui)"
+      ],
+      "created": "2026-11-02T21:25:07Z",
+      "last_seen": "2026-11-02T21:25:07Z"
+    }
+  ]
+}

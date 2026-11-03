@@ -1,8 +1,11 @@
+@use '../../abstracts/colors';
+@use '../../utilities/mixins';
+
 .project-card {
   max-width: 1152px;
   width: 100%;
   position: relative;
-  background-color: $primary-500;
+  background-color: colors.$primary-500;
   border-radius: 1.8rem;
 
   @media screen and (max-width: 960px) {
@@ -36,7 +39,7 @@
   }
 
   &__container {
-    @include flex(flex-start, flex-start);
+    @include mixins.flex(flex-start, flex-start);
     flex-direction: column;
     gap: 1.3rem;
 
@@ -80,7 +83,7 @@
 
   &__content {
     position: relative;
-    @include flex(space-between, center);
+    @include mixins.flex(space-between, center);
     width: calc(100% - 3rem);
     margin: 0.8rem auto 0.6rem;
     gap: 3rem;
@@ -99,7 +102,7 @@
       font-size: 1.6rem;
       font-weight: 600;
       text-transform: uppercase;
-      color: $secondary-600;
+      color: colors.$secondary-600;
       margin-bottom: 0.8rem;
 
       @media screen and (max-width: 960px) {
@@ -108,14 +111,17 @@
     }
 
     .project-name {
-      color: $white;
+      color: colors.$white;
       font-size: 2.25rem;
       font-weight: 400;
       line-height: 130%;
       margin-bottom: 0.5rem;
 
       .underline {
-        background-image: linear-gradient($secondary-300, $secondary-300);
+        background-image: linear-gradient(
+          colors.$secondary-300,
+          colors.$secondary-300
+        );
         background-size: 0 2px;
         background-position: right bottom;
         background-repeat: no-repeat;
@@ -133,7 +139,7 @@
 
     .description {
       font-size: 1.6rem;
-      color: $primary-200;
+      color: colors.$primary-200;
       max-width: 720px;
       padding-bottom: 1.3rem;
 
@@ -153,7 +159,7 @@
 
     .text {
       font-size: 1.3rem;
-      color: $primary-50;
+      color: colors.$primary-50;
     }
   }
 }

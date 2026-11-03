@@ -1,3 +1,5 @@
+@use '../../abstracts/colors';
+
 .main-button {
   display: inline-flex;
   padding: 8px 15px;
@@ -5,8 +7,9 @@
   align-items: center;
   gap: 10px;
 
-  background: linear-gradient($primary-700, $primary-700) padding-box,
-    $main-gradient border-box;
+  background:
+    linear-gradient(colors.$primary-700, colors.$primary-700) padding-box,
+    colors.$main-gradient border-box;
   border-radius: 10px;
   border: 1px solid transparent;
   position: relative;

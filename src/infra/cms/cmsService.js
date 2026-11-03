@@ -1,6 +1,7 @@
 export async function cmsService({ query }) {
+  let response;
   try {
-    const responsePage = await fetch(`${process.env.BASE_ENDPOINT}`, {
+    response = await fetch(`${process.env.BASE_ENDPOINT}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -9,20 +10,29 @@ export async function cmsService({ query }) {
       body: JSON.stringify({
         query,
       }),
-    }).then(async (response) => {
-      const body = await response.json();
-
-      if (!body.errors) return body;
-
-      throw new Error(JSON.stringify(body));
     });
-
-    return {
-      data: {
-        ...responsePage.data,
-      },
-    };
-  } catch (error) {
-    throw new Error(error.message);
+  } catch {
+    throw new Error(
+      'Falha de conexão com o DatoCMS. Verifique BASE_ENDPOINT e a rede.',
+    );
   }
+
+  if (!response.ok) {
+    throw new Error(`DatoCMS retornou erro HTTP ${response.status}.`);
+  }
+
+  let body;
+  try {
+    body = await response.json();
+  } catch {
+    throw new Error('DatoCMS retornou uma resposta JSON inválida.');
+  }
+
+  if (body.errors?.length) {
+    throw new Error(
+      'DatoCMS retornou erros GraphQL. Verifique a consulta e as credenciais.',
+    );
+  }
+
+  return { data: { ...body.data } };
 }

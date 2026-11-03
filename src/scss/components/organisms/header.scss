@@ -1,12 +1,15 @@
+@use '../../abstracts/colors';
+@use '../../utilities/mixins';
+
 .header {
   position: sticky;
   width: 100%;
   top: 0;
   z-index: 9;
-  background: $primary-700;
+  background: colors.$primary-700;
   height: 7rem;
-  @include flex;
-    animation: fade-in 0.7s ease-in-out;
+  @include mixins.flex;
+  animation: fade-in 0.7s ease-in-out;
 
   @media screen and (max-width: 768px) {
     margin-top: 1.6rem;
@@ -14,8 +17,8 @@
   }
 
   &__container {
-    @include container;
-    @include flex(space-between, center);
+    @include mixins.container;
+    @include mixins.flex(space-between, center);
     position: relative;
 
     @media screen and (max-width: 768px) {
@@ -26,5 +29,3 @@
     }
   }
 }
-
-

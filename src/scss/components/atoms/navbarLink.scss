@@ -1,30 +1,41 @@
+@use '../../abstracts/colors';
+
 .navbar__link {
   font-size: 1.6rem;
   line-height: 2.4rem;
   font-weight: 400;
-  color: $primary-100;
+  color: colors.$primary-100;
   display: inline-flex;
   letter-spacing: -0.01em;
   cursor: pointer;
 
-  background-image: linear-gradient($secondary-300, $secondary-300);
+  background-image: linear-gradient(
+    colors.$secondary-300,
+    colors.$secondary-300
+  );
   background-size: 0 2px;
   background-position: right bottom;
   background-repeat: no-repeat;
 
-  transition: font-weight 0.3s, color 0.3s ease-in-out,
+  transition:
+    font-weight 0.3s,
+    color 0.3s ease-in-out,
     background-size 0.5s cubic-bezier(0.65, 0, 0.35, 1);
 
   &:hover {
-    color: $secondary-300;
+    color: colors.$secondary-300;
     background-size: 100% 2px;
     background-position: left bottom;
-    transition: color 0.3s cubic-bezier(0.65, 0, 0.35, 1), background-size 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+    transition:
+      color 0.3s cubic-bezier(0.65, 0, 0.35, 1),
+      background-size 0.5s cubic-bezier(0.65, 0, 0.35, 1);
   }
 
   &.-active {
-    color: $secondary-500;
+    color: colors.$secondary-500;
     font-weight: 600;
-    transition: font-weight 0.3s, color 0.3s cubic-bezier(0.65, 0, 0.35, 1);
+    transition:
+      font-weight 0.3s,
+      color 0.3s cubic-bezier(0.65, 0, 0.35, 1);
   }
 }

@@ -1,5 +1,7 @@
+@use '../../utilities/mixins';
+
 .section-header {
-  @include container;
+  @include mixins.container;
   margin-bottom: 5rem;
 
   @media screen and (max-width: 1280px) {

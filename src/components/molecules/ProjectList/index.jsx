@@ -16,6 +16,8 @@ export default function ProjectList({ workList }) {
       const isDesktop = gsap.matchMedia();
       const sections = gsap.utils.toArray(refs.current);
 
+      if (sections.length < 2) return;
+
       isDesktop.add('(min-width: 1081px)', () => {
         gsap.to(sections, {
           xPercent: -100 * (sections.length - 1),

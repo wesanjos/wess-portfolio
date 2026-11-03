@@ -1,10 +1,12 @@
+@use '../../utilities/mixins';
+
 .more-projects {
   margin: 3rem 0 0;
   animation: fade-in 0.7s ease-in-out;
 
   &__container {
-    @include container;
-    @include flex(center, center);
+    @include mixins.container;
+    @include mixins.flex(center, center);
     flex-direction: column;
   }
 }

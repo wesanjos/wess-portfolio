@@ -10,10 +10,11 @@ const paths = [
   ['sobre'],
   ['blog'],
   ['blog', 'hernia-de-disco'],
+  ['privacidade'],
 ];
 
 export default function KanpaiPage({ page, content, css, footer }) {
-  return <Kanpai page={page} content={content} css={css} footer={footer} />;
+  return <Kanpai key={page} page={page} content={content} css={css} footer={footer} />;
 }
 
 KanpaiPage.kanpai = true;
@@ -24,7 +25,7 @@ export function getStaticPaths() {
 
 export function getStaticProps({ params }) {
   const page = (params.slug || []).join('/');
-  const name = { '': 'home', tratamentos: 'tratamentos', 'tratamentos/massoterapia-clinica': 'massoterapia', empresas: 'empresas', sobre: 'sobre', blog: 'blog', 'blog/hernia-de-disco': 'artigo' }[page];
+  const name = { '': 'home', tratamentos: 'tratamentos', 'tratamentos/massoterapia-clinica': 'massoterapia', empresas: 'empresas', sobre: 'sobre', blog: 'blog', 'blog/hernia-de-disco': 'artigo', privacidade: 'privacidade' }[page];
   const data = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'src/components/kanpai/reference.json'), 'utf8'));
   const entries = Object.entries(data).filter(([key]) => key === name || key.startsWith(`${name}:`));
   const initial = entries[0][1].html;

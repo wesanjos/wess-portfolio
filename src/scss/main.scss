@@ -1,23 +1,23 @@
-@import 'base/reset';
-@import './utilities/mixins';
+@use 'base/reset';
+@use 'utilities/mixins';
 
-@import './components/atoms/logo.scss';
-@import './components/atoms/navbarLink.scss';
-@import './components/atoms/subtitle.scss';
+@use 'components/atoms/logo.scss';
+@use 'components/atoms/navbarLink.scss';
+@use 'components/atoms/subtitle.scss';
 
-@import './components/molecules/navbar.scss';
-@import './components/molecules/contactsFooter.scss';
+@use 'components/molecules/navbar.scss';
+@use 'components/molecules/contactsFooter.scss';
 
-@import './components/molecules/hero-content.scss';
-@import './components/molecules/section-header.scss';
-@import './components/molecules/project-list.scss';
-@import './components/molecules/project-card.scss';
-@import './components/molecules/contact-list.scss';
-@import './components/molecules/button.scss';
-@import './components/molecules/list-other-projects.scss';
+@use 'components/molecules/hero-content.scss';
+@use 'components/molecules/section-header.scss';
+@use 'components/molecules/project-list.scss';
+@use 'components/molecules/project-card.scss';
+@use 'components/molecules/contact-list.scss';
+@use 'components/molecules/button.scss';
+@use 'components/molecules/list-other-projects.scss';
 
-@import './components/organisms/header.scss';
-@import './components/organisms/hero.scss';
-@import './components/organisms/portfolio.scss';
-@import './components/organisms/more-projects.scss';
-@import './components/organisms/footer.scss';
+@use 'components/organisms/header.scss';
+@use 'components/organisms/hero.scss';
+@use 'components/organisms/portfolio.scss';
+@use 'components/organisms/more-projects.scss';
+@use 'components/organisms/footer.scss';

@@ -1,14 +1,17 @@
+@use '../../abstracts/colors';
+@use '../../utilities/mixins';
+
 .footer {
   margin-top: 7rem;
-  background-color: $primary-600;
+  background-color: colors.$primary-600;
   height: 100%;
   min-height: 275px;
-  @include flex;
+  @include mixins.flex;
   animation: fade-in 0.7s ease-in-out;
 
   &__container {
-    @include container;
-    @include flex(space-between, flex-end);
+    @include mixins.container;
+    @include mixins.flex(space-between, flex-end);
 
     @media screen and (max-width: 960px) {
       flex-direction: column;
@@ -25,7 +28,7 @@
       font-size: 3rem;
       line-height: 150%;
       font-weight: 500;
-      color: $white;
+      color: colors.$white;
       margin-bottom: 2.5rem;
 
       @media screen and (max-width: 960px) {

@@ -1,9 +1,11 @@
+@use '../../utilities/mixins';
+
 .navbar {
-  @include flex();
+  @include mixins.flex();
 
   &__container {
     width: 100%;
-    @include flex;
+    @include mixins.flex;
     gap: 6rem;
 
     @media screen and (max-width: 768px) {

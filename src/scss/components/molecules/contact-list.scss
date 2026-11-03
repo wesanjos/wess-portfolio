@@ -1,5 +1,8 @@
+@use '../../abstracts/colors';
+@use '../../utilities/mixins';
+
 .contact-list {
-  @include flex(flex-start, center);
+  @include mixins.flex(flex-start, center);
   gap: 2rem;
 
   @media screen and (max-width: 768px) {
@@ -7,10 +10,10 @@
   }
 
   &__link {
-    color: $primary-50;
+    color: colors.$primary-50;
     transition: all 0.5s ease-in-out;
 
-    @include flex(flex-end, flex-end);
+    @include mixins.flex(flex-end, flex-end);
     gap: 0.4rem;
 
     @media screen and (max-width: 960px) {
@@ -18,7 +21,7 @@
     }
 
     &:hover {
-      color: $primary-300;
+      color: colors.$primary-300;
       transition: all 0.5s ease-in-out;
     }
 
